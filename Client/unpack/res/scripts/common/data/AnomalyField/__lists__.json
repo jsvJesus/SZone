@@ -1,0 +1,278 @@
+{
+	"test_ul" : [
+		["test_ul", "group2"],
+		["test_ul", "group2"]
+	],
+	"test_ur" : [
+		["test_ur", "group1"],
+		["test_ur", "group2"],
+		["test_ur", "group3"]
+	],	
+	"list1" : [
+		["mushroom1", "group1"]
+	],
+	"list2" : [
+		["snowfield01", "group1"],
+		["mushroom1", "group1"]
+	],
+	"mushroom_random" : [
+		["mushroom1", "group1"],
+		["mushroom2", "group1"],
+		["mushroom3", "group1"]	
+	],
+	"snowfield_random" : [
+		["snowfield01", "group1"],
+		["snowfield02", "group1"]	
+	],
+	"mushroom3_prize" : [
+		["mushroom3_prize", "group1"],
+		["mushroom3_prize", "group2"],
+		["moss1", "group1"]	
+	],
+	"test_all" : [
+		["test_all", "group1"]
+	],
+	"Trava_putanka" : [
+		["Putanka_01", "group1"],
+		["Putanka_02", "group1"]
+	],
+	"Krovosos" : [
+		["Random_singe_01", "group5"],
+		["Random_singe_02", "group5"],
+		["Random_singe_03", "group5"]
+	],
+	"Fiery_whirlwind" : [
+		["GW_Random_double_01", "group1"],
+		["GW_Random_double_02", "group1"],
+		["GW_Random_double_03", "group1"]
+	],
+	"Fiery_whirlwind_1" : [
+		["GW_01", "group1"],
+		["GW_01_02", "group1"]
+	],
+	"Fiery_whirlwind_2" : [
+		["GW_02", "group1"],
+		["GW_02_02", "group1"]
+	],
+	"Fiery_whirlwind_3" : [
+		["GW_03", "group1"],
+		["GW_03_02", "group1"]
+	],
+	"Fiery_whirlwind_4" : [
+		["GW_04", "group1"],
+		["GW_04_02", "group1"]
+	],
+	"Fiery_whirlwind_5" : [
+		["GW_05", "group1"],
+		["GW_05_02", "group1"]
+	],
+	"Fiery_whirlwind_6" : [
+		["GW_06", "group1"],
+		["GW_06_02", "group1"]
+	],
+	"Fiery_whirlwind_7" : [
+		["GW_07", "group1"],
+		["GW_07_02", "group1"]
+	],
+	"Fiery_whirlwind_8" : [
+		["GW_08", "group1"],
+		["GW_08_02", "group1"]
+	],
+	"Fiery_whirlwind_9" : [
+		["GW_09", "group1"],
+		["GW_09_02", "group1"]
+	],
+	"Fiery_whirlwind_10" : [
+		["GW_10", "group1"],
+		["GW_10_02", "group1"]
+	],
+	"Fiery_whirlwind_11" : [
+		["GW_11", "group1"],
+		["GW_11_02", "group1"]
+	],
+	"Fiery_whirlwind_12" : [
+		["GW_12", "group1"],
+		["GW_12_02", "group1"]
+	],
+	"Fiery_whirlwind_13" : [
+		["GW_13", "group1"],
+		["GW_13_02", "group1"]
+	],
+	"Fiery_whirlwind_14" : [
+		["GW_14", "group1"],
+		["GW_14_02", "group1"]
+	],
+	"Fiery_whirlwind_15" : [
+		["GW_15", "group1"],
+		["GW_15_02", "group1"]
+	],
+	"Fiery_whirlwind_16" : [
+		["GW_16", "group1"],
+		["GW_16_02", "group1"]
+	],
+	"Pchelki" : [
+		["Random_singe_01", "group4"],
+		["Random_singe_02", "group4"],
+		["Random_singe_03", "group4"]
+	],
+	"Golovorezka" : [
+		["Random_singe_01", "group6"],
+		["Random_singe_02", "group6"],
+		["Random_singe_03", "group6"]
+	],
+	"Zhadina" : [
+		["Random_singe_01", "group1"],
+		["Random_singe_02", "group1"],
+		["Random_singe_03", "group1"]
+	],
+	"Statika" : [
+		["Random_singe_01", "group3"],
+		["Random_singe_02", "group3"],
+		["Random_singe_03", "group3"]
+	],
+	"Ufo" : [
+		["Random_singe_01", "group2"],
+		["Random_singe_02", "group2"],
+		["Random_singe_03", "group2"]
+	],
+	"Moss" : [
+		["moss1", "group1"],
+		["moss2", "group1"]
+	],
+	"tunguska_moss" : [
+		["moss1", "group1"],
+		["moss2", "group1"]
+	],
+	"Laba" : [
+		["Random_singe_01", "group5"],
+		["Random_singe_02", "group5"],
+		["Random_singe_03", "group5"]
+	],
+	"Imarek_boloto" : [
+		["Random_singe_01", "group3"],
+		["Random_singe_02", "group3"],
+		["Random_singe_03", "group3"]
+	],
+	"farvilage_boloto" : [
+		["Random_singe_01", "group3"],
+		["Random_singe_02", "group3"],
+		["Random_singe_03", "group3"]
+	],
+	"priest_boloto" : [
+		["Random_singe_01", "group3"],
+		["Random_singe_02", "group3"],
+		["Random_singe_03", "group3"]
+	],
+	"sanatoriy_road" : [
+		["Random_singe_01", "group3"],
+		["Random_singe_02", "group3"],
+		["Random_singe_03", "group3"]
+	],
+	"sanatoriy_PoleArt" : [
+		["Random_singe_01", "group1"],
+		["Random_singe_02", "group1"],
+		["Random_singe_03", "group1"]
+	],	
+	"zabor" : [
+		["zabor", "group1"]
+	],	
+	"caravan_boar_place" : [
+		["Random_singe_01", "group4"],
+		["Random_singe_02", "group4"],
+		["Random_singe_03", "group4"],
+		["Putanka_01", "group1"],
+		["Putanka_02", "group1"]
+	],
+		"caravan_lake" : [
+		["Random_singe_01", "group3"],
+		["Random_singe_02", "group3"],
+		["Random_singe_03", "group3"],
+		["Putanka_01", "group1"],
+		["Putanka_02", "group1"]
+	],
+		"caravan_antifarm" : [
+		["Random_singe_01", "group1"],
+		["Random_singe_02", "group1"],
+		["Random_singe_03", "group1"],
+		["Random_singe_01", "group4"],
+		["Random_singe_02", "group4"],
+		["Random_singe_03", "group4"]
+	],
+		"caravan_prohod" : [
+		["Putanka_01", "group1"],
+		["Putanka_02", "group1"],
+		["Random_singe_01", "group4"],
+		["Random_singe_02", "group4"],
+		["Random_singe_03", "group4"],
+		["Random_singe_01", "group6"],
+		["Random_singe_02", "group6"],
+		["Random_singe_03", "group6"]		
+	],
+		"caravan_forest" : [
+		["Random_double_01", "group6"],		
+		["Random_double_02", "group5"],	
+		["Random_double_03", "group4"]
+	],
+		"tun_circle" : [
+		["tun_circle_01", "group1"],		
+		["tun_circle_02", "group1"],		
+		["tun_circle_03", "group1"],		
+		["tun_circle_04", "group1"],		
+		["tun_circle_05", "group1"],		
+		["tun_circle_06", "group1"],		
+		["tun_circle_07", "group1"],		
+		["tun_circle_08", "group1"],		
+		["tun_circle_09", "group1"],		
+		["tun_circle_10", "group1"]			
+	],
+		"RL_ELECTRO_1" : [
+		["RL_ELECTRO_1", "group1"]
+	],
+		"RL_ELECTRO_2" : [
+		["RL_ELECTRO_2", "group1"]
+	],
+		"RL_ELECTRO_3" : [
+		["RL_ELECTRO_3", "group1"]
+	],
+		"RL_ELECTRO_4" : [
+		["RL_ELECTRO_4", "group1"]
+	],
+		"RL_ELECTRO_5" : [
+		["RL_ELECTRO_5", "group1"]
+	],
+		"RL_ELECTRO_6" : [
+		["RL_ELECTRO_6", "group1"]
+	],
+		"RL_ELECTRO_7" : [
+		["RL_ELECTRO_7", "group1"]
+	],
+		"RL_ELECTRO_8" : [
+		["RL_ELECTRO_8", "group1"]
+	],
+		"RL_ELECTRO_9" : [
+		["RL_ELECTRO_9", "group1"]
+	],
+		"RL_ELECTRO_10" : [
+		["RL_ELECTRO_10", "group1"]
+	],
+		"RL_ELECTRO_11" : [
+		["RL_ELECTRO_11", "group1"]
+	],
+		"RL_ELECTRO_12" : [
+		["RL_ELECTRO_12", "group1"]
+	],
+		"RL_ELECTRO_13" : [
+		["RL_ELECTRO_13", "group1"]
+	],
+		"RL_ELECTRO_14" : [
+		["RL_ELECTRO_14", "group1"]
+	],
+		"RL_ELECTRO_15" : [
+		["RL_ELECTRO_15", "group1"]
+	],
+		
+		"test_soryshnica" : [
+		["test_sporyshnica", "group1"]
+	]
+	
+}

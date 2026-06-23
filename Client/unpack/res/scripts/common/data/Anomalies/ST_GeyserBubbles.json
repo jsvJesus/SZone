@@ -1,0 +1,36 @@
+{
+	"difficultyMin" : 10,
+	"difficultyMax" : 20,
+	"lifetime": 6.0,
+	"artifacts": [],
+	"artifact_spawn_chance": 0.0,
+	
+	
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 10.0,
+			"damage": {
+				"type": "INFRARED",
+				"distribution":  "RADIAL_SQUARED",
+				"frequency": 40,
+				"value": 0.0,
+				"penetration": 0.0,
+				"body_zone": "TORSO"
+			},
+			"effects": [
+				["Anomaly_Geyser_ItemSource", 1],
+				["In_Anomaly", 1]
+			],
+			"invisible": 0,
+			"nudge_type": "NONE",
+			"nudge_interval": 0.0,
+			"particles": "particles/anomaly_geyzer_pasiv.xml",
+
+			"base_height": 1.0,
+			"sfx_self_interval": [0,0],
+			
+			"sound": "anomaly/geyser_bubbl"
+		}
+	}
+}

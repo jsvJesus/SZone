@@ -1,0 +1,33 @@
+{
+	"difficultyMin" : 20,
+	"difficultyMax" : 30,
+	"lifetime": 10.0,
+	"artifacts": [410169, 410175],
+	"artifact_spawn_chance": 0.55,
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 5.0,
+			"damage": {
+				"type": "BIO",
+				"distribution":  "FLAT",
+				"frequency": 0.5,
+				"value": 60.0,
+				"penetration": 100.0,
+				"body_zone": "LEG_LOWER"
+			},
+			"effects": [
+				["Anomaly_Zelenaya_gnil", 1],
+				["In_Anomaly", 1]
+			],
+			"invisible": 1,
+			"nudge_type": "NONE",
+			"nudge_interval": 1,
+			"particles": "particles/anomaliya_zelenaya_gnil.xml",
+			
+			"sfx_self_interval": [3,6],
+			
+			"sound": "anomaly/water"
+		}
+	}
+}

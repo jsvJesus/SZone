@@ -1,0 +1,262 @@
+{
+	"name, bylevel" : {
+	
+		"default" : "Creatures.common.FROG1",
+		
+		"steppe_lvl1" : "Creatures.common.FROG_STEPPE1",
+		"steppe_elit" : "Creatures.common.FROG_ELIT"
+	},
+	"model" : "frog/frog_lod1.model",	
+	"model_scale, bylevel" : {
+		"default" : 1,
+
+		"steppe_lvl1" : 1.0,
+		"steppe_elit" : 1.5
+	},
+    "particles, bylevel" : {
+        "default" : {},
+        "[steppe_lvl1,steppe_elit]" : {
+            "Bone006": "particles/fly02.xml"
+        }
+    },
+	"tints, bylevel" : {
+		"default" : [{}],
+		"steppe_elit" : [{"Material_26_skinned":"elit"}]
+	},
+	"counter_system_on_kill" : "MOB_KILLED_FROG",
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 1,
+		"steppe_elit" : 0,	
+		"steppe_lvl1" : 400
+	},
+	"health, bylevel" : {
+		"default" : 0.9,
+		"steppe_elit" : 36.5,			
+		"steppe_lvl1" : 1.8
+	},	
+	"agro_range, bylevel" : {
+		"default" : 60,
+		"steppe_elit" : 30,	
+		"steppe_lvl1" : 50
+	},
+	"lose_agro_range, bylevel" : {
+		"default" : 70,
+		"steppe_elit" : 40,			
+		"steppe_lvl1" : 70
+	},
+	"global_cooldown" : 0.4,
+	"defence, bylevel" : {
+		"default" : {
+			"BULLET" : 1.0,
+			"EXPLOSION" : 50.0
+		},
+		 
+		"[steppe_lvl1,steppe_elit]" : {
+			"BULLET" : 1.0,
+			"EXPLOSION" : 50.0
+		}
+	},
+	"bleed": {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/body_hit_pancer_green_low.xml",
+		"0.3": "sfx/Shoot/body_hit_pancer_green_med.xml",
+		"1": "sfx/Shoot/body_hit_pancer_green_max.xml"
+	},
+	"height, bylevel" : {
+		"default" : 1.0,
+		
+		"[steppe_lvl1,steppe_elit]" : 2.0
+	},	
+	"width" : 0.5,
+	"decompose_time" : [10,30],
+	"loot, bylevel" : {
+		"default" : {},
+		
+		"steppe_lvl1" : {
+			"410351" : 1.0
+		},
+		
+		"steppe_elit"  : {
+			"410145" : 0.05
+		}
+	},
+	"foot_nodes" : ["Bip001 R Toe0", "Bip001 L Toe0"],
+	"footsteps_sound" : "mob/frog/footsteps",
+	"melee_distance, bylevel" : {
+		"default" : 2,
+		
+		"[steppe_lvl1,steppe_elit]" : 1.5
+	},	
+	"melee_height" : 2.0,		
+	"actions, bylevel" : {
+		"default" : {
+			"Idle" : {				
+				"sounds" : ["mob/frog/idle"]
+			},
+			"AttackPaws" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/frog/attack"]
+			},
+			"AttackTooth" : {
+				"model_actions" : ["AttackTooth"],
+				"sounds" : ["mob/frog/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/frog/death"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			},				
+			"Pain" : {
+				"sounds" : ["mob/frog/pain"]
+			},				
+			"Attacking" : {
+				"sounds" : ["mob/frog/angry"]
+			}
+		}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state" : "walk_around",
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around, parent=default_walk_around" : {
+			"persistent_actions" : ["Idle"],			
+			"speed" : {
+				"walk_around" : [1.4, 3.4]
+			}
+		},		
+		"attacking, parent=default_attacking" : {
+			"skills" : {
+				
+				"FROG_MELEE" : 3,
+				"FROG_TOOTH" : 3
+			},
+			"movement_types" : ["follow_target", "walk_around"],
+			"persistent_actions" : ["Attacking"],
+			"conditions" : [
+				{
+					"to_state" : "before_recover",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "less", "100"]
+						]]
+				},
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["targets_count", "equal", 0]
+				}
+			],
+			"speed" : {
+				"follow_target" : 3.8,
+				"walk_around" : [1.4, 2.4]
+			}	
+		},
+		"dead" : {
+			"persistent_actions" : ["Dead"],
+			"entering_actions" : {"actions" : ["Die"], "time" : 1.4},
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["is_dead", "equal", 0]
+				}
+			]
+		},
+		"before_recover, parent=default_before_recover" : {
+			"speed" : {
+				"walk_around" : [1.4, 3.4]
+			}
+		},
+		"recover, parent=default_recover" : {
+			"persistent_actions" : ["Idle"]
+		}
+	},
+	"skills" : {
+		"FROG_MELEE": {
+			"type": "MELEE",
+			"cooldown": 3.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["HEAD", "LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.115, 0.130],
+					"penetration" : 100
+				},
+				
+				"steppe_lvl1": {
+					"value" : [0.140, 0.2],
+					"penetration" : 160
+				},
+				
+				"steppe_elit": {
+					"value" : [0.540, 0.62],
+					"penetration" : 160
+				}
+			},			 
+			"actions": ["AttackPaws"]
+		},
+		"FROG_TOOTH": {
+			"type": "MELEE",
+			"cooldown": 5.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["HEAD", "LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.115, 0.130],
+					"penetration" : 100
+				},
+				
+				"steppe_lvl1": {
+					"value" : [0.140, 0.150],
+					"penetration" : 160
+				},
+				
+				"steppe_elit": {
+					"value" : [0.540, 0.62],
+					"penetration" : 160
+				}
+			},			 
+			"actions": ["AttackTooth"]
+		},
+		"FROG_RANGE": {
+			"type": "DIRECT",
+			"cast_range, bylevel": {
+				"default": 40.0,
+				
+				"[steppe_lvl1,steppe_elit]" : 65
+			},
+			"cooldown, bylevel": {
+				"default": 2.0,
+				"[out_lvl1, vezuv_lvl1, tungus_lvl1, autcar_lvl1, swamp_lvl1]": 4.0,
+				"[out_lvl2, vezuv_lvl2, tungus_lvl2, autcar_lvl2, swamp_lvl2]": 2.0,
+				"vezuv_lvl3" : 1.9
+			},
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO"],
+					"type" : "MELEE",
+					"value" : [0.030, 0.040],
+					"penetration" : 100
+				}
+			},
+			"actions": ["AttackRange"],
+			"self_sfxes": [
+				{
+					"path"			: "sfx/Mob/AttackPsy.xml",
+					"source_node" 	: "lefthand",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		}
+	}
+}

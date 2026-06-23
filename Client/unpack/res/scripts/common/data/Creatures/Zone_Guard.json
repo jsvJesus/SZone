@@ -1,0 +1,319 @@
+{
+	"name, bylevel" : {
+		"default" : "Creatures.common.GUARD",
+		"volkano_lvl1" : "Creatures.common.GUARDIAN"
+	},
+	"model, bylevel" : {
+		"default" : "zone_guard/zone_guard.model"
+	},
+	"model_scale, bylevel" : {
+		"default" : 3.0,
+		"volkano_lvl1" : 3.0
+	},
+	"tints, bylevel" : {
+		"default" : [{}]
+	},
+
+	"counter_system_on_kill": "MOB_KILLED_ZONEGUARD",
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 1,
+		"volkano_lvl1" : 6500
+	},
+	"health, bylevel" : {
+		"default" : 0.24,
+		"volkano_lvl1" : 5.0
+	},	
+	"agro_range, bylevel" : {
+		"default" : 50,
+		"volkano_lvl1" : 40
+	},
+	"lose_agro_range, bylevel" : {
+		"default" : 60,
+		"volkano_lvl1" : 50
+	},
+	"global_cooldown" : 3,
+
+    "filter": "AvatarFilter",
+
+	"defence, bylevel" : {
+		"default" : {
+			"MELEE" : 700.0,
+			"BULLET" : 1.0,
+			"EXPLOSION" : 50.0,
+			"BIO" : 1500.0
+		},
+
+		"volkano_lvl1" : {
+			"BULLET" : 300.0
+		}
+	},
+	"body_zones_multiplier, bylevel" : {
+		"default" : {
+			"HEAD": 2,
+			"TORSO": 1,
+			"FOREARM": 0.5,
+			"LEG_UPPER": 0.5,
+			"LEG_LOWER": 0.5
+		},
+
+		"volkano_lvl1" : {
+			"HEAD": 2,
+			"TORSO": 1,
+			"FOREARM": 0.5,
+			"LEG_UPPER": 0.5,
+			"LEG_LOWER": 0.5
+		}
+	},
+	"bleed" : {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/armor_hit.xml",
+		"0.3": "sfx/Shoot/armor_hit.xml",
+		"1": "sfx/Shoot/armor_hit.xml"
+		},
+	"height" : 0.1,	
+	"width" : 0.1,
+	"decompose_time" : [10,50],
+	"loot, bylevel" : {
+		"default" : {},
+		"volkano_lvl1" : {
+			"410366" : 0.3		
+		}
+	},
+	"foot_nodes" : ["Bip01 L Toe0", "Bip01 R Toe0"],
+	"footsteps_sound" : "mob/guard/footsteps",
+	"melee_distance, bylevel" : {
+		"default" : 2.2,
+		"volkano_lvl1" : 5.2
+	},	
+	"melee_height" : 3.5,	
+	"actions, bylevel" : {
+		"default" : {
+			"Idle" : {
+				"sounds" : ["mob/guard/idle"]
+			},
+			"AttackRightHandUp" : {
+				"model_actions" : ["AttackTooth"],
+				"sounds" : ["mob/guard/attack"]
+			},
+			"AttackTwoHands" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/guard/attack"]
+			},
+			"AttackRightHandDown" : {
+				"model_actions" : ["AttackSpecial"],
+				"sounds" : ["mob/guard/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/guard/death"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			},				
+			"Pain" : {
+				"sounds" : ["mob/guard/pain"]
+			},				
+			"Attacking" : {
+				"sounds" : ["mob/guard/angry"]
+			}
+		}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state" : "walk_around",
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around, parent=default_walk_around" : {
+			"persistent_actions" : ["Idle"],			
+			"speed, bylevel" : {
+				"default" : {
+					"walk_around" : [1.2, 2.5]
+				},
+				"volkano_lvl1" : {
+					"walk_around" : [1.7, 3.5]
+				}
+			},
+            "particles, bylevel" : {
+				"default" : {
+					"HP_hand_left": "particles/zone_guard_electro_nand.xml",
+					"HP_hand_right": "particles/zone_guard_electro_nand.xml",
+					"root": "particles/zone_guard_down_electric_smoke.xml"
+				}
+			}
+		},		
+		"attacking, parent=default_attacking" : {
+			"skills, bylevel" : {
+				"default" : {
+					"BASILISK_MELEE" : 1,
+					"ZONEGUARD_ELECTRIC_BOMB" : 9
+				},
+				"volkano_lvl1" : {
+					"ZONEGUARD_ELECTRIC_BOMB" : 9
+				}
+			},
+			"persistent_actions" : ["Attacking"],
+			"movement_types" : ["follow_target", "walk_around"],
+			"speed, bylevel" : {
+				"default" : {
+					"follow_target" : 6.2,
+					"walk_around" : [2.7, 3.5]
+				},
+				"volkano_lvl1" : {
+					"follow_target" : 6.2,
+					"walk_around" : [2.7, 3.5]
+				}
+			},
+			"particles, bylevel" : {
+				"default" : {
+					"root": "particles/zone_guard_down_electric_smoke.xml"
+				}
+			}
+		},
+		"dead" : {
+			"persistent_actions" : ["Dead"],
+			"entering_actions" : {"actions" : ["Die"], "time" : 3.9},
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["is_dead", "equal", 0]
+				}
+			],
+            "particles, bylevel": {
+                "default": {
+                    "pertecles": "particles/fire_and_smoke_360.xml"
+                }
+            }
+		},
+		"before_recover, parent=default_before_recover" : {
+			"speed, bylevel" : {
+				"default" : {
+					"follow_target" : 1.2,
+					"walk_around" : [1.2, 2.5]
+				},
+				"volkano_lvl1" : {
+					"follow_target" : 1.2,
+					"walk_around" : [1.2, 2.5]
+				}
+			},
+            "particles, bylevel" : {
+				"default" : {
+					"root": "particles/zone_guard_down_electric_smoke.xml"
+				}
+            }
+		},
+		"recover, parent=default_recover" : {
+			"persistent_actions" : ["Idle"],
+			"particles, bylevel" : {
+				"default" : {
+					"root": "particles/zone_guard_down_electric_smoke.xml"
+				}
+			}
+		}
+	},
+	"skills" : {
+		"BASILISK_MELEE": {
+			"type": "MELEE",
+			"cooldown": 2.0,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO"],
+					"type" : "MELEE",
+					"value" : [0.01, 0.02],
+					"penetration" : 0
+				},
+				"volkano_lvl1": {
+					"value" : [0.004, 0.005]
+				}
+			},			 
+			"actions": ["AttackRightHandUp"],
+			"self_sfxes": [
+				{						
+					"path"			: "sfx/Mob/AttackBlood.xml",
+					"source_node" 	: "Bone21",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		},
+
+		"ZONE_GUARD_FIREBALL": {
+			"type": "ROCKET",
+			"aoe_radius": 4,
+			"rocket_type": "ZONE_GUARD_FIREBALL",
+			"rocket_start_position" : [0, 1.5, 0],
+			"rocket_speed": 15.0,
+			"rocket_acceleration": 5.0,
+			"rocket_max_distance": 50,
+            "rocket_at_feet": 0,
+            "rocket_projectile": 0,
+			"cast_range": 25.0,
+			"cooldown": 2.0,
+			"effects": [],
+			"damage, bylevel":
+			{
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.005, 0.013],
+					"penetration" : 100
+				}
+			},
+			"actions": ["AttackRightHandDown"],
+			"self_sfxes": []
+		},
+		
+		"ZONEGUARD_ELECTRIC_BOMB": {
+			"type": "THROW",
+			"cast_range": 20.0,
+			"cooldown": 9.1,
+			"aoe_radius": 4,
+			"throwing_type"	: "ZONEGUARD_ELECTRIC_BOMB",
+			"throw_start_position"	: [0, 0.5, 0],
+			"explode_delay"	: 1.0,
+			"damage": {
+					"type" : "MELEE",
+					"value" : [0.0, 0.0],
+					"penetration" : 100
+			},			
+			"effects": [["ZG_ElectroSource1", 1],["ZG_ElectroSource2", 1]],
+			"actions": ["AttackRightHandUp"]
+		},
+
+        "ZONE_GUARD_DANGER_FIELD": {
+			"type": "DANGER_FIELD",
+			"cooldown": 3.0,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.01, 0.02],
+					"penetration" : 100
+				},
+				"1": {
+					"value" : [0.006, 0.014]
+				}
+
+			},
+			"effects, bylevel": {
+				"default": [["Poison", 1]]
+			},
+			"actions": ["AttackRightHandUp"],
+			"self_sfxes": [
+				{
+					"path"			: "sfx/Mob/AttackPoison.xml",
+					"source_node" 	: "HP_mouth",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		}
+	}
+}

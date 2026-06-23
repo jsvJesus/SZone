@@ -1,0 +1,32 @@
+{
+	"difficultyMin" : 1,
+	"difficultyMax" : 1000,
+	"lifetime": 1.6,
+	"artifacts": [410182],
+	"artifact_spawn_chance": 0.5,
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 15.0,
+			"damage": {
+				"type": "SUFFOCATION",
+				"distribution":  "RADIAL",
+				"frequency": 0.0,
+				"value": 10.0,
+				"penetration": 100.0,
+				"body_zone": "TORSO"
+			},
+			"effects": [
+				["In_Anomaly", 1]
+				],
+			"invisible": 1,
+			"nudge_type": "NONE",
+			"nudge_interval": 1,
+			
+			
+			"sfx_self_interval": [3,6],
+			
+			"sound": "environment/fire_campfire"
+		}
+	}
+}

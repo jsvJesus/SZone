@@ -1,0 +1,33 @@
+{
+	"difficultyMin" : 20,
+	"difficultyMax" : 30,
+	"lifetime": 12.0,
+	"artifacts": [410169, 210081],
+	"artifact_spawn_chance": 0.75,
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 5.0,
+			"damage": {
+				"type": "INFRARED",
+				"distribution":  "RADIAL",
+				"frequency": 0.5,
+				"value": 200.0,
+				"penetration": 100.0,
+				"body_zone": "TORSO"
+			},
+			"effects": [
+				["Anomaly_Mikrovolnovka", 1],
+				["In_Anomaly", 1]
+			],
+			"invisible": 1,
+			"nudge_type": "NONE",
+			"nudge_interval": 1,
+			"particles": "particles/anomaliya_mikrovolnovka.xml",
+			
+			"sfx_self_interval": [3,6],
+			
+			"sound": "anomaly/burn"
+		}
+	}
+}

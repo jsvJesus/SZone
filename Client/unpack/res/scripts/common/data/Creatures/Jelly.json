@@ -1,0 +1,589 @@
+{
+	"name, bylevel" : {
+		"default" : "Creatures.common.JELLY1",
+		
+		"out_lvl1_small" : "Creatures.common.JELLY_OUT1_SMALL",
+		"out_lvl2_small" : "Creatures.common.JELLY_OUT2_SMALL",
+		"vezuv_lvl1_small" : "Creatures.common.JELLY_OUT1_SMALL",
+		"vezuv_lvl2_small" : "Creatures.common.JELLY_OUT2_SMALL",
+		"tungus_lvl1_small" : "Creatures.common.JELLY_OUT1_SMALL",
+		"tungus_lvl2_small" : "Creatures.common.JELLY_OUT2_SMALL",
+		"autcar_lvl1_small" : "Creatures.common.JELLY_OUT1_SMALL",
+		"autcar_lvl2_small" : "Creatures.common.JELLY_OUT2_SMALL",
+		"swamp_lvl1_small" : "Creatures.common.JELLY_OUT1_SMALL",
+		"swamp_lvl2_small" : "Creatures.common.JELLY_OUT2_SMALL",
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : "Creatures.common.JELLY_OUT1",
+		"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" : "Creatures.common.JELLY_OUT2",
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : "Creatures.common.JELLY_VEZUV1",
+		"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" : "Creatures.common.JELLY_VEZUV2",
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : "Creatures.common.JELLY_TUNGUS1",
+		"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" : "Creatures.common.JELLY_TUNGUS2",
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : "Creatures.common.JELLY_AUTCAR1",
+		"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" : "Creatures.common.JELLY_AUTCAR2",
+		"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" : "Creatures.common.JELLY_SWAMP1",
+		"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9]" : "Creatures.common.JELLY_SWAMP2",
+		"vezuv_elit" : "Creatures.common.JELLY_OUT_ELIT",
+		"tungus_elit" : "Creatures.common.JELLY_TUNGUS_ELIT"
+		
+	},
+	"model" : "jelly/jelly_lod1.model",	
+	"model_scale, bylevel" : {
+		"default" : 1,
+		"1" : 1,
+		"2" : 1.4,
+		"3" : 1.8,
+
+		"out_lvl1_small" : 0.6,
+		"out_lvl2_small" : 0.8,
+		"vezuv_lvl1_small" : 0.6,
+		"vezuv_lvl2_small" : 0.8,
+		"tungus_lvl1_small" : 0.6,
+		"tungus_lvl2_small" : 0.8,
+		"autcar_lvl1_small" : 0.6,
+		"autcar_lvl2_small" : 0.8,
+		"swamp_lvl1_small" : 0.6,
+		"swamp_lvl2_small" : 0.8,
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 1,
+		"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" : 1.4,
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 1,
+		"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" : 1.4,
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 1,
+		"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" : 1.4,
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 1,
+		"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" : 1.4,
+		"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" : 1,
+		"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9]" : 1.4,
+		"[vezuv_elit,tungus_elit]" : 1.8
+	},
+	"tints, bylevel" : {
+		"default" : [{}],
+		"[vezuv_elit,tungus_elit]" : [{"jelly_m1_skinned":"elit"}]
+	},
+	"counter_system_on_kill": "MOB_KILLED_JELLY",
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 1,
+		
+		"out_lvl1_small" : 200,
+		"out_lvl2_small" : 250,
+		"vezuv_lvl1_small" : 205,
+		"vezuv_lvl2_small" : 255,
+		"tungus_lvl1_small" : 210,
+		"tungus_lvl2_small" : 260,
+		"autcar_lvl1_small" : 215,
+		"autcar_lvl2_small" : 265,
+		"swamp_lvl1_small" : 220,
+		"swamp_lvl2_small" : 270,
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 300,
+		"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" : 725,
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 305,
+		"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" : 730,
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 310,
+		"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" : 735,
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 315,
+		"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" : 740,
+		"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" : 320,
+		"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9]" : 745,
+		"[vezuv_elit,tungus_elit]" : 0
+	},
+	"health, bylevel" : {
+		"default" : 0.777,
+		"1" : 1.2,
+		"2" : 3,
+		"3" : 7.5,
+		
+		"out_lvl1_small" : 0.8,
+		"out_lvl2_small" : 1,
+		"vezuv_lvl1_small" : 0.82,
+		"vezuv_lvl2_small" : 1.02,
+		"tungus_lvl1_small" : 0.84,
+		"tungus_lvl2_small" : 1.04,
+		"autcar_lvl1_small" : 0.86,
+		"autcar_lvl2_small" : 1.06,
+		"swamp_lvl1_small" : 0.88,
+		"swamp_lvl2_small" : 1.08,
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 1.2,
+		"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" : 2.9,
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 1.22,
+		"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" : 2.92,
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 1.24,
+		"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" : 2.94,
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 1.26,
+		"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" : 2.96,
+		"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" : 1.28,
+		"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9]" : 2.98,
+		"vezuv_elit" : 42.0,
+		"tungus_elit" : 42.5
+	},	
+	"agro_range, bylevel" : {
+		"default" :  30,
+		"[out_lvl1_small,out_lvl2_small,vezuv_lvl1_small,vezuv_lvl2_small,tungus_lvl1_small,tungus_lvl2_small,autcar_lvl1_small,autcar_lvl2_small,swamp_lvl1_small,swamp_lvl2_small]" : 20
+	},
+	"lose_agro_range, bylevel" : {
+		"default" : 40,
+		"[out_lvl1_small,out_lvl2_small,vezuv_lvl1_small,vezuv_lvl2_small,tungus_lvl1_small,tungus_lvl2_small,autcar_lvl1_small,autcar_lvl2_small,swamp_lvl1_small,swamp_lvl2_small]" : 30
+	},
+	"global_cooldown, bylevel" : {
+		"default" : 3,
+		"[out_lvl1_small,out_lvl2_small,vezuv_lvl1_small,vezuv_lvl2_small,tungus_lvl1_small,tungus_lvl2_small,autcar_lvl1_small,autcar_lvl2_small,swamp_lvl1_small,swamp_lvl2_small,vezuv_elit,tungus_elit]" : 4
+	},
+	"defence, bylevel" : {
+		"default" : {
+			"MELEE" : 700.0,
+			"BULLET" : 1.0,
+			"EXPLOSION" : 20.0,
+			"BIO" : 700.0
+		},
+		
+		"[out_lvl1_small,out_lvl2_small,vezuv_lvl1_small,vezuv_lvl2_small,tungus_lvl1_small,tungus_lvl2_small,autcar_lvl1_small,autcar_lvl2_small,swamp_lvl1_small,swamp_lvl2_small]" :  {
+			"BULLET" : 0.0
+		},
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" :  {
+			"BULLET" : 100.0
+		},
+		"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" :  {
+			"BULLET" : 200.0
+		},
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" :  {
+			"BULLET" : 100.0
+		},
+		"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" :  {
+			"BULLET" : 200.0
+		},
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" :  {
+			"BULLET" : 100.0
+		},
+		"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" :  {
+			"BULLET" : 200.0
+		},
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" :  {
+			"BULLET" : 100.0
+		},
+		"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" :  {
+			"BULLET" : 200.0
+		},
+		"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" :  {
+			"BULLET" : 100.0
+		},
+		"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9,vezuv_elit,tungus_elit]" :  {
+			"BULLET" : 200.0
+		}
+	},
+	"bleed": {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/body_hit_green_low.xml",
+		"0.3": "sfx/Shoot/body_hit_green_med.xml",
+		"1": "sfx/Shoot/body_hit_green_max.xml"
+	},
+	"height, bylevel" : {
+		"default" : 1.9,
+		"[out_lvl1_small,out_lvl2_small,vezuv_lvl1_small,vezuv_lvl2_small,tungus_lvl1_small,tungus_lvl2_small,autcar_lvl1_small,autcar_lvl2_small,swamp_lvl1_small,swamp_lvl2_small,vezuv_elit,tungus_elit]" : 0.7
+	},
+	"width, bylevel" : {
+		"default" : 0.5,
+		"[out_lvl1_small,out_lvl2_small,vezuv_lvl1_small,vezuv_lvl2_small,tungus_lvl1_small,tungus_lvl2_small,autcar_lvl1_small,autcar_lvl2_small,swamp_lvl1_small,swamp_lvl2_small,vezuv_elit,tungus_elit]" : 0.3
+	},
+	"decompose_time" : [10,30],
+	"loot, bylevel" : {
+		"default" : {},
+		
+		"out_lvl1_small" :  {
+			"410148" : 0.85
+		},
+		"out_lvl2_small" :  {
+			"410148" : 0.85
+		},
+		"vezuv_lvl1_small" :  {
+			"410148" : 0.85
+		},
+		"vezuv_lvl2_small" :  {
+			"410148" : 0.85
+		},
+		"tungus_lvl1_small" :  {
+			"410148" : 0.85
+		},
+		"tungus_lvl2_small" :  {
+			"410148" : 0.85
+		},
+		"autcar_lvl1_small" :  {
+			"410148" : 0.85
+		},
+		"autcar_lvl2_small" :  {
+			"410148" : 0.85
+		},
+		"swamp_lvl1_small" :  {
+			"410148" : 0.85
+		},
+		"swamp_lvl2_small" :  {
+			"410148" : 0.85
+		},
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" :  {
+			"410148" : 0.24
+		},
+		"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" :  {
+			"410148" : 0.24
+		},
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" :  {
+			"410148" : 0.24
+		},
+		"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" :  {
+			"410148" : 0.24
+		},
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" :  {
+			"410148" : 0.24
+		},
+		"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" :  {
+			"410148" : 0.24
+		},
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" :  {
+			"410148" : 0.24
+		},
+		"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" :  {
+			"410148" : 0.24
+		},
+		"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" :  {
+			"410148" : 0.24
+		},
+		"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9]" :  {
+			"410148" : 0.24
+		},
+		
+		"[vezuv_elit,tungus_elit]"  : {
+			"410145" : 0.05,
+			"410005" : 0.01
+		}
+	},
+	"foot_nodes" : ["Bip001 L Foot", "Bip001 R Foot"],
+	"footsteps_sound" : "mob/jelly/footsteps",
+	"melee_distance, bylevel" : {
+		"default" : 2.03,
+		
+		"out_lvl1_small" : 1,
+		"out_lvl2_small" : 1.2,
+		"vezuv_lvl1_small" : 1,
+		"vezuv_lvl2_small" : 1.2,
+		"tungus_lvl1_small" : 1,
+		"tungus_lvl2_small" : 1.2,
+		"autcar_lvl1_small" : 1,
+		"autcar_lvl2_small" : 1.2,
+		"swamp_lvl1_small" : 1,
+		"swamp_lvl2_small" : 1.2,
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 2.0,
+		"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" : 2.4,
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 2.0,
+		"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" : 2.4,
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 2.0,
+		"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" : 2.4,
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 2.0,
+		"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" : 2.4,
+		"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" : 2.0,
+		"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9,vezuv_elit,tungus_elit]" : 2.4
+	},
+	"melee_height" : 3.5,
+	"actions, bylevel" : {
+		"default" : {
+			"Idle" : {				
+				"sounds" : ["mob/jelly/idle"]
+			},
+			"Idle1" : {				
+				"model_actions" : ["Idle1"],
+				"sounds" : ["mob/jelly/idle"]
+			},
+			"Eat" : {				
+				"model_actions" : ["Eat"]
+			},
+			"AttackPaws" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/jelly/attack"]
+			},
+			"AttackTooth" : {
+				"model_actions" : ["AttackTooth"],
+				"sounds" : ["mob/jelly/attack"]
+			},
+			"Die1" : {
+				"model_actions" : ["Die1"],
+				"sounds" : ["mob/jelly/death"]
+			},
+			"Dead1" : {
+				"model_actions" : ["Dead1"]	
+			},				
+			"Pain" : {
+				"model_actions" : ["Pain"],
+				"sounds" : ["mob/jelly/pain"]
+			}				
+		}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state" : "walk_around",
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around" : {
+			"persistent_actions" : ["Idle"],			
+			"movement_types" : ["walk_around"],
+			"conditions" : [
+				{
+					"to_state" : "attacking_ranged",
+					"predicate" : 
+						["and",[
+							["targets_count", "more", "0"],
+							["health_percent", "more", "85"]
+						]]
+				},
+				{
+					"to_state" : "attacking",
+					"predicate" : 
+						["and",[
+							["targets_count", "more", "0"],
+							["health_percent", "less", "85"]
+						]]
+				}
+			],
+			"speed" : {
+				"walk_around" : [0.4, 1.1]
+			}
+		},		
+		"attacking, parent=default_attacking" : {
+			"skills, bylevel": {
+				"default": {
+					"JELLY_MELEE" : 2				
+				},
+				"[vezuv_elit,tungus_elit]": {
+					"JELLY_MELEE" : 2,
+					"JELLY_RANGE" : 9					
+				}
+			},
+			"movement_types" : ["follow_target", "walk_around"],
+			"speed" : {
+				"follow_target" : 2.2,
+				"walk_around" : [0.6, 1.3]
+			}	
+		},
+		"attacking_ranged" : {
+			"speed" : 2,
+			"movement_types" : ["follow_target", "walk_around"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : 
+						["and",[
+							["targets_count", "more", "0"],
+							["health_percent", "less", "85"]
+						]]
+				},
+				{
+					"to_state" : "walk_around",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "equal", "100"]
+						]]
+				},
+				{
+					"to_state" : "before_recover",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "less", "100"]
+						]]
+				},
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["targets_count", "equal", 0]
+				}
+			],
+			"skills" : {
+				"JELLY_RANGE" : 1
+				},
+			"movement_types" : ["follow_target", "walk_around"],
+			"speed" : {
+				"follow_target" : 3.5,
+				"walk_around" : [1, 2]
+			}	
+		},
+		"dead" : {		
+			"persistent_actions" : ["Dead1"],
+			"entering_actions" : {"actions" : ["Die1"], "time" : 0.6},
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["is_dead", "equal", 0]
+				}
+			]
+		},
+		"before_recover, parent=default_before_recover" : {
+			"speed" : {
+				"walk_around" : [1.7, 4]
+			}
+		},
+		"recover, parent=default_recover" : {			
+			"persistent_actions" : ["Eat"]
+		}
+	},
+	"skills" : {
+		"JELLY_MELEE": {
+			"type": "MELEE",
+			"cooldown, bylevel": {
+				"default": 2.5,
+				"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 2.0,
+				"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" : 1.6,
+				"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 2.0,
+				"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" : 1.6,
+				"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 2.0,
+				"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" : 1.6,
+				"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 2.0,
+				"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" : 1.6,
+				"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" : 2.0,
+				"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9,vezuv_elit,tungus_elit]" : 1.6
+			},
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["HEAD", "TORSO"],
+					"type" : "MELEE",
+					"value" : [0.115, 0.130],
+					"penetration" : 100
+				},
+				
+				"1": {
+					"value" : [0.128, 0.192]
+				},
+				"2": {
+					"value" : [0.179, 0.268]
+				},
+				"3": {
+					"value" : [0.235, 0.353]
+				},
+				
+				"out_lvl1_small" : {
+					"value" : [0.78, 0.122]
+				},
+				"out_lvl2_small" : {
+					"value" : [0.88, 0.132]
+				},
+				"vezuv_lvl1_small" : {
+					"value" : [0.782, 0.124]
+				},
+				"vezuv_lvl2_small" : {
+					"value" : [0.882, 0.134]
+				},
+				"tungus_lvl1_small" : {
+					"value" : [0.784, 0.126]
+				},
+				"tungus_lvl2_small" : {
+					"value" : [0.884, 0.136]
+				},
+				"autcar_lvl1_small" : {
+					"value" : [0.786, 0.128]
+				},
+				"autcar_lvl2_small" : {
+					"value" : [0.886, 0.138]
+				},
+				"swamp_lvl1_small" : {
+					"value" : [0.788, 0.13]
+				},
+				"swamp_lvl2_small" : {
+					"value" : [0.888, 0.14]
+				},
+				
+				"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : {
+					"value" : [0.122, 0.182]
+				},
+				"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" : {
+					"value" : [0.128, 0.192]
+				},
+				"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : {
+					"value" : [0.124, 0.184]
+				},
+				"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" : {
+					"value" : [0.13, 0.194]
+				},
+				"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : {
+					"value" : [0.126, 0.186]
+				},
+				"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" : {
+					"value" : [0.132, 0.196]
+				},
+				"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : {
+					"value" : [0.128, 0.188]
+				},
+				"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" : {
+					"value" : [0.134, 0.198]
+				},
+				"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" : {
+					"value" : [0.13, 0.19]
+				},
+				"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9]" : {
+					"value" : [0.136, 0.2]
+				},
+				"[vezuv_elit,tungus_elit]" : {
+					"value" : [0.536, 0.6]
+				}
+			},			 
+			"actions": ["AttackTooth"]
+		},
+		"JELLY_RANGE": {
+			"type" : "THROW",
+			"cast_range, bylevel" : {
+				"default" : 20.0,
+				"[out_lvl1_small,out_lvl2_small,vezuv_lvl1_small,vezuv_lvl2_small,tungus_lvl1_small,tungus_lvl2_small,autcar_lvl1_small,autcar_lvl2_small,swamp_lvl1_small,swamp_lvl2_small,vezuv_elit,tungus_elit]" : 14
+			},
+			"cooldown, bylevel" : {
+				"default" : 2.5,
+				"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 2.0,
+				"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" : 1.6,
+				"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 2.0,
+				"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" : 1.6,
+				"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 2.0,
+				"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" : 1.6,
+				"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 2.0,
+				"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" : 1.6,
+				"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" : 2.0,
+				"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9,vezuv_elit,tungus_elit]" : 1.6
+			},
+			"aoe_radius" : 4,
+			"throwing_type"	: "BIO",
+			"throw_start_position" : [0, 1.7, 0],
+			"explode_delay"	: 3,
+			"damage" : {		
+					"type" : "MELEE",
+					"value" : [0.005, 0.006],
+					"penetration" : 100
+				},			
+			"effects, bylevel" : {
+				"default" : [["Poison", 1]],
+				
+				"out_lvl1_small" : [["Poison", 1]],
+				"out_lvl2_small" : [["Poison", 1]],
+				"vezuv_lvl1_small" : [["Poison", 1]],
+				"vezuv_lvl2_small" : [["Poison", 1]],
+				"tungus_lvl1_small" : [["Poison", 1]],
+				"tungus_lvl2_small" : [["Poison", 1]],
+				"autcar_lvl1_small" : [["Poison", 1]],
+				"autcar_lvl2_small" : [["Poison", 1]],
+				"swamp_lvl1_small" : [["Poison", 1]],
+				"swamp_lvl2_small" : [["Poison", 1]],
+				
+				"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : [["Poison", 2]],
+				"[out_lvl2,out_lvl2_agr3,out_lvl2_agr6,out_lvl2_agr9]" : [["Poison", 2]],
+				"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : [["Poison", 5]],
+				"[vezuv_lvl2,vezuv_lvl2_agr3,vezuv_lvl2_agr6,vezuv_lvl2_agr9]" : [["Poison", 10]],
+				"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : [["Poison", 15]],
+				"[tungus_lvl2,tungus_lvl2_agr3,tungus_lvl2_agr6,tungus_lvl2_agr9]" : [["Poison", 20]],
+				"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : [["Poison", 25]],
+				"[autcar_lvl2,autcar_lvl2_agr3,autcar_lvl2_agr6,autcar_lvl2_agr9]" : [["Poison", 30]],
+				"[swamp_lvl1,swamp_lvl1_agr3,swamp_lvl1_agr6,swamp_lvl1_agr9]" : [["Poison", 22]],
+				"[swamp_lvl2,swamp_lvl2_agr3,swamp_lvl2_agr6,swamp_lvl2_agr9,vezuv_elit,tungus_elit]" : [["Poison", 27]]
+			},
+			"actions": ["AttackPaws"]
+		}
+	}
+}

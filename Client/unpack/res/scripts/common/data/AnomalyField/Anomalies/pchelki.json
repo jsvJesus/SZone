@@ -1,0 +1,43 @@
+{
+    "sfxes": {
+        "revealed": [], 
+        "warning": [
+            [
+                "", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "hide": [
+            [
+                "sfx/Anomalys/anomaly_pchelki_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "persistent": [
+            [
+                "sfx/Anomalys/anomaly_pchelki_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "pchelki", 
+    "effects": [
+        {
+            "modifier": 1.0, 
+            "stacks": 1, 
+            "id": 706
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "sfxes": {
+        "revealed": [
+            [
+                "sfx/Anomalys/anomaliya_statika.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "warning": [
+            [
+                "sfx/Anomalys/anomaliya_statika_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "hide": [
+            [
+                "sfx/Anomalys/anomaliya_statika_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "persistent": [
+            [
+                "sfx/Anomalys/anomaliya_statika_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "statika", 
+    "effects": [
+        {
+            "modifier": 1.0, 
+            "stacks": 1, 
+            "id": 704
+        }
+    ]
+}

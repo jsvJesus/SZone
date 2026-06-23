@@ -1,0 +1,25 @@
+{
+    "sfxes": {
+        "revealed": [], 
+        "warning": [], 
+        "hide": [], 
+        "persistent": [
+            [
+                "", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "Zabor_far", 
+    "effects": [
+        {
+            "modifier": 1.0, 
+            "stacks": 1, 
+            "id": 711
+        }
+    ]
+}

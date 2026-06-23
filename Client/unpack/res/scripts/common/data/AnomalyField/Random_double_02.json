@@ -1,0 +1,163 @@
+{
+    "cells": [
+        "0,0,0,0,0,0,0,0,1,2,0,0,2,0,0,0,0,0,0,0", 
+        "0,1,0,0,0,0,0,1,2,0,0,0,0,1,0,0,0,0,1,0", 
+        "0,0,0,1,0,0,0,0,1,0,0,0,0,0,2,0,0,0,2,0", 
+        "0,0,0,0,2,1,0,0,0,0,1,0,0,0,0,0,0,2,0,0", 
+        "0,1,0,0,0,2,0,0,1,0,0,0,0,1,0,0,0,1,0,0", 
+        "0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,2,0,0,0,0", 
+        "0,2,1,0,2,0,0,0,1,2,0,0,1,0,0,0,0,0,0,0", 
+        "0,0,2,0,0,2,0,0,2,1,0,0,0,0,0,0,1,2,0,0", 
+        "0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,2,0,0,1,0", 
+        "0,0,0,2,1,0,0,0,0,1,2,2,0,0,0,0,0,0,2,0", 
+        "0,1,2,0,0,0,2,2,0,0,1,0,0,0,0,0,0,0,0,2", 
+        "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0", 
+        "0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,2,0,0,0,1", 
+        "0,1,0,0,2,0,0,2,2,0,1,0,0,0,0,1,0,0,0,2", 
+        "0,2,0,0,1,0,0,0,1,0,0,2,1,0,1,2,0,0,0,0", 
+        "0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0", 
+        "0,0,0,1,0,0,0,0,0,0,0,1,2,1,0,0,0,0,2,1", 
+        "0,1,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,1,0", 
+        "0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0,0,0", 
+        "0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0"
+    ], 
+    "colors": {
+        "0": "gray", 
+        "1": "#ff0000", 
+        "2": "#008000"
+    }, 
+    "groups": {
+        "group1": {
+            "0": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }, 
+            "1": {
+                "path": "zhadina.json"
+            }, 
+            "2": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }
+        }, 
+        "group2": {
+            "0": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }, 
+            "1": {
+                "path": "ufo.json"
+            }, 
+            "2": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }
+        }, 
+        "group3": {
+            "0": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }, 
+            "1": {
+                "path": "statika.json"
+            }, 
+            "2": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }
+        }, 
+        "group4": {
+            "0": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }, 
+            "1": {
+                "path": "pchelki.json"
+            }, 
+            "2": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }
+        }, 
+        "group5": {
+            "0": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }, 
+            "1": {
+                "path": "krovosos.json"
+            }, 
+            "2": {
+                "path": "trava_putanka.json"
+            }
+        }, 
+        "group6": {
+            "0": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }, 
+            "1": {
+                "path": "golovorezka.json"
+            }, 
+            "2": {
+                "effects": [], 
+                "name": "EmptyAnomaly", 
+                "sfxes": {
+                    "hide": [], 
+                    "persistent": [], 
+                    "revealed": []
+                }
+            }
+        }
+    }
+}

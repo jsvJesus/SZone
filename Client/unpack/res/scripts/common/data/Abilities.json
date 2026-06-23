@@ -1,0 +1,113 @@
+{
+  "Abilities" : {
+
+    "Stun": {
+      "ID": 1,
+      "Name": "Abilities.Stun",
+      "RP_Flags": ["PERKCRAFT1"],
+      "EffectOnTarget": "Perk_Stun",
+      "Effect": "Perk_Stun_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_burst.dds",
+      "Description": "Abilities.Stun.Description",
+      "Artifact": 210031,
+      "Range": 5
+    },
+
+    "HealUP": {
+      "ID": 2,
+      "Name": "Abilities.HealUP",
+      "RP_Flags": ["DOCGLOBALANDDRUGLOBAL"],
+      "Effect": "Perk_HealUP_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_vitality.dds",
+      "Description": "Abilities.HealUP.Description",
+	  "Artifact": 210051
+    },
+	
+    "Weight": {
+      "ID": 3,
+      "Name": "Abilities.Weight",
+      "RP_Flags": ["PATHGLOBALHUNTGLOBAL"],
+      "Effect": "Perk_Weight_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_weight.dds",
+      "Description": "Abilities.Weight.Description",
+      "Artifact": 210061
+    },
+
+    "HealAllUP": {
+      "ID": 5,
+      "Name": "Abilities.HealAllUP",
+      "RP_Flags": ["ALLPROFPERKHEAL"],
+      "Effect": "Perk_HealUP_All_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_vitality.dds",
+      "Description": "Abilities.HealAllUP.Description",
+	  "Artifact": 210051
+    },
+	
+    "WeightAll": {
+      "ID": 6,
+      "Name": "Abilities.WeightAll",
+      "RP_Flags": ["PATHGLOBALHUNTGLOBAL"],
+      "Effect": "Perk_Weight_All_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_weight.dds",
+      "Description": "Abilities.WeightAll.Description",
+      "Artifact": 210061
+    },
+	
+    "Accuracy": {
+      "ID": 7,
+      "Name": "Abilities.Accuracy",
+      "RP_Flags": ["SNIPERACCURACY"],
+      "Effect": "Perk_Accuracy_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_accuracy.dds",
+      "Description": "Abilities.Accuracy.Description",
+      "Artifact": 216
+    },
+	
+    "AccuracyAll": {
+      "ID": 8,
+      "Name": "Abilities.AccuracyAll",
+      "RP_Flags": ["ALLPROFPERKACCURACY"],
+      "Effect": "Perk_Accuracy_All_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_accuracy.dds",
+      "Description": "Abilities.AccuracyAll.Description",
+      "Artifact": 216
+    },
+	
+    "Reanimator": {
+      "ID": 9,
+      "Name": "Abilities.Reanimator",
+      "RP_Flags": ["SCIGLOBALRESGLOBAL"],
+      "Effect": "Perk_SevereInjury_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_healing.dds",
+      "Description": "Abilities.Reanimator.Description",
+      "Artifact": 217
+    },
+	
+    "AntiCold": {
+      "ID": 10,
+      "Name": "Abilities.AntiCold",
+      "RP_Flags": ["BODYHARDINESSCOLDRESIST3"],
+      "Effect": "Perk_Anti_Cold_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_antifreeze.dds",
+      "Description": "Abilities.AntiCold.Description"
+    },
+	
+    "AntiRadioactivity": {
+      "ID": 11,
+      "Name": "Abilities.AntiRadioactivity",
+      "RP_Flags": ["BODYHARDINESSRADIATIONRESIST3"],
+      "Effect": "Perk_Anti_Radioactivity_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_antiradiation.dds",
+      "Description": "Abilities.AntiRadioactivity.Description"
+    },
+
+    "AntiWet": {
+      "ID": 12,
+      "Name": "Abilities.AntiWet",
+      "RP_Flags": ["BODYHARDINESSELECTROSTATICRESIST3"],
+      "Effect": "Perk_Anti_Wet_Cooldown",
+      "Icon": "soGUI/maps/Icons/ability/icon_dryre.dds",
+      "Description": "Abilities.AntiWet.Description"
+    }
+  }
+}

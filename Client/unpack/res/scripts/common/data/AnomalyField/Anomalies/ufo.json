@@ -1,0 +1,52 @@
+{
+    "sfxes": {
+        "revealed": [
+            [
+                "sfx/Anomalys/anomaly_ufo.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "warning": [
+            [
+                "sfx/Anomalys/anomaly_ufo_fade.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "hide": [
+            [
+                "sfx/Anomalys/anomaly_ufo_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "persistent": [
+            [
+                "sfx/Anomalys/anomaly_ufo_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "ufo", 
+    "effects": [
+        {
+            "modifier": 1.0, 
+            "stacks": 1, 
+            "id": 710
+        }
+    ]
+}

@@ -1,0 +1,265 @@
+{
+	"Spaces" : 
+	{
+    "defaults":
+        {
+            "periods":
+            {
+                "day":		"04:00",
+                "night":	"22:00"
+            },
+            "start_global_time":   "12:00",
+            "period_duration":   3.500000,
+            "start_local_time":   "12:00"
+        },	
+	"spaces/so_origins":
+	        {
+			    "default": "StartGame",
+	            "start_local_time":   "11:50",
+				"period_duration":   10000000000000000.00
+	            
+	        },
+	"spaces/market":
+	        {
+			    "default": "Market",
+	            "start_local_time":   "11:50",
+				"period_duration":   10000000000000000.00
+	            
+	        },
+	"spaces/anomaly":
+	        {
+			    "default": "personages_select",
+	            "start_local_time":   "10:00",
+	            "period_duration":   3.500000
+	            
+	        },
+	"spaces/cave_test_2":
+	        {
+			    "default": "Cloudy3",
+	            "start_local_time":   "10:00",
+	            "period_duration":   3.500000
+	            
+	        },
+	"spaces/pvp_swamp":
+	        {
+			    "default": "Pvp_swamp_fog",
+	            "start_local_time":   "20:00",
+				"period_duration":   10000000000000000.00
+	            
+	        },
+	"spaces/swamp":
+			{
+        	    "start_local_time":   "12:00",
+	            "period_duration":   3.500000,
+	            "periods":
+        	    {
+	                "weather_outlands_morning_fog":		 "03:30",
+	                "weather_outlands_stormy_1":		 "07:30",
+	                "weather_outlands_rainy_random":	 "12:30",
+	                "weather_outlands_stormy_2":		 "13:30"
+	            }
+        	},
+	"spaces/swamp_dungeon":
+	        {
+			    "default": "Sunset",
+	            "start_local_time":   "16:22",
+				"period_duration":   10000000000000000.00
+	            
+	        },		
+	"spaces/gray_world":
+	        {
+			    "default": "gray_world",
+	            "start_local_time":   "7:10",
+				"period_duration":   10000000000000000.00
+	            
+	        },
+	"spaces/cave_paukan":
+	        {
+			    "default": "underground",
+	            "start_local_time":   "0:00",
+				"period_duration":   10000000000000000.00
+	            
+	        },		
+	"spaces/lubech_uderground":
+	        {
+			    "default": "underground",
+	            "start_local_time":   "0:00",
+				"period_duration":   10000000000000000.00
+	            
+	        },		
+	"spaces/inst_lab":
+	        {
+			    "default": "underground",
+	            "start_local_time":   "0:00",
+				"period_duration":   10000000000000000.00
+	            
+	        },		
+	"spaces/city_lubech":
+        	{
+	            "default": "PeaSoup",
+				"start_local_time":   "12:00",
+	            "periods":
+        	    {
+	                "weather_morning":		"04:00",
+	                "weather_day":			"11:00",
+	                "weather_evening":		"19:00",
+	                "weather_night":		"22:00"
+	            }
+        	},
+		"spaces/city_lubech_new":
+        	{
+	            "default": "PeaSoup",
+				"start_local_time":   "12:00",
+	            "periods":
+        	    {
+	                "weather_morning":		"04:00",
+	                "weather_day":			"11:00",
+	                "weather_evening":		"19:00",
+	                "weather_night":		"22:00"
+	            }
+        	},
+	"spaces/city_lubech_noob":
+        	{
+	            "default": "PeaSoup",
+				"start_local_time":   "12:00",
+	            "periods":
+        	    {
+	                "weather_morning":		"04:00",
+	                "weather_day":			"11:00",
+	                "weather_evening":		"19:00",
+	                "weather_night":		"22:00"
+	            }
+        	},		
+	"spaces/outlands":
+	        {
+        	    "start_local_time":   "12:00",
+	            "period_duration":   3.500000,
+	            "periods":
+        	    {
+	                "weather_outlands_morning_fog":		"03:30",
+	                "weather_outlands_stormy_1":		"07:30",
+	                "weather_outlands_rainy_random":	"12:30",
+	                "weather_outlands_stormy_2":		"13:30"
+	            }
+	        },
+
+    "spaces/road_lubech":
+	        {
+                "default": "Fog_roadlubech",
+        	    "start_local_time":   "12:00",
+	            "period_duration":   3.500000
+	        },
+	"spaces/vesuvius":
+	        {
+			    "default": "vesuvius",
+	            "start_local_time":   "12:10",
+	            "period_duration":   3.500000
+	            
+	        },
+	"spaces/volcano":
+        	{
+                "default": "DustStorm", 			
+			    "start_local_time":   "12:00",
+				"period_duration":   3.500000
+            },
+	"spaces/outlands_airport":
+	        {
+                "default": "Stormy",
+        	    "start_local_time":   "12:00",
+                "period_duration":   3.500000,
+	            "periods":
+        	    { 
+			        "weather_clear":                     "04:00",
+ 			        "weather_random":                    "13:00"
+                }			
+            },
+	"spaces/outlands_caravan":
+	        {
+                "default": "Stormy", 			
+			    "start_local_time":   "12:00",
+				"period_duration":   3.500000,
+                "periods":
+        	    { 
+			        "weather_outlands_stormy_1":         "21:00",
+ 			        "weather_random":                    "13:00"
+                }		
+            },
+	"spaces/novaya":
+	        {   
+			    "default": "Blizzard",
+        	    "start_local_time":   "12:00",
+                "period_duration":   3.500000,
+                "periods":
+                {   
+				    "weather_morning":		            "04:00",
+  	                "weather_day":			            "12:00",
+	                "weather_evening":		            "15:00",
+	                "weather_night_random":		        "22:00" 
+				}
+	        },	
+	"spaces/tunguska":
+	        {
+			    "default": "Clear",
+        	    "start_local_time":   "18:00",
+				"period_duration":   3.500000,
+                "periods":
+				{
+				    "weather_clear":                   "04:00",
+					"weather_random":                  "11:00"				
+				}
+	        },
+	"spaces/steppe":
+        	{
+			    "default": "Steppe",
+	            "start_local_time":   "12:00",
+				"period_duration":   5.500000	            
+        	},
+	"spaces/steppe_dust":
+	        {
+        	    "start_local_time":   "17:00"
+	        },	
+	"spaces/pvp_steppe_d2":
+        {
+            "start_local_time":   "12:00",
+	        "period_duration":    10000000000000000.00
+        },
+	"spaces/zoo":
+        {
+            "start_local_time":   "12:00",
+	        "period_duration":    10000000000000000.00
+        },
+	"spaces/zoo2":
+        {
+            "start_local_time":   "12:00",
+	        "period_duration":    10000000000000000.00
+        },
+	"spaces/test_fps":
+        {
+            "start_local_time":   "12:00",
+	        "period_duration":    10000000000000000.00
+        },
+	"spaces/main":
+        {
+            "start_local_time":   "15:00",
+            "period_duration":    10000000000000000.00
+        },	
+	"space/personages_select":
+		{
+			"start_local_time":   "12:00",
+			"period_duration":    10000000000000000.00
+		}
+	},
+	
+"ZoneWeather":
+ {
+	"zone_fog_strong":
+	    { 
+	        "start_local_time":   "12:00",
+            "period_duration":   3.500000,
+            "periods":
+		        {
+		        }
+		}		
+	}
+
+ }

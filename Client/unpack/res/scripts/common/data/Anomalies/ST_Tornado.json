@@ -1,0 +1,34 @@
+{
+	"difficultyMin" : 1,
+	"difficultyMax" : 10,
+	"lifetime": 1.75,
+	
+	"artifact_spawn_chance": 0.0,
+	"height_up": 1,
+	"height_down": 1,
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 5.0,
+			"damage": {
+				"type": "GRAVITATION",
+				"distribution":  "FLAT",
+				"frequency": 3.0,
+				"value": 100.0,
+				"penetration": 100.0,
+				"body_zone": "TORSO"
+			},
+			"effects": [
+				["In_Anomaly", 1]
+			],
+			"invisible": 0,
+			"nudge_type": "TO_CENTER",
+			"nudge_interval": 2,
+			"particles": "particles/anomaly_tornado.xml",
+			
+			"sfx_self_interval": [3,6],
+			"sfx_target": "sfx/default.xml",
+			"sound": "anomaly/tornado"
+		}
+	}
+}

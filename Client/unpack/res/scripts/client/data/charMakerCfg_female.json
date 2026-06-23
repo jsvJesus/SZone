@@ -1,0 +1,166 @@
+{
+"01_head": {
+		"1": {
+				"icon": "soGUI/maps/charCreation/head.tga", 
+				"caption": "DefaultModels.client.STRING_F_01", 
+				"head_id": 1
+				},
+		"2": {
+				"icon": "soGUI/maps/charCreation/head.tga", 
+				"caption": "DefaultModels.client.STRING_F_02", 
+				"head_id": 2
+				},
+        "3": {
+				"icon": "soGUI/maps/charCreation/head.tga",
+				"caption": "DefaultModels.client.STRING_F_03",
+				"head_id": 3
+				},
+        "4": {
+				"icon": "soGUI/maps/charCreation/head.tga",
+				"caption": "DefaultModels.client.STRING_F_04",
+				"head_id": 4
+				},
+        "5": {
+				"icon": "soGUI/maps/charCreation/head.tga",
+				"caption": "DefaultModels.client.STRING_F_05",
+				"head_id": 5
+				}
+		},
+
+"02_body":	{
+		"1": {
+				"icon": "soGUI/maps/charCreation/body.tga", 
+				"caption": "DefaultModels.client.o2_body_shtormovka", 
+				"item_type_ID": 108
+				},
+		"2": {
+				"icon": "soGUI/maps/charCreation/body.tga", 
+				"caption": "DefaultModels.client.o2_body_haki", 
+				"item_type_ID": 120
+				},
+		"3": {
+				"icon": "soGUI/maps/charCreation/body.tga", 
+				"caption": "DefaultModels.client.o2_body_kojanka", 
+				"item_type_ID": 122
+				},
+		"4": {
+				"icon": "soGUI/maps/charCreation/body.tga", 
+				"caption": "DefaultModels.client.o2_body_shirt_white", 
+				"item_type_ID": 110284
+				},
+		"5": {
+				"icon": "soGUI/maps/charCreation/body.tga", 
+				"caption": "DefaultModels.client.o2_body_shirt_red", 
+				"item_type_ID": 110285
+				},
+		"6": {
+				"icon": "soGUI/maps/charCreation/body.tga", 
+				"caption": "DefaultModels.client.o2_body_shirt_brown", 
+				"item_type_ID": 110286
+				},
+		"7": {
+				"icon": "soGUI/maps/charCreation/body.tga", 
+				"caption": "DefaultModels.client.o2_body_shirt_blue", 
+				"item_type_ID": 110287
+				},
+		"8": {
+				"icon": "soGUI/maps/charCreation/body.tga", 
+				"caption": "DefaultModels.client.o2_body_shirt_green", 
+				"item_type_ID": 110288
+				}
+		},
+
+"03_palms":		{
+		"1": {
+				"icon": "soGUI/maps/charCreation/hand.tga", 
+				"caption": "DefaultModels.client.o3_palms_perch", 
+				"item_type_ID": 110247
+				},
+		"2": {
+				"icon": "soGUI/maps/charCreation/hand.tga", 
+				"caption": "DefaultModels.client.o3_palms_poluperchatki", 
+				"item_type_ID": 110248
+				},
+		"3": {
+				"icon": "soGUI/maps/charCreation/hand.tga", 
+				"caption": "DefaultModels.client.o3_palms_poluperchatki2", 
+				"item_type_ID": 110249
+				},
+		"4": {
+				"icon": "soGUI/maps/charCreation/hand.tga", 
+				"caption": "DefaultModels.client.o3_palms_usilennie", 
+				"item_type_ID": 110250
+				}
+		},
+
+"04_legs":	{
+		"1": {
+				"icon": "soGUI/maps/charCreation/legs.tga", 
+				"caption": "DefaultModels.client.o4_legs_longi", 
+				"item_type_ID": 104
+				},
+		"2": {
+				"icon": "soGUI/maps/charCreation/legs.tga", 
+				"caption": "DefaultModels.client.o4_legs_jeans_blue", 
+				"item_type_ID": 110256
+				},
+		"3": {
+				"icon": "soGUI/maps/charCreation/legs.tga", 
+				"caption": "DefaultModels.client.o4_legs_jeans_brown", 
+				"item_type_ID": 110257
+				},
+		"4": {
+				"icon": "soGUI/maps/charCreation/legs.tga", 
+				"caption": "DefaultModels.client.o4_legs_jeans_black", 
+				"item_type_ID": 110258
+				},
+		"5": {
+				"icon": "soGUI/maps/charCreation/legs.tga", 
+				"caption": "DefaultModels.client.o4_legs_jeans_green", 
+				"item_type_ID": 110259
+				},
+		"6": {
+				"icon": "soGUI/maps/charCreation/legs.tga", 
+				"caption": "DefaultModels.client.o4_legs_pants", 
+				"item_type_ID": 110298
+				}
+		},
+
+"05_feet":	{
+		"1": {
+				"icon": "soGUI/maps/charCreation/boots.tga", 
+				"caption": "DefaultModels.client.o5_feet_bertci_m1", 
+				"item_type_ID": 110251
+				},
+		"2": {
+				"icon": "soGUI/maps/charCreation/boots.tga", 
+				"caption": "DefaultModels.client.o5_feet_bertci_m2", 
+				"item_type_ID": 110252
+				},
+		"3": {
+				"icon": "soGUI/maps/charCreation/boots.tga", 
+				"caption": "DefaultModels.client.o5_feet_bertci_m3", 
+				"item_type_ID": 110253
+				},
+		"4": {
+				"icon": "soGUI/maps/charCreation/boots.tga", 
+				"caption": "DefaultModels.client.o5_feet_bertci_m4", 
+				"item_type_ID": 110254
+				},
+		"5": {
+				"icon": "soGUI/maps/charCreation/boots.tga", 
+				"caption": "DefaultModels.client.o5_feet_botinki", 
+				"item_type_ID": 110255
+				},
+		"6": {
+				"icon": "soGUI/maps/charCreation/boots.tga", 
+				"caption": "DefaultModels.client.o5_feet_botinki_2", 
+				"item_type_ID": 110255
+				},
+		"7": {
+				"icon": "soGUI/maps/charCreation/boots.tga", 
+				"caption": "DefaultModels.client.o5_feet_botinki_3", 
+				"item_type_ID": 110255
+				}
+		}
+}

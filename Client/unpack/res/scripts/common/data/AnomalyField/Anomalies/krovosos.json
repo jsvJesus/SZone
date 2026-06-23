@@ -1,0 +1,52 @@
+{
+    "sfxes": {
+        "revealed": [
+            [
+                "sfx/Anomalys/anomaliya_krovosos.xml", 
+                [
+                    0, 
+                    1, 
+                    0
+                ]
+            ]
+        ], 
+        "warning": [
+            [
+                "sfx/Anomalys/anomaliya_krovosos_off.xml", 
+                [
+                    0, 
+                    1, 
+                    0
+                ]
+            ]
+        ], 
+        "hide": [
+            [
+                "sfx/Anomalys/anomaliya_krovosos_off.xml", 
+                [
+                    0, 
+                    1, 
+                    0
+                ]
+            ]
+        ], 
+        "persistent": [
+            [
+                "sfx/Anomalys/anomaliya_krovosos_off.xml", 
+                [
+                    0, 
+                    1, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "krovosos", 
+    "effects": [
+        {
+            "modifier": 1.0, 
+            "stacks": 1, 
+            "id": 709
+        }
+    ]
+}

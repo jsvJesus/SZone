@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SzoneOnline>
+  <LauncherSettings>
+    <CurrentUpdateUrl>http://update.szone-online.so:8080/</CurrentUpdateUrl>
+    <CurrentLanguage>Russian</CurrentLanguage>
+    <SaveDownloadReport>false</SaveDownloadReport>
+  </LauncherSettings>
+</SzoneOnline>

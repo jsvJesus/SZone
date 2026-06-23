@@ -1,0 +1,33 @@
+{
+	"difficultyMin" : 20,
+	"difficultyMax" : 30,
+	"lifetime": 10.66,
+	"artifacts": [410169, 210081],
+	"artifact_spawn_chance": 0.75,
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 5.0,
+			"damage": {
+				"type": "ELECTROSTATIC",
+				"distribution":  "RADIAL_SQUARED",
+				"frequency": 2.5,
+				"value": 350.0,
+				"penetration": 100.0,
+				"body_zone": "TORSO"
+			},
+			"effects": [
+				["Anomaly_Razryadnik", 1],
+				["In_Anomaly", 1]
+			],
+			"invisible": 1,
+			"nudge_type": "NONE",
+			"nudge_interval": 1,
+			"particles": "particles/anomaliya_razryadnik.xml",
+			
+			"sfx_self_interval": [3,6],
+			"sfx_target": "sfx/anomaliya_razryadnik_uron.xml",
+			"sound": "anomaly/electro"
+		}
+	}
+}

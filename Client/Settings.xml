@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SzoneOnline>
+  <LauncherSettings>
+    <!-- update server url -->
+    <UpdateUrls>
+      <Url name="Russia">http://update.szone-online.so:8080/</Url>
+    </UpdateUrls>
+    <!-- news -->
+    <NewsUrl>news.html</NewsUrl>
+    <!-- info -->
+    <InfoUrl>info.php?</InfoUrl>
+    <!-- proto -->
+    <ProtoUrl>proto.php?</ProtoUrl>
+    <!-- patch -->
+    <PatchStoreUrl>patch/</PatchStoreUrl>
+    <!-- pack folder -->
+    <PackFolder>packs\</PackFolder>
+    <!-- game folder -->
+    <GameFolder>game\</GameFolder>
+    <!-- temp folder -->
+    <TempFolder>temp\</TempFolder>
+    <!-- tracker url -->
+    <TrackerUrl>tracker/announce</TrackerUrl>
+    <!-- extension of zip -->
+    <ZipExt>.zip</ZipExt>
+    <!-- extension of so -->
+    <SoExt>.so</SoExt>
+    <!-- extension of patch -->
+    <PatchExt>.patch</PatchExt>
+    <!-- extension of backup -->
+    <BackupExt>.backup</BackupExt>
+    <!-- extension of patched -->
+    <PatchedExt>.patched</PatchedExt>
+    <!-- extension of torrent -->
+    <TorrentExt>.torrent</TorrentExt>
+    <!-- PACK_ADLER_VOID_SIZE 15 Mb -->
+    <PackAdlerVoidSize>0x00f00000</PackAdlerVoidSize>
+    <!-- PACK_ADLER_FILL_SIZE 1 Mb -->
+    <PackAdlerFillSize>0x00100000</PackAdlerFillSize>
+    <!-- update command -->
+    <UpdateCommand>-update</UpdateCommand>
+    <!-- Updater file name -->
+    <UpdaterFilename>SZoneUpdate.exe</UpdaterFilename>
+    <!-- Launcher file name -->
+    <LauncherFilename>SZoneOnlineLauncher.exe</LauncherFilename>
+    <!-- Game file name -->
+    <GameFilename>SZoneOnline.exe</GameFilename>
+    <!-- Resume data file name -->
+    <ResumeDataFilename>resume.data</ResumeDataFilename>
+    <!-- Corrupted file name -->
+    <CorruptedFilename>corrupted</CorruptedFilename>
+    <!-- Game packs names -->
+    <GamePacksNames type="list">
+      <PackName>local</PackName>
+      <PackName>scripts</PackName>
+      <PackName>soGUI</PackName>
+      <PackName>res_pack</PackName>
+      <PackName>resources</PackName>
+      <PackName>spaces</PackName>
+      <PackName>spaces1</PackName>
+      <PackName>speedtree</PackName>
+      <PackName>characters</PackName>
+      <PackName>models</PackName>
+      <PackName>models1</PackName>
+      <PackName>tex_buildings</PackName>
+      <PackName>tex_buildings2</PackName>
+      <PackName>tex_landscape</PackName>
+      <PackName>tex_materials</PackName>
+      <PackName>tex_materials2</PackName>
+      <PackName>tex_misc</PackName>
+      <PackName>tex_pack</PackName>
+      <PackName>tex_characters</PackName>
+      <PackName>tex_unwraps</PackName>
+      <PackName>sys</PackName>
+    </GamePacksNames>
+    <!-- Resources pack name -->
+    <ResourcesPack>resources</ResourcesPack>
+    <!-- Update answer actual -->
+    <UpdateAnswerActual>ACTUAL!</UpdateAnswerActual>
+    <!-- Update answer update -->
+    <UpdateAnswerUpdate>UPDATE!</UpdateAnswerUpdate>
+    <!-- Update answer unsupported -->
+    <UpdateAnswerUnsupported>UNSUPPORTED!</UpdateAnswerUnsupported>
+    <!-- Update answer corrupted -->
+    <UpdateAnswerCorrupted>CORRUPTED!</UpdateAnswerCorrupted>
+    <!-- Update answer error -->
+    <UpdateAnswerError>ERROR!</UpdateAnswerError>
+  </LauncherSettings>
+  <LauncherTorrentSettings>
+    <!-- The port used for incoming connections must be greater than 1024 and less than 65535 -->
+    <IncommingConnections>30000</IncommingConnections>
+    <!-- 0 - disabled, 1 - enabled -->
+    <UPnP>0</UPnP>
+    <!-- Upload rate limit must be greater than 0 or disabled -->
+    <UploadSpeed>0</UploadSpeed>
+  </LauncherTorrentSettings>
+  <LauncherLanguage name="Russian" url_lang="ru">
+    <S key="INTERNET_ERROR_MSG" value="(001) Возникла ошибка в процессе подключения к серверу обновлений!\nПроверьте подключение к сети Интернет, настройки прокси-сервера и брандмауэра."/>
+    <S key="FILEACCESS_ERROR_MSG" value="(002) Возникла ошибка в процессе доступа к файлам клиента игры!\nВозможно файлы повреждены, заблокированы другим приложением или антивирусом."/>
+    <S key="UNSUPPORTED_ERROR_MSG" value="(003) Текущий клиент игры не поддерживается сервером обновлений!\nЗагрузите актуальный клиент с сервера игры или обратитесь в техподдержку."/>
+    <S key="CORRUPTED_ERROR_MSG" value="(004) Файлы клиента игры повреждены!\nЗагрузите актуальный клиент с сервера игры или обратитесь в техподдержку."/>
+    <S key="UPDATE_ERROR_MSG" value="(005) Возникла ошибка в процессе обновления файлов клиента игры!\nВозможно недостаточно места на диске, либо файлы заблокированы другим приложением или антивирусом."/>
+    <S key="UPDATE_RESUME_MSG" value="(006) Возникла неустановленная ошибка в процессе восстановления процесса обновления!"/>
+    <S key="UNKNOWN_ERROR_MSG" value="(007) Возникла неустановленная ошибка в процессе обновления клиента игры!\nВозможно загрузчику игры выделено недостаточно прав."/>
+    <S key="LAUNCHER_GET_FILE_SIZE_ERROR_MSG" value="(008) Возникла ошибка в процессе получения размера файла лончера."/>
+    <S key="LAUNCHER_GET_FILE_CONTENT_ERROR_MSG" value="(009) Возникла ошибка скачивания файла лончера."/>
+    <S key="CLIENT_GET_FILE_SIZE_ERROR_MSG" value="(010) Возникла ошибка в процессе получения размера файла клиента."/>
+    <S key="CLIENT_GET_FILE_CONTENT_ERROR_MSG" value="(011) Возникла ошибка скачивания файла клиента."/>
+    <S key="CANCEL_QUESTION_MSG" value="Вы действительно хотите остановить обновление клиента игры?\nПосле перезапуска загрузчика возможно будет продолжить обновление."/>
+    <S key="RESUME_QUESTION_MSG" value="Во время последнего запуска загрузчика обновление было прервано. Восстановить работу?"/>
+
+    <S key="LAUNCHER_CHECKING_STATUS" value="Проверка версии загрузчика..."/>
+    <S key="LAUNCHER_DOWNLOADING_STATUS" value="Обновление загрузчика игры: %i%%"/>
+    <S key="CLIENT_CHECKING_STATUS" value="Проверка версии клиента: %i%%"/>
+    <S key="CLIENT_DOWNLOADING_STATUS" value="Обновление клиента игры: %i%%"/>
+    <S key="TORRENT_DOWNLOADING_STATUS" value="Загрузка торрент-файла обновления..."/>
+    <S key="PATCH_DOWNLOADING_STATUS" value="Загрузка обновления клиента: %i%%"/>
+    <S key="QUEUED_FOR_CHECKING_STATUS" value="Подготовка к загрузке"/>
+    <S key="PATCH_EXTRACTING_STATUS" value="Распаковка обновления клиента: %i%%"/>
+    <S key="PATCH_INSTALLING_STATUS" value="Установка обновления клиента: %i%%"/>
+    <S key="RESOURCES_EXTRACTING_STATUS" value="Распаковка ресурсов клиента: %i%%"/>
+    <S key="UPDATE_COMPLETED_STATUS" value="Всё готово для входа в зону!"/>
+    <S key="UPDATE_FAILED_STATUS" value="Возникла ошибка в процессе обновления!"/>
+    <S key="NEWS_SERVER_NOT_RESPONDING" value="СЕРВЕР НОВОСТЕЙ НЕ ДОСТУПЕН"/>
+    <S key="SEARCH_NEWS_SERVER" value="ПОИСК СЕРВЕРА НОВОСТЕЙ..."/>
+    <S key="Play" value="Вход"/>
+    <S key="Language" value="Язык"/>
+    <S key="Server" value="Сервер"/>
+    <S key="IDP_OLE_INIT_FAILED" value="OLE initialization failed.  Make sure that the OLE libraries are the correct version."/>
+    <S key="Europe" value="Европа"/>
+    <S key="Russia" value="Россия"/>
+    <S key="Exit" value="Выход"/>
+    <S key="Retry" value="Повтор"/>
+    <S key="Error" value="Ошибка"/>
+    <S key="EmptyOrNotFoundNode" value="Ключ в Settings.xml не существует или имеет пустое значение" />
+    <S key="LauncherUpdateFailProcessBusy" value="Не удалось завершить обновление (причина: процесс лаунчера не завершился)" />
+    <S key="FailedDeleteFile" value="Ошибка удаления файла: " />
+    <S key="ERROR_ACCESS_DENIED" value="Ошибка доступа к файлу: " />
+    <S key="CheckUpdate" value="Проверить обновление" />
+    <S key="MegaByte" value="МБ" />
+    <S key="SaveDownloadReport" value="Записывать лог работы лончера" />
+    <S key="UpdateServerCurrentlyUnavailable" value="Сервер обновления временно недоступен" />
+    <S key="FindClientSZone" value="Найден запущенный клиент SZone-online, необходимо его закрыть, сделать это сейчас?" />
+    <S key="KillProcessClientSZoneFail" value="Попытка закрыть клиент SZone-online не удалась, повторить попытку?" />
+    <S key="CheckVCRedist" value="Проверка vcredist" />
+    <S key="DownloadVCRedist" value="Загрузка vcredist" />
+    <S key="InstallVCRedist" value="Установка vcredist" />
+    <S key="CheckDirectX" value="Проверка DirectX" />
+    <S key="DownloadDirectX" value="Загрузка DirectX" />
+    <S key="InstallDirectX" value="Установка DirectX" />
+  </LauncherLanguage>
+  <LauncherLanguage name="English" url_lang="en">
+    <S key="INTERNET_ERROR_MSG" value="(001) An error has occured during the connection to the update server\nCheck your internet connection, proxy-server and firewall settings."/>
+    <S key="FILEACCESS_ERROR_MSG" value="(002) An error has occured during the access to the game client files!\nFiles could be damaged or blocked by other application or antivirus."/>
+    <S key="UNSUPPORTED_ERROR_MSG" value="(003) Your current client is not supported by the update server!\nPlease, download final version of the client or contact our support."/>
+    <S key="CORRUPTED_ERROR_MSG" value="(004) Game client files are corrupted!\nPlease, download final version of the client or contact our support."/>
+    <S key="UPDATE_ERROR_MSG" value="(005) An error has occured during the download!\nInsufficiently disc space, or game files are blocked by other application or antivirus."/>
+    <S key="UPDATE_RESUME_MSG" value="(006) An unknown error has occured during the update restore process!"/>
+    <S key="UNKNOWN_ERROR_MSG" value="(007) An unknown error has occured during the client update!\nDownloader could be blocked because of wrong administration rights."/>
+    <S Key="LAUNCHER_GET_FILE_SIZE_ERROR_MSG" value="(008) An error occurred while getting the file size launcher."/>
+    <S Key="LAUNCHER_GET_FILE_CONTENT_ERROR_MSG" value="(009) There was an error downloading the file launcher."/>
+    <S Key="CLIENT_GET_FILE_SIZE_ERROR_MSG" value="(010) An error occurred while getting the file size client."/>
+    <S Key="CLIENT_GET_FILE_CONTENT_ERROR_MSG" value="(011) There was an error downloading the file client."/>
+    <S key="CANCEL_QUESTION_MSG" value="Do you really want to stop the update?\nYou can continue the update after downloader reboot."/>
+    <S key="RESUME_QUESTION_MSG" value="The update was interrupted during the last launch. Do you want to restore it?"/>
+
+    <S key="LAUNCHER_CHECKING_STATUS" value="Checking version of launcher..."/>
+    <S key="LAUNCHER_DOWNLOADING_STATUS" value="Updating launcher: %i%%"/>
+    <S key="CLIENT_CHECKING_STATUS" value="Checking version of client: %i%%"/>
+    <S key="CLIENT_DOWNLOADING_STATUS" value="Updating client: %i%%"/>
+    <S key="TORRENT_DOWNLOADING_STATUS" value="Downloading torrent-files..."/>
+    <S key="PATCH_DOWNLOADING_STATUS" value="Downloading patch for client: %i%%"/>
+    <S key="QUEUED_FOR_CHECKING_STATUS" value="Preparation for downloading"/>
+    <S key="PATCH_EXTRACTING_STATUS" value="Extracting patch for client: %i%%"/>
+    <S key="PATCH_INSTALLING_STATUS" value="Installing patch for client: %i%%"/>
+    <S key="RESOURCES_EXTRACTING_STATUS" value="Extracting client's resources: %i%%"/>
+    <S key="UPDATE_COMPLETED_STATUS" value="Everything is ready to enter the zone!"/>
+    <S key="UPDATE_FAILED_STATUS" value="An error occurred during the update!"/>
+    <S key="NEWS_SERVER_NOT_RESPONDING" value="NEWS SERVER NOT RESPONDING"/>
+    <S key="SEARCH_NEWS_SERVER" value="SEARCH NEWS SERVER ..."/>
+    <S key="Language" value="Language"/>
+    <S key="Server" value="Server"/>
+    <S key="IDP_OLE_INIT_FAILED" value="OLE initialization failed.  Make sure that the OLE libraries are the correct version."/>
+    <S key="Europe" value="Europe"/>
+    <S key="Russia" value="Russia"/>
+    <S key="Exit" value="Exit"/>
+    <S key="Retry" value="Retry"/>
+    <S key="Error" value="Error"/>
+    <S key="EmptyOrNotFoundNode" value="Key in Settings.xml does not exist or null" />
+    <S key="LauncherUpdateFailProcessBusy" value="Unable to complete the update (reason: launcher process has not been completed)" />
+    <S key="FailedDeleteFile" value="Failed to delete file: " />
+    <S key="ERROR_ACCESS_DENIED" value="Access is denied: " />
+    <S key="CheckUpdate" value="Check update" />
+    <S key="MegaByte" value="MB" />
+    <S key="SaveDownloadReport" value="Save the downloading log" />
+    <S key="UpdateServerCurrentlyUnavailable" value="Update server currently unavailable" />
+    <S key="FindClientSZone" value="Found running client SZone-online, you must close it, do it now?" />
+    <S key="KillProcessClientSZoneFail" value="Attempting to close the client SZone-online failed, try again?" />
+    <S key="CheckVCRedist" value="Checking vcredist" />
+    <S key="DownloadVCRedist" value="Downloading vcredist" />
+    <S key="InstallVCRedist" value="Installing vcredist" />
+    <S key="CheckDirectX" value="Checking DirectX" />
+    <S key="DownloadDirectX" value="Downloading DirectX" />
+    <S key="InstallDirectX" value="Installing DirectX" />
+  </LauncherLanguage>
+  <NewsUrl>
+    <Url name="Russia" url_lang="ru">http://szone-online.so/news/launcher/?lang=ru&game_srv=ru#news_title</Url>
+    <Url name="Russia" url_lang="en">http://szone-online.so/news/launcher/?lang=en&game_srv=ru#news_title</Url>
+  </NewsUrl>
+</SzoneOnline>
+<!--
+-->

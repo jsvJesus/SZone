@@ -1,0 +1,18 @@
+<scripts_config.xml>
+  <space> spaces/noob_city </space>
+  <player>
+    <entityType> Avatar </entityType>
+    <startPosition> 0.000000 1.250000 0.000000 </startPosition>
+    <startDirection> 1.000000 0.000000 0.000000 </startDirection>
+  </player>
+  <server>
+    <online> true </online>
+    <host> ctsgames2.convex.ru </host>
+  </server>
+  <chat>
+    <visibleLines> 4 </visibleLines>
+  </chat>
+  <login>
+    <host> ctsgames2.convex.ru:22231 </host>
+  </login>
+</scripts_config.xml>

@@ -1,0 +1,25 @@
+{
+    "sfxes": {
+        "revealed": [], 
+        "warning": [], 
+        "hide": [], 
+        "persistent": [
+            [
+                "sfx/Anomalys/anomaly_zabor_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "Zabor2", 
+    "effects": [
+        {
+            "modifier": 1.0, 
+            "stacks": 1, 
+            "id": 713
+        }
+    ]
+}

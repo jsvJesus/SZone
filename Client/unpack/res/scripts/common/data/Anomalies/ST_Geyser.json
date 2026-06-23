@@ -1,0 +1,34 @@
+{
+	"difficultyMin" : 10,
+	"difficultyMax" : 20,
+	"lifetime": 1.0,
+	"artifacts": [410242],
+	"artifact_spawn_chance": 1.0,
+	
+	
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 6.0,
+			"damage": {
+				"type": "INFRARED",
+				"distribution":  "RADIAL_SQUARED",
+				"frequency": 10,
+				"value": 0.0,
+				"penetration": 0.0,
+				"body_zone": "TORSO"
+			},
+			"effects": [
+				["Anomaly_Katapulta", 1],
+				["In_Anomaly", 1]
+			],
+			"invisible": 0,
+			"nudge_type": "CATAPULT",
+			"nudge_interval": 0.7,
+			
+			"base_height": 1.0,
+			"sfx_self_interval": [3,6],
+			"sfx_target": "sfx/anomaly_geyser_active.xml"
+		}
+	}
+}

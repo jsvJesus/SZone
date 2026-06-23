@@ -1,0 +1,43 @@
+{
+	"difficultyMin" : 10,
+	"difficultyMax" : 20,
+	"lifetime": 3.0,
+	"artifacts": [410242],
+	"artifact_spawn_chance": 1.0,
+	
+	
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 3.0,
+			"damage": {
+				"type": "INFRARED",
+				"distribution":  "RADIAL_SQUARED",
+				"frequency": 1.5,
+				"value": 40.0,
+				"penetration": 130.0,
+				"body_zone": "TORSO"
+			},
+			"effects": [
+				["Anomaly_Geyser_Source_1", 1],
+				["Anomaly_Geyser_Source_2", 1],
+				["Anomaly_Geyser_Source_3", 1],
+				["Anomaly_Geyser_Source_4", 1],
+				["Anomaly_Geyser_Source_5", 1],
+				["Anomaly_Geyser_Source_6", 1],
+				["Anomaly_Geyser_Source_7", 1],
+				["Anomaly_Geyser_Source_8", 1],
+				["Anomaly_Geyser_Source_9", 1],
+				["In_Anomaly", 1]
+			],
+			"invisible": 0,
+			"nudge_type": "CATAPULT",
+			"nudge_interval": 0.7,
+			"particles": "particles/anomaly_geyzer_pasiv.xml",
+			
+			"sfx_self_interval": [3,6],
+			"sfx_target": "sfx/anomaly_geyser_active.xml",
+			"sound": "anomaly/gravi"
+		}
+	}
+}

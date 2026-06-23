@@ -1,0 +1,33 @@
+{
+	"difficultyMin" : 16,
+	"difficultyMax" : 25,
+	"lifetime": 5.0,
+	
+	"artifact_spawn_chance": 0.0,
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 25.0,
+			"damage": {
+				"type": "RADIATION",
+				"distribution":  "RADIAL_SQUARED",
+				"frequency": 0.0,
+				"value": 0.0,
+				"penetration": 100.0,
+				"body_zone": "TORSO"
+			},
+			"effects": [
+				["RadioactivitySource", 1],
+				["In_Anomaly", 1]
+			],
+			"invisible": 1,
+			"nudge_type": "NONE",
+			"nudge_interval": 1
+			
+			
+			
+			
+			
+		}
+	}
+}

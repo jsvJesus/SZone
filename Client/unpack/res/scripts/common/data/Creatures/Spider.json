@@ -1,0 +1,928 @@
+{
+	"name, bylevel" : {
+		"default" : "Creatures.common.SPIDER1",
+		
+		"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small]" : "Creatures.common.PAUCHEK",
+		
+		"[1,out_lvl1]" : "Creatures.common.SPIDER_OU1",
+		"[2,out_lvl2]" : "Creatures.common.SPIDER_OU2",
+		"[3,out_lvl3]" : "Creatures.common.SPIDER_OU3",
+		"out_lvl1_grey" : "Creatures.common.GREYS_OU1",
+		"[4,out_lvl1_big]" : "Creatures.common.BIGS_OU1",
+		
+		"autcar_lvl1" : "Creatures.common.SPIDER_AC1",
+		"autcar_lvl1_grey" : "Creatures.common.GREYS_AC1",
+		"autcar_lvl2_grey" : "Creatures.common.GREYS_AC2",
+		"outcar_lvl1_big" : "Creatures.common.BIGS_AC1",
+		
+		"vezuv_lvl1" : "Creatures.common.SPIDER_VZ1",
+		"vezuv_lvl2" : "Creatures.common.SPIDER_VZ2",
+		"vezuv_lvl1_grey" : "Creatures.common.GREYS_VZ1",
+		"vezuv_lvl1_big" : "Creatures.common.BIGS_VZ1",
+		"vezuv_elit" : "Creatures.common.SPIDER_VZ_ELIT",
+		
+		"tungus_lvl1" : "Creatures.common.SPIDER_TU1",
+		"tungus_lvl1_grey" : "Creatures.common.GREYS_TU1",
+		"tungus_lvl1_big" : "Creatures.common.BIGS_TU1",
+		
+		"swamp_lvl1_grey" : "Creatures.common.GREYS_SV1",
+		"sp_paukan_lvl1" : "Creatures.common.SPIDER5",
+
+		"[steppe_lvl1,steppe_lvl1_canyon]" : "Creatures.common.STEPPE_SPIDER1",
+		"steppe_lvl2" : "Creatures.common.STEPPE_SPIDER2",
+		"steppe_elit" : "Creatures.common.STEPPE_SPIDER_ELIT",
+		
+		"[302,lab_lvl1]" : "Creatures.common.SPIDER5",
+		"[512,aut_pit3_uniq]" : "Creatures.common.PIT_lv3",
+		"tun_pit6_uniq" : "Creatures.common.PIT_lv6",
+		"autcar_pit9_uniq" : "Creatures.common.PIT_lv9",
+		"cave" : "Creatures.common.white_spider"
+	},
+	"model" : "spider/spider.model",	
+	"model_scale, bylevel" : {
+		"default" : 1,
+		
+		"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small]" : 0.20,
+		
+		"[1,out_lvl1,autcar_lvl1_grey]" : 0.5,
+		"[2,out_lvl2,autcar_lvl2_grey]" : 0.50,
+		"[3,out_lvl3,vezuv_lvl1_grey]" : 0.5,
+		
+		"[autcar_lvl1,out_lvl1_grey]" : 0.53,
+		"[vezuv_lvl1,tungus_lvl1_grey]" : 0.54,
+		"[vezuv_lvl2,lvl15_all_grey]" : 0.55,
+		"[tungus_lvl1,swamp_lvl1_grey]" : 0.56,
+		
+		"[4,out_lvl1_big]" : 1.0,
+		"vezuv_lvl1_big" : 0.71,
+		"tungus_lvl1_big" : 0.72,
+		"outcar_lvl1_big" : 0.73,
+		
+		"[steppe_lvl1_canyon]" : 0.6,
+		"steppe_lvl1" : 0.4,
+		"steppe_lvl2" : 0.9,
+		"[vezuv_elit,steppe_elit]" : 1.5,
+		
+		"[302,lab_lvl1,sp_paukan_lvl1]" : 0.6,
+		"512" : 3.5,
+		"aut_pit3_uniq" : 3.5,
+		"tun_pit6_uniq" : 3.5,
+		"autcar_pit9_uniq" : 3.5,
+		"cave" : 0.2
+
+	},
+	"tints, bylevel" : {
+		"default" : [{}],
+		"[302,512,sp_paukan_lvl1]" : [{"body":"cave"}],
+		"[autcar_lvl1_grey,autcar_lvl2_grey,vezuv_lvl1_grey,out_lvl1_grey,tungus_lvl1_grey,swamp_lvl1_grey]" : [{"body":"cave"}],
+		"tun_pit6_uniq" : [{"body":"cave"}],
+		"[steppe_lvl1,steppe_lvl1_canyon]" : [{"body":"sand"}],
+		"steppe_lvl2" : [{"body":"sand"}],
+		"[vezuv_elit,steppe_elit]" : [{"body":"elit"}],
+		"cave" : [{"body":"cave"}]
+	},
+	"counter_system_on_kill": "MOB_KILLED_SPIDER",
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 1,
+		
+		"city_lvl1_small" : 5,
+		"out_lvl1_small" : 6,
+		"autcar_lvl1_small" : 7,
+		"vezuv_lvl1_small" : 8,
+		"tungus_lvl1_small" : 9,
+		
+		"[1,out_lvl1]" : 12,
+		"[2,out_lvl2]" : 13,
+		"[3,out_lvl3,vezuv_lvl1_grey]" : 14,
+		"[vezuv_lvl1,tungus_lvl1_grey,swamp_lvl1_grey]" : 15,
+		"vezuv_lvl2" : 16,
+		"tungus_lvl1" : 17,
+		"autcar_lvl1" : 18,
+		"autcar_lvl1_grey" : 19,
+		"autcar_lvl2_grey" : 20,
+		
+		"[4,out_lvl1_big]" : 20,
+		"vezuv_lvl1_big" : 20,
+		"tungus_lvl1_big" : 20,
+		"outcar_lvl1_big" : 20,
+		
+		"steppe_lvl1" : 60,
+		"steppe_lvl1_canyon" : 30,
+		"steppe_lvl2" : 80,
+		
+		"[302,lab_lvl1,sp_paukan_lvl1]" : 42,
+		"512" : 2500,
+		"aut_pit3_uniq" : 2500,
+		"tun_pit6_uniq" : 2500,
+		"autcar_pit9_uniq" : 2500,
+		"[vezuv_elit,steppe_elit]" : 0,
+		"autcar_pit9_uniq" : 2500,
+		"cave" : 25
+	},
+	"health, bylevel" : {
+		"default" : 0.12,
+		
+		"city_lvl1_small" : 0.020,
+		"out_lvl1_small" : 0.022,
+		"autcar_lvl1_small" : 0.024,
+		"vezuv_lvl1_small" : 0.026,
+		"tungus_lvl1_small" : 0.028,
+		
+		"[1,out_lvl1]" : 0.050,
+		"[2,out_lvl2]" : 0.052,
+		"[3,out_lvl3,vezuv_lvl1_grey]" : 0.054,
+		"[vezuv_lvl1,tungus_lvl1_grey,swamp_lvl1_grey]" : 0.058,
+		"vezuv_lvl2" : 0.06,
+		"tungus_lvl1" : 0.062,
+		"autcar_lvl1" : 0.066,
+		"autcar_lvl1_grey" : 0.068,
+		"autcar_lvl2_grey" : 0.07,
+		
+		"[steppe_lvl1,steppe_lvl1_canyon]" : 0.2,
+		"steppe_lvl2" : 0.3,
+		
+		"[4,out_lvl1_big]" : 0.08,
+		"vezuv_lvl1_big" : 0.08,
+		"tungus_lvl1_big" : 0.08,
+		"outcar_lvl1_big" : 0.08,
+		"vezuv_elit" : 15.5,
+		"steppe_elit" : 18.0,
+		
+		"[302,lab_lvl1,sp_paukan_lvl1]" : 0.168,
+		"512" : 10,
+		"aut_pit3_uniq" : 10,
+		"tun_pit6_uniq" : 10,
+		"autcar_pit9_uniq" : 10,
+		"cave" : 0.050
+	},	
+	"agro_range, bylevel" : {
+		"default" :20,
+		
+		"autcar_lvl1_grey" : 10,
+		"autcar_lvl2_grey" : 10,
+		"vezuv_lvl1_grey" : 10,
+		"out_lvl1_grey" : 10,
+		"tungus_lvl1_grey" : 10,
+		
+		"steppe_lvl1" : 50,
+		"steppe_lvl1_canyon" : 50,
+		"steppe_lvl2" : 50,
+		"[vezuv_elit,steppe_elit]" : 30,
+		
+		"[302,lab_lvl1,sp_paukan_lvl1]" : 7,
+		"512" : 1,
+		"aut_pit3_uniq" : 1,
+		"tun_pit6_uniq" : 10,
+		"autcar_pit9_uniq" : 10,
+		"cave" : 10
+		},
+	"lose_agro_range, bylevel" : {
+		"default" : 30,
+		
+		"autcar_lvl1_grey" : 20,
+		"autcar_lvl2_grey" : 20,
+		"vezuv_lvl1_grey" : 20,
+		"out_lvl1_grey" : 20,
+		"tungus_lvl1_grey" : 20,
+		
+		"steppe_lvl1" : 55,
+		"steppe_lvl1_canyon" : 55,
+		"steppe_lvl2" : 55,
+		"[vezuv_elit,steppe_elit]" : 40,
+		
+		"[302,lab_lvl1,sp_paukan_lvl1]" : 11,
+		"512" : 11,
+		"aut_pit3_uniq" : 10,
+		"tun_pit6_uniq" : 20,
+		"autcar_pit9_uniq" : 20,
+		"cave" : 20
+		},
+	"global_cooldown, bylevel" : {
+		"default" : 3,
+		"steppe_lvl1" : 1,
+		"steppe_lvl1_canyon" : 1,
+		"[steppe_lvl2,vezuv_elit,steppe_elit]" : 1
+	},
+	"defence, bylevel" : {
+		"default" : {
+			"MELEE" : 700.0,
+			"BULLET" : 1.0,
+			"EXPLOSION" : 50.0,
+			"BIO" : 700.0
+		},
+		
+		"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small]" : {
+			"BULLET" : 0.0
+		},
+		"[1,2,3,out_lvl1,out_lvl2,out_lvl3,autcar_lvl1,vezuv_lvl1,vezuv_lvl2,tungus_lvl1,cave]" : {
+			"BULLET" : 10.0
+		},
+		"[autcar_lvl1_grey,autcar_lvl2_grey,vezuv_lvl1_grey,out_lvl1_grey,tungus_lvl1_grey,swamp_lvl1_grey]" : {
+			"BULLET" : 20.0
+		},
+		"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : {
+			"BULLET" : 200.0
+			},
+			
+		"[302,lab_lvl1,sp_paukan_lvl1]" : {
+			"BULLET" : 150.0
+			},
+		"512" : {
+			"BULLET" : 250.0
+			},	
+		"aut_pit3_uniq" : {
+			"BULLET" : 250.0
+			},
+		"tun_pit6_uniq" : {
+			"BULLET" : 250.0
+			},
+		"autcar_pit9_uniq" : {
+			"BULLET" : 250.0
+			},
+		
+		"[steppe_lvl1,steppe_lvl1_canyon,vezuv_elit,steppe_elit]" :{
+			"BULLET" : 300.0
+			},
+		"steppe_lvl2" : {
+			"BULLET" : 300.0
+			}
+			
+	},
+	"bleed": {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/body_hit_green_low.xml",
+		"0.3": "sfx/Shoot/body_hit_green_med.xml",
+		"1": "sfx/Shoot/body_hit_green_max.xml"
+	},
+	"height, bylevel" : {
+		"default" : 0.4,
+		"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small]" : 0.2,
+		"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : 1.5,
+		"512" : 3,
+		"[steppe_lvl1,steppe_lvl1_canyon,vezuv_elit,steppe_elit]" : 0.4,
+		"steppe_lvl2" : 0.4
+	},
+	"width, bylevel" : {
+		"default" : 0.2,
+		"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : 1,
+		"512" : 2,
+		"[steppe_lvl1,steppe_lvl1_canyon,vezuv_elit,steppe_elit]" : 1.1,
+		"steppe_lvl2" : 1.1
+	},
+	"decompose_time" : [10,30],
+	"loot, bylevel" : {
+		"default" : {},
+		"[302,lab_lvl1]" : {},
+		"sp_paukan_lvl1" : {
+			"810255" : 0.90
+		},
+		"512" : {
+			"818" : 0.75,
+			"836" : 0.75,
+			"410177" : 0.50
+		},
+		
+		"city_lvl1_small" : {
+			"410095" : 0.6,
+			"410098" : 1.0		
+		},
+		"out_lvl1_small" : {
+			"410095" : 0.63,	
+			"410098" : 1.0
+		},
+		"autcar_lvl1_small" : {
+			"410095" : 0.66,
+			"410101" : 0.1,			
+			"410098" : 1.0
+		},
+		"vezuv_lvl1_small" : {
+			"410095" : 0.69,	
+			"410098" : 1.0
+		},
+		"tungus_lvl1_small" : {
+			"410095" : 0.7,
+			"410098" : 1.0
+		},
+		
+		"[1,out_lvl1,autcar_lvl1_grey]" : {
+			"410095" : 0.6,
+			"410101" : 0.1,
+			"410098" : 1.0
+		},
+		"[2,out_lvl2,autcar_lvl2_grey]" : {
+			"410096" : 0.63,
+			"410099" : 1.0
+		},
+		"[3,out_lvl3,vezuv_lvl1_grey]" : {
+			"410096" : 0.66,
+			"410099" : 1.0
+		},
+		"[autcar_lvl1,out_lvl1_grey]" : {
+			"410096" : 0.69,
+			"410099" : 1.0
+		},
+		"[vezuv_lvl1,tungus_lvl1_grey,swamp_lvl1_grey]" : {
+			"410095" : 0.7,
+			"410098" : 1.0
+		},
+		"vezuv_lvl2" : {
+			"410096" : 0.73,
+			"410099" : 1.0
+		},
+		"tungus_lvl1" : {
+			"410096" : 0.76,
+			"410099" : 1.0
+		},
+		
+		"out_lvl1_big" : {
+			"410097" : 0.6,
+			"410100" : 1.0
+		},
+		"vezuv_lvl1_big" : {
+			"410097" : 0.63,
+			"410100" : 1.0
+		},
+		"tungus_lvl1_big" : {
+			"410097" : 0.66,
+			"410100" : 1.0
+		},
+		"outcar_lvl1_big" : {
+			"410097" : 0.69,
+			"410100" : 1.0
+		},
+		
+		"aut_pit3_uniq" : {
+			"836" : 0.75,
+			"818" : 0.75,
+			"410177" : 0.25
+		},
+		"tun_pit6_uniq" : {
+			"836" : 0.75,
+			"818" : 0.75,
+			"410177" : 0.25
+		},
+		"autcar_pit9_uniq" : {
+			"836" : 0.75,
+			"818" : 0.75,
+			"410177" : 0.25
+		},
+		"steppe_lvl1" : {
+			"410352" : 0.8
+		},
+		"steppe_lvl1_canyon" : {
+			"410352" : 0.1
+		},
+		"steppe_lvl2" : {
+			"410353" : 0.8
+		},
+		
+		"[vezuv_elit,steppe_elit]"  : {
+			"410145" : 0.05
+		}
+	},
+	"foot_nodes" : ["SpiderLLeg13", "SpiderRLeg13"],
+	"footsteps_sound" : "mob/spider/footsteps",
+	"melee_distance, bylevel" : {
+		"default" : 1.8,
+		"1" : 1.08,
+		"2" : 1.8,
+		"3" : 2,
+		"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : 3.16,
+		"[302,lab_lvl1,sp_paukan_lvl1]" : 1.44,
+		"512" : 5.4,
+		"[steppe_lvl1,steppe_lvl1_canyon,cave]" : 1.0,
+		"[steppe_lvl2,vezuv_elit,steppe_elit]" : 3.0
+	},
+	"melee_height" : 3.5,
+	"actions, bylevel" : {
+		"default" : {
+			"AttackSpike" : {
+				"model_actions" : ["spider_attack"],
+				"sounds" : ["mob/spider/attack"]
+			},
+			"AttackPoison" : {
+				"model_actions" : ["spider_attack"],
+				"sounds" : ["mob/spider/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/spider/death"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			},				
+			"Pain" : {
+				"model_actions" : ["spider_recoil"],
+				"sounds" : ["mob/spider/pain"]
+			},
+			"RiseUp" : {
+				"model_actions" : ["spider_spawn"],
+				"sounds" : ["mob/spider/idle"]
+			},
+			"HideDown" : {
+				"model_actions" : ["spider_dig"],
+				"sounds" : ["mob/spider/idle"]
+			},
+			"Hide" : {	
+				"model_actions" : ["spider_dug"]
+			},
+			"Idle" : {				
+				"sounds" : ["mob/spider/idle"]
+			},
+			"Ambush" : {				
+				
+			}
+		},
+		"1" : {},
+		"steppe_lvl1" : {},
+		"steppe_lvl2" : {}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state, bylevel" : {
+		"default" : "walk_around",
+		"[autcar_lvl1_grey,autcar_lvl2_grey,vezuv_lvl1_grey,out_lvl1_grey,tungus_lvl1_grey,swamp_lvl1_grey,steppe_lvl1,steppe_lvl2,steppe_elit]" : "Hide_underground",
+		"[out_lvl1,out_lvl2,out_lvl3,autcar_lvl1,vezuv_lvl1,vezuv_lvl2,tungus_lvl1,vezuv_elit]" : "Ambush_state"
+		},
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around" : {
+			"movement_types" : ["walk_around"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			],
+			"speed, bylevel" : {
+				"default" : {
+					"walk_around" : [1, 3]
+				},
+				"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small,vezuv_elit,steppe_elit]" : {
+					"walk_around" : [2, 5]
+				},
+				"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : {
+					"walk_around" : [1.5, 2.5]
+				}
+			}
+		},
+		"Hide_underground" : {
+			"movement_types" : ["stand_only"],		
+			"speed" : {
+				"stand_only" : [0]
+			},
+			"persistent_actions" : ["Hide"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			],
+			"transitions" : {
+				"attacking" : {"time" : 1, "actions" : ["RiseUp"]}
+			},
+			"agro_range, bylevel" : {
+				"default" : 10,
+				"[autcar_lvl1_grey,autcar_lvl2_grey,vezuv_lvl1_grey,out_lvl1_grey,tungus_lvl1_grey,swamp_lvl1_grey]" : 12,
+				"[steppe_lvl1,steppe_lvl1_canyon,steppe_lvl2,steppe_elit]" : 5
+			},
+			"lose_agro_range, bylevel" : {
+				"default" : 20,
+				"1" : 22,
+				"steppe_lvl2,steppe_elit" : 24
+			}
+		},
+		"Ambush_state" : {
+			"movement_types" : ["stand_only"],		
+			"speed" : {
+				"stand_only" : [0]
+			},
+			"persistent_actions" : ["Ambush"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			],
+			"agro_range, bylevel" : {
+				"default" : 10,
+				"[out_lvl1,out_lvl2,out_lvl3,autcar_lvl1,vezuv_lvl1,vezuv_lvl2,tungus_lvl1,vezuv_elit]" : 12,
+				"[steppe_lvl1,steppe_lvl1_canyon,steppe_elit]" : 5
+			},
+			"lose_agro_range, bylevel" : {
+				"default" : 20,
+				"1" : 22,
+				"steppe_lvl2" : 24
+			}
+		},
+		"attacking" : {
+			"skills, bylevel" : {
+				"default" : {
+					"SPIDER_POISON" : 1,
+					"SPIDER_MELEE" : 3
+				},
+				"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small]" : {
+					"SPIDER_POISON" : 1
+				},
+				"out_lvl1" : {
+					"SPIDER_POISON" : 1,
+					"SPIDER_MELEE" : 3,
+					"SPIDER_WEB_RANGE" : 1
+				},
+				"out_lvl2" : {
+					"SPIDER_POISON" : 1,
+					"SPIDER_MELEE" : 3,
+					"SPIDER_WEB_RANGE" : 2
+				},
+				"out_lvl3" : {
+					"SPIDER_POISON" : 2,
+					"SPIDER_MELEE" : 3,
+					"SPIDER_WEB_RANGE" : 3
+				},
+				"[steppe_lvl1,steppe_lvl1_canyon,steppe_lvl2,vezuv_elit,steppe_elit]" : {
+					"SPIDER_POISON" : 2,
+					"SPIDER_MELEE" : 3,
+					"SPIDER_WEB_RANGE" : 1
+				}
+			},
+			"movement_types" : ["follow_target", "walk_around"],
+			"conditions" : [
+				{
+					"to_state" : "after_combat",
+					"predicate" : ["targets_count", "equal", 0]
+				}
+			],
+			"speed, bylevel" : {
+				"default" : {
+					"follow_target" : 6.9,
+					"walk_around" : [2, 4]
+				},
+				"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small]" : {
+					"walk_around" : [2, 5]
+				},
+				"[1,2,3,out_lvl1,out_lvl2,out_lvl3,autcar_lvl1,vezuv_lvl1,vezuv_lvl2,tungus_lvl1,steppe_lvl1,steppe_lvl2]" : {
+					"walk_around" : [1, 3]
+				},
+				
+				"[vezuv_elit,steppe_elit]" : {
+					"walk_around" : [3, 6]
+				},
+				
+				"[autcar_lvl1_grey,autcar_lvl2_grey,vezuv_lvl1_grey,out_lvl1_grey,tungus_lvl1_grey,swamp_lvl1_grey]" : {
+					"walk_around" : [1, 3]
+				},
+				"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : {
+					"walk_around" : [1, 3]
+				},
+				"cave" : {
+					"follow_target" : 3.5,
+					"walk_around" : [1, 3]
+				}
+			}	
+		},
+		"dead" : {		
+			"persistent_actions" : ["Dead"],
+			"entering_actions" : {"actions" : ["Die"], "time" : 1},
+			"conditions, bylevel" : { 
+				"default" : [
+						{
+							"to_state" : "walk_around",
+							"predicate" : ["is_dead", "equal", 0]
+						}
+				],
+				"[302,512,sp_paukan_lvl1]" : [
+						{
+							"to_state" : "walk_around",
+							"predicate" : ["is_dead", "equal", 0]
+						}
+				],
+				"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small]" : [
+						{
+							"to_state" : "walk_around",
+							"predicate" : ["is_dead", "equal", 0]
+						}
+				],
+				"[1,2,3,out_lvl1,out_lvl2,out_lvl3,autcar_lvl1,vezuv_lvl1,vezuv_lvl2,tungus_lvl1,steppe_lvl1,steppe_lvl2,vezuv_elit,steppe_elit]" : [
+						{
+							"to_state" : "Ambush_state",
+							"predicate" : ["is_dead", "equal", 0]
+						}
+				],
+				"[autcar_lvl1_grey,autcar_lvl2_grey,vezuv_lvl1_grey,out_lvl1_grey,tungus_lvl1_grey,swamp_lvl1_grey]" : [
+						{
+							"to_state" : "Hide_underground",
+							"predicate" : ["is_dead", "equal", 0]
+						}
+				],
+				"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : [
+						{
+							"to_state" : "walk_around",
+							"predicate" : ["is_dead", "equal", 0]
+						}
+				],
+				"[aut_pit3_uniq,tun_pit6_uniq,autcar_pit9_uniq]" : [
+						{
+							"to_state" : "walk_around",
+							"predicate" : ["is_dead", "equal", 0]
+						}
+				]
+			}	
+		},
+		"after_combat" : {
+			"movement_types" : ["walk_around"],
+			"change_state_timer, bylevel" : {
+				"default" : [10, "recover"],
+				"[1,2,3,out_lvl1,out_lvl2,out_lvl3,autcar_lvl1,vezuv_lvl1,vezuv_lvl2,tungus_lvl1,steppe_lvl1,steppe_lvl2,vezuv_elit,steppe_elit]" : [10, "recover_ambush"],
+				"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : [10, "recover"],
+				"[autcar_lvl1_grey,autcar_lvl2_grey,vezuv_lvl1_grey,out_lvl1_grey,tungus_lvl1_grey,swamp_lvl1_grey]" : [10, "recover_underground"]
+			},
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			],
+			"transitions" : {
+				"recover_underground" : {"time" : 2, "actions" : ["HideDown"]}
+			},
+			"speed, bylevel" : {
+				"default" : {
+					"walk_around" : [1, 3]
+				},
+				"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small]" : {
+					"walk_around" : [2, 5]
+				},
+				"[1,2,3,out_lvl1,out_lvl2,out_lvl3,autcar_lvl1,vezuv_lvl1,vezuv_lvl2,tungus_lvl1,steppe_lvl1,steppe_lvl2,vezuv_elit,steppe_elit]" : {
+					"walk_around" : [1, 3]
+				},
+				"[autcar_lvl1_grey,autcar_lvl2_grey,vezuv_lvl1_grey,out_lvl1_grey,tungus_lvl1_grey,swamp_lvl1_grey]" : {
+					"walk_around" : [1, 3]
+				},
+				"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : {
+					"walk_around" : [1, 3]
+				}
+			}
+		},
+		"recover" : {			
+			"persistent_actions" : ["Idle"],
+			"persistent_effects" : {
+				"418" : {"stacks":1}
+			},
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "equal", "100"]
+						]]
+				},
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			]
+		},
+		"recover_ambush" : {			
+			"persistent_actions" : ["Idle"],
+			"persistent_effects" : {
+				"418" : {"stacks":1}
+			},
+			"conditions" : [
+				{
+					"to_state" : "Ambush_state",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "equal", "100"]
+						]]
+				},
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			]
+		},
+		"recover_underground" : {
+			"persistent_actions" : ["Hide"],
+			"persistent_effects" : {
+				"418" : {"stacks":1}
+			},
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				},
+				{
+					"to_state" : "Hide_underground",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "equal", "100"]
+						]]
+				}
+			],
+			"transitions" : {
+				"attacking" : {"time" : 1, "actions" : ["RiseUp"]}
+			}
+		}
+	},
+	"skills" : {
+		"SPIDER_POISON": {
+			"type": "MELEE",
+			"cooldown": 3.0,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.01, 0.02],
+					"penetration" : 100
+				},
+				"1": {
+					"value" : [0.012, 0.028]
+				},
+				"2": {
+					"value" : [0.09, 0.136]
+				},
+				"3": {
+					"value" : [0.166, 0.250]
+				},
+				"4": {
+					"value" : [0.2, 0.25]
+				},
+				"[302,lab_lvl1,sp_paukan_lvl1]": {
+					"value" : [0.06, 0.12]
+				},
+				"512": {
+					"value" : [0.1, 0.20]
+				},
+				
+				"city_lvl1_small" : {
+					"value" : [0.012, 0.028]
+				},
+				"out_lvl1_small" : {
+					"value" : [0.012, 0.028]
+				},
+				"autcar_lvl1_small" : {
+					"value" : [0.012, 0.028]
+				},
+				"vezuv_lvl1_small" : {
+					"value" : [0.012, 0.028]
+				},
+				"tungus_lvl1_small" : {
+					"value" : [0.012, 0.028]
+				},
+				
+				"vezuv_elit" : {
+					"value" : [0.12, 0.28]
+				},
+				"steppe_elit" : {
+					"value" : [0.12, 0.28]
+				}
+				
+			},
+			"effects, bylevel": {
+				"default": [["Poison", 1]],
+				"[302,lab_lvl1,sp_paukan_lvl1]" : [["Poison", 3]],
+				"512" : [["Poison", 4]],
+				"[city_lvl1_small,out_lvl1_small,autcar_lvl1_small,vezuv_lvl1_small,tungus_lvl1_small]" : [["Poison", 1]],
+				"[1,2,3,out_lvl1,out_lvl2,out_lvl3,autcar_lvl1,vezuv_lvl1,vezuv_lvl2,tungus_lvl1,steppe_lvl1,steppe_lvl2]" : [["Poison", 2]],
+				"[autcar_lvl1_grey,autcar_lvl2_grey,vezuv_lvl1_grey,out_lvl1_grey,tungus_lvl1_grey,swamp_lvl1_grey]" : [["Poison", 3]],
+				"[4,out_lvl1_big,vezuv_lvl1_big,tungus_lvl1_big,outcar_lvl1_big]" : [["Poison", 4]],
+				"[aut_pit3_uniq,tun_pit6_uniq,autcar_pit9_uniq,vezuv_elit,steppe_elit]" : [["Poison", 4]]
+			},
+			"actions": ["AttackPoison"],
+			"self_sfxes": [
+				{						
+					"path"			: "sfx/Mob/AttackPoison.xml",
+					"source_node" 	: "HP_mouth",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		},
+		"SPIDER_MELEE": {
+			"type": "MELEE",
+			"cooldown": 1.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.01, 0.02],
+					"penetration" : 100
+				},
+				"4": {
+					"value" : [0.2, 0.250]
+				},
+				"[302,lab_lvl1,sp_paukan_lvl1]": {
+					"value" : [0.06, 0.12]
+				},
+				"512": {
+					"value" : [0.1, 0.20]
+				},
+				
+				
+				"[1,out_lvl1,autcar_lvl1_grey]" : {
+					"value" : [0.020, 0.060]
+				},
+				"[2,out_lvl2,autcar_lvl2_grey]" : {
+					"value" : [0.030, 0.070]
+				},
+				"[3,out_lvl3,vezuv_lvl1_grey]" : {
+					"value" : [0.040, 0.080]
+				},
+				"[autcar_lvl1,out_lvl1_grey]" : {
+					"value" : [0.050, 0.090]
+				},
+				"[vezuv_lvl1,tungus_lvl1_grey,swamp_lvl1_grey]" : {
+					"value" : [0.060, 0.10]
+				},
+				"vezuv_lvl2" : {
+					"value" : [0.070, 0.105]
+				},
+				"tungus_lvl1" : {
+					"value" : [0.080, 0.120]
+				},
+				
+				"out_lvl1_big" : {
+					"value" : [0.09, 0.250]
+				},
+				"vezuv_lvl1_big" : {
+					"value" : [0.1, 0.250]
+				},
+				"tungus_lvl1_big" : {
+					"value" : [0.105, 0.250]
+				},
+				"outcar_lvl1_big" : {
+					"value" : [0.120, 0.250]
+				},
+				"[steppe_lvl1,steppe_lvl1_canyon]" : {
+					"value" : [0.120, 0.250]
+				},
+				"steppe_lvl2" : {
+					"value" : [0.120, 0.250]
+				},
+				"lvl12_all_big" : {
+					"value" : [0.130, 0.250]
+				},
+				"lvl15_all_big" : {
+					"value" : [0.140, 0.250]
+				},
+				"lvl18_all_big" : {
+					"value" : [0.150, 0.250]
+				},
+				"lvl21_all_big" : {
+					"value" : [0.160, 0.250]
+				},
+				"lvl24_all_big" : {
+					"value" : [0.170, 0.250]
+				},
+				"lvl27_all_big" : {
+					"value" : [0.180, 0.250]
+				},
+				"lvl30_all_big" : {
+					"value" : [0.190, 0.250]
+				},
+				
+				"aut_pit3_uniq" : {
+					"value" : [0.10, 0.20]
+				},
+				"tun_pit6_uniq" : {
+					"value" : [0.10, 0.20]
+				},
+				"autcar_pit9_uniq" : {
+					"value" : [0.10, 0.20]
+				},
+				
+				
+				"[vezuv_elit,steppe_elit]" : {
+					"value" : [0.620, 0.850]
+				}
+				
+			},			 
+			"actions": ["AttackSpike"]
+		},
+		"SPIDER_WEB_RANGE": {
+			"type": "THROW",
+			"cast_range": 20.0,
+			"cooldown": 2.5,
+			"aoe_radius": 4,
+			"throwing_type"	: "SPIDER_WEB",
+			"throw_start_position"	: [0, 1.5, 0],
+			"explode_delay"	: 1.5,
+			"damage": {
+					"type" : "MELEE",
+					"value" : [0.0, 0.0],
+					"penetration" : 100
+			},			
+			"effects": [["Slow_Web", 3]], 
+			"actions": ["AttackPaws"]
+		}
+	}
+}

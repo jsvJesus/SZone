@@ -1,0 +1,663 @@
+{
+	"name, bylevel" : {
+		"default" : "Creatures.common.DOG1",
+		"nz_lvl1_uniq" : "Creatures.common.DOG_NZ1",
+		"nz_elit" : "Creatures.common.DOG_NZ_ELIT",
+		
+		"orig_lvl1_uniq" : "Creatures.common.DOG1",
+		
+		"city_lvl1" : "Creatures.common.DOG_CIT1",
+		"[1,out_lvl1]" : "Creatures.common.DOG_OUT1",
+		"[2,out_lvl2]" : "Creatures.common.DOG_OUT2",
+		"out_elit" : "Creatures.common.DOG_OUT_ELIT",
+		"vezuv_lvl1" : "Creatures.common.DOG_VEZ1",
+		"vezuv_lvl2" : "Creatures.common.DOG_VEZ2",
+		"vezuv_elit" : "Creatures.common.DOG_VEZ_ELIT",
+		"tungus_lvl1" : "Creatures.common.DOG_TU1",
+		"autcar_lvl1" : "Creatures.common.DOG_AC1",
+		"swamp_lvl1" : "Creatures.common.DOG_SW1",
+		
+		"city_lvl1_mut" : "Creatures.common.DOGMUT_CIT1",
+		"out_lvl1_mut" : "Creatures.common.DOGMUT_OUT1",
+		"vezuv_lvl1_mut" : "Creatures.common.DOGMUT_VEZ1",
+		"tungus_lvl1_mut" : "Creatures.common.DOGMUT_TU1",
+		"autcar_lvl1_mut" : "Creatures.common.DOGMUT_AC1",
+		"swamp_lvl1_mut" : "Creatures.common.DOGMUT_SW1",
+		"test" : "Creatures.common.DOGMUT_SW1",
+		
+		"steppe_lvl1" : "Creatures.common.SHAKAL_STP1"
+	},
+	"model, bylevel" : {
+		"default" : "dog-mutant/dog.model",
+		"nz_lvl1_uniq" : "dog-mutant/dog-mutant_snow.model",
+		"nz_elit" : "dog-mutant/dog_snow.model",
+		"steppe_lvl1" : "dog-mutant/dog_jackal.model"
+	},
+	"model_scale, bylevel" : {
+		"default" : 1,
+		"nz_lvl1_uniq" : 2.0,
+		
+		"city_lvl1" : 1,
+		"[1,out_lvl1]" : 1.1,
+		"[2,out_lvl2]" : 1.5,
+		"vezuv_lvl1" : 1.15,
+		"vezuv_lvl2" : 1.15,
+		"tungus_lvl1" : 1.2,
+		"autcar_lvl1" : 1.25,
+		"swamp_lvl1" : 1.3,
+		
+		"city_lvl1_mut" : 2,
+		"out_lvl1_mut" : 2.05,
+		"vezuv_lvl1_mut" : 2.1,
+		"tungus_lvl1_mut" : 2.15,
+		"autcar_lvl1_mut" : 2.2,
+		"swamp_lvl1_mut" : 2.25,
+		"nz_elit" : 2.5,
+		"[out_elit,vezuv_elit]" : 2.5
+	},
+	"tints, bylevel" : {
+		"default" : [{"body":"default"}, {"body":"labrador"}, {"body":"ovcharka"}, {"body":"pyatna"}],
+		"[nz_lvl1_uniq]" : [{}],
+		"orig_lvl1_uniq" : [{"body":"ovcharka", "wool":"ovcharka", "wool_blood":"ovcharka"}],
+		"[city_lvl1_mut,out_lvl1_mut,vezuv_lvl1_mut,tungus_lvl1_mut,autcar_lvl1_mut,swamp_lvl1_mut]" : [{"body":"default"}],
+		"nz_elit" : [{"Material_67_skinned":"elit"}],
+		"[out_elit,vezuv_elit]" : [{"body":"elit"}],
+		"steppe_lvl1" : [{}]
+	},
+	"counter_system_on_kill, bylevel" : {
+		"default" : "MOB_KILLED_DOG",
+		"steppe_lvl1" : "MOB_KILLED_JACKAL"
+		},
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 1,
+		"orig_lvl1_uniq" : 22,
+		"nz_lvl1_uniq" : 37,
+		
+		"city_lvl1" : 20,
+		"[1,out_lvl1]" : 25,
+		"[2,out_lvl2]" : 30,
+		"vezuv_lvl1" : 35,
+		"vezuv_lvl2" : 40,
+		"tungus_lvl1" : 45,
+		"autcar_lvl1" : 50,
+		"swamp_lvl1" : 55,
+		
+		"city_lvl1_mut" : 50,
+		"out_lvl1_mut" : 55,
+		"vezuv_lvl1_mut" : 60,
+		"tungus_lvl1_mut" : 65,
+		"autcar_lvl1_mut" : 70,
+		"swamp_lvl1_mut" : 75,
+
+		"[out_elit,vezuv_elit,nz_elit]" : 0,		
+		"steppe_lvl1" : 350
+	},
+	"health, bylevel" : {
+		"default" : 0.12,
+		"orig_lvl1_uniq" : 0.09,
+		"nz_lvl1_uniq" : 0.48,
+		
+		"city_lvl1" : 0.09,
+		"[1,out_lvl1]" : 0.1,
+		"[2,out_lvl2]" : 0.2,
+		"vezuv_lvl1" : 0.15,
+		"vezuv_lvl2" : 0.19,
+		"tungus_lvl1" : 0.18,
+		"autcar_lvl1" : 0.2,
+		"swamp_lvl1" : 0.22,
+		
+		"city_lvl1_mut" : 0.2,
+		"out_lvl1_mut" : 0.22,
+		"vezuv_lvl1_mut" : 0.24,
+		"tungus_lvl1_mut" : 0.26,
+		"autcar_lvl1_mut" : 0.28,
+		"swamp_lvl1_mut" : 0.3,
+
+		"out_elit" : 30.0,
+		"vezuv_elit" : 30.0,
+		"nz_elit" : 30.0,	
+		"steppe_lvl1" : 1.0
+	},	
+	"agro_range, bylevel" : {
+		"default" : 20,
+		"city_lvl1" : 10,
+		"[out_elit,vezuv_elit,nz_elit]" : 30,
+		"steppe_lvl1" : 50
+	},
+	"lose_agro_range, bylevel" : {
+		"default" : 40,
+		"city_lvl1" : 20,
+		"[out_elit,vezuv_elit,nz_elit]" : 40,
+		"steppe_lvl1" : 70
+	},
+	"global_cooldown, bylevel" : {
+		"default" : 3,
+		"[out_elit,vezuv_elit,nz_elit]" : 2,
+		"steppe_lvl1" : 1
+	},
+	"defence, bylevel" : {
+		"default" : {
+			"MELEE" : 700.0,
+			"BULLET" : 1.0,
+			"EXPLOSION" : 30.0,
+			"BIO" : 700.0
+		},
+		"1" : {
+			"BULLET" : 0.0
+		},
+		"2" : {
+			"BULLET" : 30.0
+		},
+		"nz_lvl1_uniq" : {
+			"BULLET" : 60.0,
+			"COLD" : 1000.0
+		},
+		"[city_lvl1,out_lvl1,out_lvl2,vezuv_lvl1,vezuv_lvl2,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : {
+			"BULLET" : 0.0
+		},
+		"[city_lvl1_mut,out_lvl1_mut,vezuv_lvl1_mut,tungus_lvl1_mut,autcar_lvl1_mut,swamp_lvl1_mut,out_elit,vezuv_elit,nz_elit]" : {
+			"BULLET" : 30.0
+		},
+		"steppe_lvl1" : {
+			"BULLET" : 50.0
+		}
+	},
+	"bleed": {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/body_hit_low.xml",
+		"0.3": "sfx/Shoot/body_hit_med.xml",
+		"1": "sfx/Shoot/body_hit_max.xml"
+	},
+	"height" : 1.0,	
+	"width" : 1.0,
+	"decompose_time" : [10,30],
+	"loot, bylevel" : {
+		"default" : {},
+		"nz_lvl1_uniq" : {
+			"811" : 0.5
+		},
+		"orig_lvl1_uniq" : {
+			"803" : 0.45
+		},
+		
+		"city_lvl1" : {
+			"803" : 0.45
+		},
+		"[1,out_lvl1]" : {
+			"803" : 0.55
+		},
+		"[2,out_lvl2]" : {
+			"810" : 0.65
+		},
+		"vezuv_lvl1" : {
+			"803" : 0.6	
+		},
+		"vezuv_lvl2" : {
+			"810" : 0.6,
+			"810272" : 0.5			
+		},
+		"tungus_lvl1" : {
+			"803" : 0.65
+		},
+		"autcar_lvl1" : {
+			"803" : 0.7
+		},
+		"swamp_lvl1" : {
+			"803" : 0.75
+		},
+		
+		"city_lvl1_mut" : {
+			"810" : 0.45
+		},
+		"out_lvl1_mut" : {
+			"810" : 0.5
+		},
+		"vezuv_lvl1_mut" : {
+			"810" : 0.55
+		},
+		"tungus_lvl1_mut" : {
+			"810" : 0.6
+		},
+		"autcar_lvl1_mut" : {
+			"810" : 0.65
+		},
+		"swamp_lvl1_mut" : {
+			"810" : 0.7
+		},
+		
+		"steppe_lvl1" : {
+			"410361" : 0.7
+		},
+		
+		"[out_elit,vezuv_elit,nz_elit]"  : {
+			"410145" : 0.05
+		}
+	},
+	"foot_nodes" : ["Bip01 L Foot", "Bip01 R Foot"],
+	"footsteps_sound" : "mob/dog/footsteps",
+	"melee_distance, bylevel" : {
+		"default" : 2.1,
+		"1" : 2.5,
+		"2" : 2.9,
+		"[nz_lvl1_uniq,out_elit,vezuv_elit,nz_elit]" : 3.1,
+		"steppe_lvl1" : 3.3
+	},	
+	"melee_height" : 1.5,	
+	"actions, bylevel" : {
+		"default" : {
+			"Idle" : {				
+				"sounds" : ["mob/dog/idle"]
+			},
+			"Idle1" : {
+				"model_actions" : ["Idle1"],
+				"sounds" : ["mob/dog/idle"]
+			},
+			"AttackPaws" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/dog/attack"]
+			},
+			"AttackTooth" : {
+				"model_actions" : ["AttackTooth"],
+				"sounds" : ["mob/dog/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/dog/death"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			},				
+			"Pain" : {
+				"sounds" : ["mob/dog/pain"]
+			},				
+			"Attacking" : {
+				"sounds" : ["mob/dog/angry"]
+			}
+		},
+		"steppe_lvl1" : {
+			"Idle" : {				
+				"sounds" : ["mob/jackal/idle"]
+			},
+			"Idle1" : {
+				"model_actions" : ["Idle1"],
+				"sounds" : ["mob/jackal/idle"]
+			},
+			"AttackPaws" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/dog/attack"]
+			},
+			"AttackTooth" : {
+				"model_actions" : ["AttackTooth"],
+				"sounds" : ["mob/dog/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/dog/death"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			},				
+			"Pain" : {
+				"sounds" : ["mob/dog/pain"]
+			},				
+			"Attacking" : {
+				"sounds" : ["mob/dog/angry"]
+			}
+		}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state" : "walk_around",
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around, parent=default_walk_around" : {
+			"persistent_actions" : ["Idle"],			
+			"speed, bylevel" : {
+				"default" : {
+					"walk_around" : [1, 3]
+				},
+				"2" : {
+					"walk_around" : [1, 3.1]
+				},
+				"nz_lvl1_uniq" : {
+					"walk_around" : [1, 3.2]
+				},
+				"steppe_lvl1" : {
+					"walk_around" : [1, 3.3]
+				}
+			}
+		},		
+		"attacking, parent=default_attacking" : {
+			"skills, bylevel" : {
+				"default" : {
+						"DOG_BLEED" : 2,
+						"DOG_MELEE_DOWN" : 3,
+						"DOG_MELEE_UP" : 1
+				},
+				"orig_lvl1_uniq" : {
+						"DOG_BLEED" : 1,
+						"DOG_MELEE_DOWN" : 7,
+						"DOG_MELEE_UP" : 3
+				},
+				"[city_lvl1,out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : {
+						"DOG_BLEED" : 2,
+						"DOG_MELEE_DOWN" : 4,
+						"DOG_MELEE_UP" : 1
+				},
+				"[out_lvl2,vezuv_lvl2]" : {
+						"DOG_BLEED" : 3,
+						"DOG_MELEE_DOWN" : 3,
+						"DOG_MELEE_UP" : 1
+				},
+				"[city_lvl1_mut,out_lvl1_mut,vezuv_lvl1_mut,tungus_lvl1_mut,autcar_lvl1_mut,swamp_lvl1_mut]" : {
+						"DOG_MUTANT_POISON" : 2,
+						"DOG_MELEE_DOWN" : 3,
+						"DOG_MELEE_UP" : 1
+				},
+				"[steppe_lvl1,out_elit,vezuv_elit,nz_elit]" : {
+						"DOG_BLEED" : 3,
+						"DOG_MELEE_DOWN" : 3,
+						"DOG_MELEE_UP" : 1
+				},
+				"test" : {
+						"ROCKET" : 2,
+						"DOG_MELEE_UP" : 1
+				}
+			},
+			"persistent_actions" : ["Attacking"],
+			"speed, bylevel" : {
+				"default" : {
+					"follow_target" : 6,
+					"walk_around" : [2, 4]
+				},
+				"2" : {
+					"follow_target" : 7,
+					"walk_around" : [2, 4]
+				},
+				"[nz_lvl1_uniq,out_elit,vezuv_elit,nz_elit]" : {
+					"follow_target" : 8,
+					"walk_around" : [2, 4]
+				},
+				"steppe_lvl1" : {
+					"follow_target" : 9,
+					"walk_around" : [2, 5]
+				}
+			}	
+		},
+		"dead" : {		
+			"persistent_actions" : ["Dead"],
+			"entering_actions" : {"actions" : ["Die"], "time" : 1.1},
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["is_dead", "equal", 0]
+				}
+			]
+		},
+		"before_recover, parent=default_before_recover" : {
+			"speed, bylevel" : {
+				"default" : {
+					"walk_around" : [1, 3]
+				},
+				"2" : {
+					"walk_around" : [1, 3.1]
+				},
+				"[nz_lvl1_uniq,out_elit,vezuv_elit,nz_elit]" : {
+					"walk_around" : [1, 3.2]
+				},
+				"steppe_lvl1" : {
+					"walk_around" : [1, 3.3]
+				}
+			}
+		},
+		"recover, parent=default_recover" : {			
+			"persistent_actions" : ["Idle"]
+		}
+	},
+	"skills" : {
+		"DOG_BLEED": {
+			"type": "MELEE",
+			"cooldown": 5.0,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO", "FOREARM", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.015, 0.030],
+					"penetration" : 100
+				},
+				
+				"3": {
+					"value" : [0.063, 0.104]
+				},
+				
+				"city_lvl1" : {
+					"value" : [0.32, 0.41]
+				},
+				"[1,out_lvl1]" : {
+					"value" : [0.034, 0.043]
+				},
+				"[2,out_lvl2]" : {
+					"value" : [0.036, 0.045]
+				},
+				"vezuv_lvl1" : {
+					"value" : [0.037, 0.047]
+				},
+				"vezuv_lvl2" : {
+					"value" : [0.039, 0.049]
+				},
+				"nz_lvl1_uniq" : {
+					"value" : [0.04, 0.06]
+				},
+				"tungus_lvl1" : {
+					"value" : [0.042, 0.052]
+				},
+				"autcar_lvl1" : {
+					"value" : [0.05, 0.07]
+				},
+				"swamp_lvl1" : {
+					"value" : [0.046, 0.065]
+				},
+				"steppe_lvl1" : {
+					"value" : [0.052, 0.075]
+				},
+				
+				
+				"[out_elit,vezuv_elit,nz_elit]" : {
+					"value" : [0.4, 0.6]
+				}
+			},
+			"effects, bylevel": {
+				"default" : [["Bleed", 1]],
+				"city_lvl1" : [["Bleed", 1]],
+				"out_lvl1" : [["Bleed", 1]],
+				"vezuv_lvl1" : [["Bleed", 2]],
+				"vezuv_lvl2" : [["Bleed", 2]],
+				"tungus_lvl1" : [["Bleed", 2]],
+				"autcar_lvl1" : [["Bleed", 2]],
+				"swamp_lvl1" : [["Bleed", 3]],
+				"[steppe_lvl1,out_elit,vezuv_elit,nz_elit]" : [["Bleed", 3]]
+			},
+			"actions": ["AttackTooth"]
+		},
+		"DOG_MUTANT_POISON": {
+			"type": "MELEE",
+			"cooldown": 5.0,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO", "FOREARM", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.015, 0.030],
+					"penetration" : 100
+				},
+				"city_lvl1_mut" : {
+					"value" : [0.04, 0.06]
+				},
+				"out_lvl1_mut" : {
+					"value" : [0.04, 0.06]
+				},
+				"vezuv_lvl1_mut" : {
+					"value" : [0.04, 0.06]
+				},
+				"tungus_lvl1_mut" : {
+					"value" : [0.04, 0.06]
+				},
+				"autcar_lvl1_mut" : {
+					"value" : [0.04, 0.06]
+				},
+				"swamp_lvl1_mut" : {
+					"value" : [0.04, 0.06]
+				},
+				"steppe_lvl1" : {
+					"value" : [0.04, 0.06]
+				},
+				"[out_elit,vezuv_elit,nz_elit]" : {
+					"value" : [0.4, 0.6]
+				}
+			},
+			"effects, bylevel": {
+				"default" : [["Poison", 1]],
+				"city_lvl1_mut" : [["Poison", 1]],
+				"out_lvl1_mut" : [["Poison", 1]],
+				"vezuv_lvl1_mut" : [["Poison", 1]],
+				"tungus_lvl1_mut" : [["Poison", 2]],
+				"autcar_lvl1_mut" : [["Poison", 2]],
+				"swamp_lvl1_mut" : [["Poison", 2]],
+				"[steppe_lvl1,out_elit,vezuv_elit,nz_elit]" : [["Poison", 2]]
+			},
+			"actions": ["AttackTooth"]
+		},
+		"DOG_MELEE_DOWN": {
+			"type": "MELEE",
+			"cooldown": 1.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["LEG_UPPER", "TORSO", "LEG_LOWER"],
+					"type" : "MELEE",
+					"value" : [0.015, 0.030],
+					"penetration" : 100
+				},
+				
+				"3": {
+					"value" : [0.063, 0.104]
+				},
+				
+				"city_lvl1" : {
+					"value" : [0.033, 0.04]
+				},
+				"[1,out_lvl1]" : {
+					"value" : [0.034, 0.043]
+				},
+				"[2,out_lvl2]" : {
+					"value" : [0.03, 0.05]
+				},
+				"vezuv_lvl1" : {
+					"value" : [0.037, 0.047]
+				},
+				"vezuv_lvl2" : {
+					"value" : [0.039, 0.049]
+				},
+				"nz_lvl1_uniq" : {
+					"value" : [0.04, 0.06]
+				},
+				"tungus_lvl1" : {
+					"value" : [0.042, 0.052]
+				},
+				"autcar_lvl1" : {
+					"value" : [0.05, 0.07]
+				},
+				"swamp_lvl1" : {
+					"value" : [0.046, 0.065]
+				},
+				"steppe_lvl1" : {
+					"value" : [0.052, 0.075]
+				},
+				
+				"[out_elit,vezuv_elit,nz_elit]" : {
+					"value" : [0.4, 0.6]
+				}
+			},			 
+			"actions": ["AttackTooth"]
+		},
+		"DOG_MELEE_UP": {
+			"type": "MELEE",
+			"cooldown": 2.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["HEAD", "TORSO", "FOREARM", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.025, 0.060],
+					"penetration" : 100
+				},
+				
+				"3": {
+					"value" : [0.098, 0.126]
+				},
+				
+				"city_lvl1" : {
+					"value" : [0.04, 0.06]
+				},
+				"[1,out_lvl1]" : {
+					"value" : [0.042, 0.062]
+				},
+				"[2,out_lvl2]" : {
+					"value" : [0.044, 0.064]
+				},
+				"vezuv_lvl1" : {
+					"value" : [0.046, 0.066]
+				},
+				"vezuv_lvl2" : {
+					"value" : [0.048, 0.068]
+				},
+				"nz_lvl1_uniq" : {
+					"value" : [0.05, 0.1]
+				},
+				"tungus_lvl1" : {
+					"value" : [0.052, 0.12]
+				},
+				"autcar_lvl1" : {
+					"value" : [0.056, 0.16]
+				},
+				"swamp_lvl1" : {
+					"value" : [0.054, 0.14]
+				},
+				"steppe_lvl1" : {
+					"value" : [0.058, 0.18]
+				},
+				
+				"[out_elit,vezuv_elit,nz_elit]" : {
+					"value" : [0.54, 0.74]
+				}
+			},			 
+			"actions": ["AttackPaws"]
+		},
+		"ROCKET": {
+			"type": "ROCKET",
+			"aoe_radius": 4,
+			"rocket_type": "RPG7_ROCKET",
+			"rocket_start_position" : [0, 0.5, 0],
+			"rocket_speed": 5.0,
+			"rocket_acceleration": 5.0,
+			"rocket_max_distance": 50,
+			"cast_range": 25.0,
+			"cooldown": 2.0,
+			"effects": [],
+			"damage, bylevel":
+			{
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.005, 0.013],
+					"penetration" : 100
+				}
+			},
+			"actions": ["AttackNails"],
+			"self_sfxes": []
+		}
+	}
+}

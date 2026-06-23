@@ -1,0 +1,449 @@
+{
+	"name, bylevel" : {
+	
+		"default" : "Creatures.common.IMP1",
+		
+		"out_lvl1" : "Creatures.common.IMP_OUT1",
+		"out_lvl2" : "Creatures.common.IMP_OUT2",
+		"vezuv_lvl1" : "Creatures.common.IMP_VEZUV1",
+		"vezuv_lvl2" : "Creatures.common.IMP_VEZUV2",
+		"vezuv_lvl3" : "Creatures.common.IMP_VEZUV3",
+		"vezuv_elit1" : "Creatures.common.IMP_VEZUV_ELIT1",
+		"vezuv_elit2" : "Creatures.common.IMP_VEZUV_ELIT2",
+		"vulkan_lvl1" : "Creatures.common.IMP_VULKAN1",
+		"vulkan_lvl2" : "Creatures.common.IMP_VULKAN2",
+		"tungus_lvl1" : "Creatures.common.IMP_TUNGUS1",
+		"tungus_lvl2" : "Creatures.common.IMP_TUNGUS2",
+		"tungus_elit" : "Creatures.common.IMP_TUNGUS_ELIT",
+		"autcar_lvl1" : "Creatures.common.IMP_AUTCAR1",
+		"autcar_lvl2" : "Creatures.common.IMP_AUTCAR2",
+		"swamp_lvl1" : "Creatures.common.IMP_SWAMP1",
+		"swamp_lvl2" : "Creatures.common.IMP_SWAMP2",
+		"nz_lvl1_agr6" : "Creatures.common.IMP_NZ",
+		"halloween" : "Creatures.common.IMP_HALLOWEEN"
+	},
+	"model, bylevel" : {
+		"default" : "bes/bes_lod1.model",
+		"halloween" : "bes/bes_halloween.model"
+	},	
+	"model_scale, bylevel" : {
+		"default" : 1,
+		"[out_lvl1, vezuv_lvl1, tungus_lvl1, autcar_lvl1, swamp_lvl1, vulkan_lvl1]" : 1, 
+		"[out_lvl2, vezuv_lvl2, tungus_lvl2, autcar_lvl2, swamp_lvl2]" : 1.2,
+		"vulkan_lvl2" : 1.4,
+		"vezuv_lvl3" : 1.4,
+		"halloween" : 1.2,
+		"[vezuv_elit1, vezuv_elit2, tungus_elit]" : 1.8
+		
+	},
+    "particles, bylevel" : {
+        "default" : {},
+        "halloween": {
+            "head": "particles/fire_and_smoke_360.xml"
+        }
+    },
+	"tints, bylevel" : {
+		"default" : [{}],
+		"[vezuv_elit1, vezuv_elit2, tungus_elit]" : [{"bes_skinned":"elit"}]
+	},
+	"counter_system_on_kill": "MOB_KILLED_BES",
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 1,
+		"out_lvl1" : 250, 
+		"out_lvl2" : 300,
+		"vulkan_lvl1" : 370,
+		"vulkan_lvl2" : 435,
+		"vezuv_lvl1" : 262, 
+		"vezuv_lvl2" : 312,
+		"vezuv_lvl3" : 335, 
+		"tungus_lvl1" : 267,
+		"tungus_lvl2" : 317,
+		"autcar_lvl1" : 272,
+		"autcar_lvl2" : 322,
+		"swamp_lvl1" : 277, 
+		"swamp_lvl2" : 327,
+		"[vezuv_elit1, vezuv_elit2, tungus_elit]" : 0,
+		"halloween" : 500
+	},
+	"health, bylevel" : {
+		"default" : 0.9,
+		"out_lvl1" : 1, 
+		"out_lvl2" : 1.2, 
+		"vulkan_lvl1" : 0.8,
+		"vulkan_lvl2" : 1.35,
+		"vezuv_lvl1" : 1.05, 
+		"vezuv_lvl2" : 1.25,
+		"vezuv_lvl3" : 1.35,
+		"tungus_lvl1" : 1.07,
+		"tungus_lvl2" : 1.27,
+		"autcar_lvl1" : 1.09,
+		"autcar_lvl2" : 1.29,
+		"swamp_lvl1" : 1.11, 
+		"swamp_lvl2" : 1.31,
+		"halloween" : 1.8,
+		"vezuv_elit1" : 36.2,
+		"vezuv_elit2" : 36.5,
+		"tungus_elit" : 36.8
+		
+	},	
+	"agro_range, bylevel" : {
+		"default" : 60,
+		
+		"out_lvl1" : 50,
+		"vulkan_lvl1" : 45,
+		"vulkan_lvl2" : 25,
+		"nz_lvl1_agr6" : 13,
+		"halloween" : 30,
+		"[vezuv_elit1, vezuv_elit2, tungus_elit]" : 25
+	},
+	"lose_agro_range, bylevel" : {
+		"default" : 70,
+		"out_lvl1" : 40,
+		"vulkan_lvl1" : 55,
+		"vulkan_lvl2" : 35,
+		"nz_lvl1_agr6" : 14,
+		"halloween" : 40,
+		"[vezuv_elit1, vezuv_elit2, tungus_elit]" : 30
+	},
+	"global_cooldown" : 3.4,
+	"defence, bylevel" : {
+		"default" : {
+			"MELEE" : 700.0,
+			"BULLET" : 1.0,
+			"EXPLOSION" : 50.0,
+			"BIO" : 2000.0,
+			"SUFFOCATION" : 2000.0,
+			"COLD" : 2000.0,
+			"INFRARED" : 2000.0,
+			"ELECTROSTATIC" : 2000.0,
+			"GRAVITATION" : 2000.0
+		},
+		"out_lvl1" : {
+			"BULLET" : 100.0
+		}, 
+		"out_lvl2" : {
+			"BULLET" : 200.0
+		}, 
+		"vezuv_lvl1" : {
+			"BULLET" : 120.0
+		}, 
+		"vezuv_lvl2" : {
+			"BULLET" : 220.0
+		},
+		"vezuv_lvl3" : {
+			"BULLET" : 300.0
+		},
+		"tungus_lvl1" : {
+			"BULLET" : 140.0
+		},
+		"tungus_lvl2" : {
+			"BULLET" : 240.0
+		},
+		"autcar_lvl1" : {
+			"BULLET" : 160.0
+		},
+		"autcar_lvl2" : {
+			"BULLET" : 260.0
+		},
+		"swamp_lvl1" : {
+			"BULLET" : 180.0
+		}, 
+		"swamp_lvl2" : {
+			"BULLET" : 280.0
+		}, 
+		"halloween" : {
+			"BULLET" : 350.0,
+			"EXPLOSION" : 150.0
+		},
+		"[vezuv_elit1, vezuv_elit2, tungus_elit]" : {
+			"BULLET" : 300.0
+		}		
+	},
+	"bleed": {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/body_hit_low.xml",
+		"0.3": "sfx/Shoot/body_hit_med.xml",
+		"1": "sfx/Shoot/body_hit_max.xml"
+	},
+	"height, bylevel" : {
+		"default" : 1.0,
+		"[out_lvl1, vezuv_lvl1, tungus_lvl1, autcar_lvl1, swamp_lvl1]" : 1.7, 
+		"[out_lvl2, vezuv_lvl2, tungus_lvl2, autcar_lvl2, swamp_lvl2, halloween]" : 2,
+		"[vezuv_lvl3, vezuv_elit1, vezuv_elit2, tungus_elit]" : 2.1
+	},	
+	"width" : 1.0,
+	"decompose_time" : [10,30],
+	"loot, bylevel" : {
+		"default" : {},
+		
+		"out_lvl1" : {
+			"827" : 0.6
+		}, 
+		"out_lvl2" : {
+			"828" : 0.55
+		}, 
+		"vezuv_lvl1" : {
+			"827" : 0.6
+		}, 
+		"vezuv_lvl2" : {
+			"828" : 0.55
+		},
+		"vezuv_lvl3" : {
+			"834" : 0.95
+		},
+		"tungus_lvl1" : {
+			"827" : 0.6
+		},
+		"tungus_lvl2" : {
+			"828" : 0.55
+		},
+		"autcar_lvl1" : {
+			"827" : 0.6
+		},
+		"autcar_lvl2" : {
+			"834" : 0.45
+		},
+		"swamp_lvl1" : {
+			"827" : 0.6
+		}, 
+		"swamp_lvl2" : {
+			"828" : 0.55
+		}, 
+		"halloween" : {
+			"828" : 0.55,
+			"1703" : 0.05
+		},
+		
+		"[vezuv_elit1, vezuv_elit2, tungus_elit]"  : {
+			"410145" : 0.05
+		}
+
+	},
+	"foot_nodes" : ["lefttoe", "righttoe"],
+	"footsteps_sound" : "mob/bes/footsteps",
+	"melee_distance, bylevel" : {
+		"default" : 2,
+		"[out_lvl1, vezuv_lvl1, tungus_lvl1, autcar_lvl1, swamp_lvl1]" : 2.4, 
+		"[out_lvl2, vezuv_lvl2, tungus_lvl2, autcar_lvl2, swamp_lvl2, halloween]" : 2.8, 
+		"[vezuv_lvl3, vezuv_elit1, vezuv_elit2, tungus_elit]" : 3
+	},	
+	"melee_height" : 2.0,		
+	"actions, bylevel" : {
+		"default" : {
+			"Idle" : {				
+				"sounds" : ["mob/bes/idle"]
+			},
+			"Idle1" : {
+				"model_actions" : ["Idle1"],
+				"sounds" : ["mob/bes/idle"]
+			},
+			"AttackPaws" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/bes/attack"]
+			},
+			"AttackRange" : {
+				"model_actions" : ["AttackSpecial"],
+				"sounds" : ["mob/bes/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/bes/death"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			},				
+			"Pain" : {
+				"sounds" : ["mob/bes/pain"]
+			},				
+			"Attacking" : {
+				"sounds" : ["mob/bes/angry"]
+			}
+		}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state" : "walk_around",
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around, parent=default_walk_around" : {
+			"persistent_actions" : ["Idle"],			
+			"speed" : {
+				"walk_around" : [1.7, 4]
+			}
+		},		
+		"attacking, parent=default_attacking" : {
+			"skills, bylevel" : {
+				"default" : {
+					"BES_RANGE" : 1,
+					"BES_MELEE" : 3
+				}
+			},
+			"movement_types" : ["follow_target", "walk_around"],
+			"persistent_actions" : ["Attacking"],
+			"conditions" : [
+				{
+					"to_state" : "before_recover",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "less", "100"]
+						]]
+				},
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["targets_count", "equal", 0]
+				}
+			],
+			"speed" : {
+				"follow_target" : 6.1,
+				"walk_around" : [2, 4]
+			}	
+		},
+		"dead" : {
+			"persistent_actions" : ["Dead"],
+			"entering_actions" : {"actions" : ["Die"], "time" : 0.8},
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["is_dead", "equal", 0]
+				}
+			]
+		},
+		"before_recover, parent=default_before_recover" : {
+			"speed" : {
+				"walk_around" : [1.7, 4]
+			}
+		},
+		"recover, parent=default_recover" : {
+			"persistent_actions" : ["Idle"]
+		}
+	},
+	"skills" : {
+		"BES_MELEE": {
+			"type": "MELEE",
+			"cooldown": 1.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["HEAD", "LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.115, 0.130],
+					"penetration" : 100
+				},
+				"[out_lvl1, vezuv_lvl1, tungus_lvl1, autcar_lvl1, swamp_lvl1]": {
+					"value" : [0.95, 0.110],
+					"penetration" : 100
+				},
+				"[out_lvl2, vezuv_lvl2, tungus_lvl2, autcar_lvl2, swamp_lvl2]": {
+					"value" : [0.115, 0.130],
+					"penetration" : 150
+				},
+				"vezuv_lvl3": {
+					"value" : [0.125, 0.140],
+					"penetration" : 160
+				},
+				
+				"[vezuv_elit1, vezuv_elit2, tungus_elit]": {
+					"value" : [0.225, 0.540],
+					"penetration" : 170
+				},
+				
+				"halloween": {
+					"value" : [0.140, 0.150],
+					"penetration" : 160
+				}
+			},			 
+			"actions": ["AttackPaws"]
+		},
+		"BES_RANGE": {
+			"type": "DIRECT",
+			"cast_range, bylevel": {
+				"default": 40.0,
+				"out_lvl1" : 20, 
+				"out_lvl2" : 25, 
+				"vezuv_lvl1" : 30, 
+				"vezuv_lvl2" : 35,
+				"[vezuv_lvl3, vezuv_elit1, vezuv_elit2, tungus_elit]" : 70, 
+				"tungus_lvl1" : 40,
+				"tungus_lvl2" : 45,
+				"autcar_lvl1" : 50,
+				"autcar_lvl2" : 55,
+				"swamp_lvl1" : 60, 
+				"swamp_lvl2" : 65
+			},
+			"cooldown, bylevel": {
+				"default": 2.0,
+				"[out_lvl1, vezuv_lvl1, tungus_lvl1, autcar_lvl1, swamp_lvl1]": 4.0,
+				"[out_lvl2, vezuv_lvl2, tungus_lvl2, autcar_lvl2, swamp_lvl2]": 2.0,
+				"[vezuv_lvl3, vezuv_elit1, vezuv_elit2, tungus_elit]" : 1.9
+			},
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO"],
+					"type" : "MELEE",
+					"value" : [0.030, 0.040],
+					"penetration" : 100
+				},
+				"[out_lvl1, vezuv_lvl1, tungus_lvl1, autcar_lvl1, swamp_lvl1]": {
+					"value" : [0.060, 0.080],
+					"penetration" : 100
+				},
+				"[out_lvl2, vezuv_lvl2, tungus_lvl2, autcar_lvl2, swamp_lvl2]": {
+					"value" : [0.080, 0.10],
+					"penetration" : 150
+				},
+				"vezuv_lvl3": {
+					"value" : [0.090, 0.105],
+					"penetration" : 160
+				},
+				
+				"[vezuv_elit1, vezuv_elit2, tungus_elit]": {
+					"value" : [0.190, 0.305],
+					"penetration" : 160
+				},
+				
+				"halloween": {
+					"value" : [0.12, 0.15],
+					"penetration" : 160
+				}
+			},
+			"actions": ["AttackRange"],
+			"self_sfxes": [
+				{
+					"path"			: "sfx/Mob/AttackPsy.xml",
+					"source_node" 	: "lefthand",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		},
+		"PLAYER_ATTACK": {
+			"type": "DIRECT",
+			"cast_range": 40.0,
+			"cooldown": 2.0,
+			"aoe_radius": 0,
+			"damage": {
+				"body_zones": ["TORSO"],
+				"type" : "MELEE",
+				"value" : [0.030, 0.040],
+				"penetration" : 100
+			},
+			"actions": ["AttackRange"],
+			"self_sfxes": [
+				{
+					"path"			: "sfx/Mob/AttackPsy.xml",
+					"source_node" 	: "lefthand",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		}
+	}
+}

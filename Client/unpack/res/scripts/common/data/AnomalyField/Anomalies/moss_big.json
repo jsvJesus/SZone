@@ -1,0 +1,52 @@
+{
+    "sfxes": {
+        "revealed": [
+            [
+                "sfx/anomaly_moss.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "warning": [
+            [
+                "sfx/anomaly_moss_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "hide": [
+            [
+                "sfx/anomaly_moss_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "persistent": [
+            [
+                "sfx/anomaly_moss_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "moss_big", 
+    "effects": [
+        {
+            "modifier": 0.0, 
+            "stacks": 3, 
+            "id": 703
+        }
+    ]
+}

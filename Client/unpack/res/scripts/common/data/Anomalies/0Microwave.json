@@ -1,0 +1,33 @@
+{
+	"difficultyMin" : 1,
+	"difficultyMax" : 10,
+	"lifetime": 0.91,
+	
+	"artifact_spawn_chance": 0.0,
+	"default_state": "main",
+	"states": {
+		"main": {
+			"radius": 6.0,
+			"damage": {
+				"type": "INFRARED",
+				"distribution":  "STORM",
+				"frequency": 1.5,
+				"value": 150.0,
+				"penetration": 100.0,
+				"body_zone": "HEAD"
+			},
+			"effects": [
+				["Anomaly_Microwave", 1],
+				["In_Anomaly", 1]
+			],
+			"invisible": 1,
+			"nudge_type": "NONE",
+			"nudge_interval": 3,
+			"particles": "particles/anomaly_microwave.xml",
+			"sfx_self": "sfx/anomaly_microwave.xml",
+			"sfx_self_interval": [3,6],
+			"sfx_target": "sfx/anomaly_microwave_person_implosion.xml",
+			"sound": "anomaly/fire"
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+    "sfxes": {
+        "revealed": [
+            [
+                "sfx/Anomalys/anomaly_fiery_whirlwind.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "warning": [], 
+        "hide": [
+            [
+                "sfx/Anomalys/anomaly_fiery_whirlwind_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "persistent": [
+            [
+                "sfx/Anomalys/anomaly_fiery_whirlwind_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "fiery_whirlwind", 
+    "effects": [
+        {
+            "modifier": 1.0, 
+            "stacks": 1, 
+            "id": 601
+        }
+    ]
+}

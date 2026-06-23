@@ -1,0 +1,779 @@
+{
+	"name, bylevel" : {
+		"default" : "Creatures.common.SILVAN1",
+		
+		"or_lv1_quest" : "Creatures.common.DOMOVOI_OR1",
+		"city_lvl1_dom" : "Creatures.common.DOMOVOI_CIT1",
+		"out_lvl1_dom" : "Creatures.common.DOMOVOI_OUT1",
+		"vezuv_lvl1_dom" : "Creatures.common.DOMOVOI_VEZ1",
+		"tungus_lvl1_dom" : "Creatures.common.DOMOVOI_TUN1",
+		"autcar_lvl1_dom" : "Creatures.common.DOMOVOI_AC1",
+		
+		"nz_lv5_yeti" : "Creatures.common.YETI_NZ1",
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : "Creatures.common.SILVAN_OUT1",
+		"out_lvl2" : "Creatures.common.SILVAN_OUT2",
+		
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : "Creatures.common.SILVAN_VEZ1",
+		"vezuv_lvl2" : "Creatures.common.SILVAN_VEZ2",
+		"vezuv_lvl3" : "Creatures.common.SILVAN_VEZ3",
+		"vezuv_elit" : "Creatures.common.SILVAN_VEZ_ELIT",
+		
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : "Creatures.common.SILVAN_TUN1",
+		"tungus_lvl2" : "Creatures.common.SILVAN_TUN2",
+		"tungus_lvl3" : "Creatures.common.SILVAN_TUN3",
+		"tungus_elit" : "Creatures.common.SILVAN_TUN_ELIT",
+		
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : "Creatures.common.SILVAN_AC1",
+		"autcar_lvl2" : "Creatures.common.SILVAN_AC2"
+	},
+	"model, bylevel" : {
+		"default" : "silvan/silvan_lod1.model",
+		"nz_lv5_yeti" : "silvan/silvan_home_lod1.model",
+		"[or_lv1_quest,city_lvl1_dom,out_lvl1_dom,vezuv_lvl1_dom,tungus_lvl1_dom,autcar_lvl1_dom]" : "silvan/silvan_home_lod1.model",
+		"[vezuv_elit,tungus_elit]" : "silvan/silvan_lod1.model"
+	},
+	"model_scale, bylevel" : {
+		"default" : 1,
+		
+		"[or_lv1_quest,city_lvl1_dom,out_lvl1_dom,vezuv_lvl1_dom,tungus_lvl1_dom,autcar_lvl1_dom]" : 0.5,
+		
+		"nz_lv5_yeti" : 0.6,
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 0.7,
+		"out_lvl2" : 0.9,
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 0.7,
+		"vezuv_lvl2" : 0.9,
+		"vezuv_lvl3" : 1.3,
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 0.7,
+		"tungus_lvl2" : 0.9,
+		"tungus_lvl3" : 1.4,
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 0.7,
+		"autcar_lvl2" : 0.9,
+		"[vezuv_elit,tungus_elit]" : 1.6
+		
+	},
+	"tints, bylevel" : {
+		"default" : [{}],
+		"nz_lv5_yeti" : [{"body":"snow"}],
+		"[vezuv_elit,tungus_elit]" : [{"body":"elit"}]
+	},
+	"counter_system_on_kill": "MOB_KILLED_SILVAN",
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 1,
+		
+		"[or_lv1_quest,city_lvl1_dom]" : 16,
+		"out_lvl1_dom" : 18,
+		"vezuv_lvl1_dom" : 20,
+		"tungus_lvl1_dom" : 22,
+		"autcar_lvl1_dom" : 24,
+		
+		"nz_lv5_yeti" : 135,
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 95,
+		"out_lvl2" : 135,
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 100,
+		"vezuv_lvl2" : 150,
+		"vezuv_lvl3" : 185,
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 105,
+		"tungus_lvl2" : 155,
+		"tungus_lvl3" : 185,
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 110,
+		"autcar_lvl2" : 162,
+		"[vezuv_elit,tungus_elit]" : 0
+	},
+	"health, bylevel" : {
+		"default" : 0.4,
+		
+		"[or_lv1_quest,city_lvl1_dom]" : 0.096,
+		"out_lvl1_dom" : 0.098,
+		"vezuv_lvl1_dom" : 0.1,
+		"tungus_lvl1_dom" : 0.102,
+		"autcar_lvl1_dom" : 0.104,
+		
+		"nz_lv5_yeti" : 0.54,
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 0.36,
+		"out_lvl2" : 0.54,
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 0.4,
+		"vezuv_lvl2" : 0.6,
+		"vezuv_lvl3" : 0.74,
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 0.42,
+		"tungus_lvl2" : 0.62,
+		"tungus_lvl3" : 0.74,
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 0.44,
+		"autcar_lvl2" : 0.64,
+		"vezuv_elit" : 33.2,
+		"tungus_elit" : 33.8
+	},	
+	"agro_range, bylevel" : { 
+		"default" : 30,
+		"[or_lv1_quest,city_lvl1_dom,out_lvl1_dom,vezuv_lvl1_dom,tungus_lvl1_dom,autcar_lvl1_dom]" : 3,
+		"nz_lv5_yeti" : 6,
+		"[vezuv_elit,tungus_elit]" : 30
+	},
+	"lose_agro_range, bylevel" : { 
+		"default" : 40,
+		"[or_lv1_quest,city_lvl1_dom,out_lvl1_dom,vezuv_lvl1_dom,tungus_lvl1_dom,autcar_lvl1_dom]" : 7,
+		"nz_lv5_yeti" : 14,
+		"[vezuv_elit,tungus_elit]" : 40
+	},
+	"global_cooldown" : 3,
+	"defence, bylevel" : {
+		"default" : {
+			"MELEE" : 700.0,
+			"BULLET" : 60.0,
+			"EXPLOSION" : 30.0,
+			"BIO" : 700.0
+		},
+		"1" : {
+			"BULLET" : 0.0
+		},
+		"2" : {
+			"BULLET" : 30.0
+		},
+		
+		
+		"[lvl3_all,lvl6_all]" : {
+			"BULLET" : 30.0
+		},
+		
+		
+		"[or_lv1_quest,city_lvl1_dom]" : {
+			"BULLET" : 0.0,
+			"EXPLOSION" : 0.0
+		},
+		"out_lvl1_dom" : {
+			"BULLET" : 2.0,
+			"EXPLOSION" : 1.0
+		},
+		"vezuv_lvl1_dom" : {
+			"BULLET" : 4.0,
+			"EXPLOSION" : 2.0
+		},
+		"tungus_lvl1_dom" : {
+			"BULLET" : 6.0,
+			"EXPLOSION" : 3.0
+		},
+		"autcar_lvl1_dom" : {
+			"BULLET" : 8.0,
+			"EXPLOSION" : 4.0
+		},
+		
+		"nz_lv5_yeti" : {
+			"BULLET" : 15.0,
+			"COLD" : 1000.0,
+			"EXPLOSION" : 6.0
+		},
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : {
+			"BULLET" : 10.0,
+			"EXPLOSION" : 20.0
+		},
+		"out_lvl2" : {
+			"BULLET" : 20.0,
+			"EXPLOSION" : 30.0
+		},
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : {
+			"BULLET" : 12.0,
+			"EXPLOSION" : 22.0
+		},
+		"vezuv_lvl2" : {
+			"BULLET" : 22.0,
+			"EXPLOSION" : 32.0
+		},
+		"vezuv_lvl3" : {
+			"BULLET" : 24.0,
+			"EXPLOSION" : 34.0
+		},
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : {
+			"BULLET" : 14.0,
+			"EXPLOSION" : 24.0
+		},
+		"tungus_lvl2" : {
+			"BULLET" : 24.0,
+			"EXPLOSION" : 34.0
+		},
+		"tungus_lvl3" : {
+			"BULLET" : 34.0,
+			"EXPLOSION" : 34.0
+		},
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : {
+			"BULLET" : 16.0,
+			"EXPLOSION" : 26.0
+		},
+		"autcar_lvl2" : {
+			"BULLET" : 26.0,
+			"EXPLOSION" : 36.0
+		},
+		"[vezuv_elit,tungus_elit]" : {
+			"BULLET" : 126.0,
+			"EXPLOSION" : 136.0
+		}
+	},
+	"bleed": {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/body_hit_low.xml",
+		"0.3": "sfx/Shoot/body_hit_med.xml",
+		"1": "sfx/Shoot/body_hit_max.xml"
+	},
+	"height, bylevel" : { 
+		"default" : 1.8,
+		
+		"[or_lv1_quest,city_lvl1_dom,out_lvl1_dom,vezuv_lvl1_dom,tungus_lvl1_dom,autcar_lvl1_dom]" : 0.8,
+		
+		"nz_lv5_yeti" : 0.9,
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 1.6,
+		"out_lvl2" : 1.9,
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 1.6,
+		"vezuv_lvl2" : 1.9,
+		"vezuv_lvl3" : 2.4,
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 1.6,
+		"tungus_lvl2" : 1.9,
+		"[tungus_lvl3,vezuv_elit,tungus_elit]" : 2.4,
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 1.6,
+		"autcar_lvl2" : 1.9
+	},	
+	"width" : 0.5,
+	"decompose_time" : [10,30],
+	"loot, bylevel" : {
+		"default" : {},
+		
+		"or_lv1_quest" : {
+			"810154" : 1.0
+		},
+		"city_lvl1_dom" : {
+			"810155" : 1.0,
+			"835" : 0.4			
+		},
+		"out_lvl1_dom" : {
+			"810155" : 1.0,
+			"835" : 0.4			
+		},
+		"vezuv_lvl1_dom" : {
+			"810155" : 0.4
+		},
+		"tungus_lvl1_dom" : {
+			"810155" : 0.4
+		},
+		"autcar_lvl1_dom" : {
+			"810155" : 0.4
+		},
+		
+		"nz_lv5_yeti" : {
+			"410183" : 0.025,
+			"820" : 0.25,
+			"708" : 0.55,			
+			"810153" : 0.25
+		},
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : {
+			"810155" : 0.03
+		},
+		"out_lvl2" : {
+			"810155" : 0.03
+		},
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : {
+			"810155" : 0.03
+		},
+		"vezuv_lvl2" : {
+			"810155" : 0.03
+		},
+		"vezuv_lvl3" : {
+			"810155" : 0.03
+		},
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : {
+			"810155" : 0.03
+		},
+		"tungus_lvl2" : {
+			"810155" : 0.03
+		},
+		"tungus_lvl3" : {
+			"810155" : 0.03
+		},
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : {
+			"810155" : 0.03
+		},
+		"autcar_lvl2" : {
+			"810155" : 0.03
+		},
+		
+		"[vezuv_elit,tungus_elit]"  : {
+			"410145" : 0.05,
+			"410005" : 0.01
+		}
+	},
+	"foot_nodes" : ["Bip01 L Toe0", "Bip01 R Toe0"],
+	"footsteps_sound, bylevel" : {
+		"default" : "mob/big_silvan/footsteps",
+		"or_lv1_quest" : "mob/silvan/footsteps",
+		"nz_lv5_yeti" : "mob/silvan/footsteps"
+	},	
+	"melee_distance, bylevel" : {
+		"default" : 1.56,
+		
+		"[or_lv1_quest,city_lvl1_dom,out_lvl1_dom,vezuv_lvl1_dom,tungus_lvl1_dom,autcar_lvl1_dom]" : 1.85,
+		
+		"nz_lv5_yeti" : 1.85,
+		
+		"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : 2.09,
+		"out_lvl2" : 2.2,
+		"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : 2.09,
+		"vezuv_lvl2" : 2.2,
+		"[vezuv_lvl3,vezuv_elit,tungus_elit]" : 2.5,
+		"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : 2.09,
+		"tungus_lvl2" : 2.2,
+		"tungus_lvl3" : 2.5,
+		"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : 2.09,
+		"autcar_lvl2" : 2.2
+	},
+	"melee_height" : 3.5,	
+	"actions, bylevel" : {
+		"default" : {
+			"Idle" : {				
+				"sounds" : ["mob/big_silvan/idle"]
+			},
+			"Idle1" : {				
+				"model_actions" : ["Idle1"],
+				"sounds" : ["mob/big_silvan/idle"]
+			},
+			"Hide" : {				
+				"sounds" : ["mob/big_silvan/idle"]
+			},
+			"Eat" : {				
+				"model_actions" : ["Eat"]
+			},
+			"AttackPaws" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/big_silvan/attack"]
+			},
+			"AttackTooth" : {
+				"model_actions" : ["AttackTooth"],
+				"sounds" : ["mob/big_silvan/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/big_silvan/death"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			},				
+			"Pain" : {
+				"model_actions" : ["Pain"],
+				"sounds" : ["mob/big_silvan/pain"]
+			},				
+			"Attacking" : {
+				"sounds" : ["mob/big_silvan/angry"]
+			}
+		},
+		"[or_lv1_quest,city_lvl1_dom,out_lvl1_dom,vezuv_lvl1_dom,tungus_lvl1_dom,autcar_lvl1_dom]" : {
+			"Idle" : {				
+				"sounds" : ["mob/silvan/idle"]
+			},	
+			"Idle1" : {				
+				"model_actions" : ["Idle1"],
+				"sounds" : ["mob/silvan/idle"]
+			},
+			"Eat" : {				
+				"model_actions" : ["Eat"],
+				"sounds" : ["mob/silvan/idle"]
+			},
+			"AttackPaws" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/silvan/attack"]
+			},
+			"AttackTooth" : {
+				"model_actions" : ["AttackTooth"],
+				"sounds" : ["mob/silvan/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/silvan/death"]
+			},				
+			"Pain" : {
+				"model_actions" : ["Pain"],
+				"sounds" : ["mob/silvan/pain"]
+			},				
+			"Attacking" : {
+				"sounds" : ["mob/silvan/angry"]
+			}
+		}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state, bylevel" : {
+		"default" : "walk_around",
+		"[out_lvl1_agr3,vezuv_lvl1_agr3,autcar_lvl1_agr3]" : "ambush",
+		"[out_lvl1_agr6,vezuv_lvl1_agr6,autcar_lvl1_agr6]" : "ambush",
+		"[out_lvl1_agr9,vezuv_lvl1_agr9,autcar_lvl1_agr9,vezuv_elit,tungus_elit]" : "ambush"
+	},
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around" : {
+			"persistent_actions" : ["Idle"],			
+			"movement_types" : ["walk_around"],
+			"conditions, bylevel" : {
+				"default" : [
+					{
+						"to_state" : "attacking",
+						"predicate" : ["targets_count", "more", 0]
+					}
+				],
+				"nz_lv5_yeti" : [
+					{
+						"to_state" : "attacking_ranged",
+						"predicate" : 
+							["and",[
+								["targets_count", "more", "0"],
+								["health_percent", "more", "85"]
+							]]
+					},
+					{
+						"to_state" : "attacking",
+						"predicate" : 
+							["and",[
+								["targets_count", "more", "0"],
+								["health_percent", "less", "85"]
+							]]
+					}
+				]
+			},
+			"speed" : {
+				"walk_around" : [1.6, 3]
+			}
+		},
+		"ambush" : {
+			"persistent_actions" : ["Hide"],			
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			],
+			"agro_range, bylevel" : {
+				"default" : 5.0,
+				"[out_lvl1_agr3,vezuv_lvl1_agr3,autcar_lvl1_agr3]" : 3.0,
+				"[out_lvl1_agr6,vezuv_lvl1_agr6,autcar_lvl1_agr6]" : 6.0,
+				"[out_lvl1_agr9,vezuv_lvl1_agr9,autcar_lvl1_agr9,vezuv_elit,tungus_elit]" : 9.0
+			}
+		},
+		"attacking, parent=default_attacking" : {
+			"skills, bylevel" : {
+				"default" : {
+						"SILVAN_MELEE" : 1,
+						"SILVAN_MELEE_2" : 1
+				},
+				"nz_lv5_yeti" : {
+						"SILVAN_MELEE" : 1,
+						"SILVAN_MELEE_2" : 1,
+						"YETI_RANGE" : 1
+						
+				},
+				"or_lv1_quest" : {
+						"DOMOVOI_MELEE" : 2,
+						"DOMOVOI_MELEE_2" : 1,
+						"DOMOVOI_MELEE_MISS": 2
+				},
+				"[city_lvl1_dom,out_lvl1_dom,vezuv_lvl1_dom,tungus_lvl1_dom,autcar_lvl1_dom]" : {
+						"DOMOVOI_MELEE" : 3,
+						"DOMOVOI_MELEE_2" : 2,
+						"DOMOVOI_MELEE_MISS": 1
+				}
+			},
+			"persistent_actions" : ["Attacking"],
+			"movement_types" : ["follow_target", "walk_around"],
+			"speed, bylevel" : {
+				"default" : {
+					"follow_target" : 6.0,
+					"walk_around" : [1.8, 3]
+				},	
+				"[vezuv_elit,tungus_elit]" : {
+					"follow_target" : 10.0,
+					"walk_around" : [1.8, 3]
+				}
+			}
+		},
+		"attacking_ranged" : {
+			"speed" : 2,
+			"movement_types" : ["follow_target", "walk_around"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : 
+						["and",[
+							["targets_count", "more", "0"],
+							["health_percent", "less", "85"]
+						]]
+				},
+				{
+					"to_state" : "before_recover",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "less", "100"]
+						]]
+				},
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["targets_count", "equal", 0]
+				}
+			],
+			"skills" : {
+				"YETI_RANGE" : 1
+				},
+			"movement_types" : ["follow_target", "walk_around"],	
+			"speed" : {
+				"follow_target" : 5.5,
+				"walk_around" : [1.5, 2.5]
+			}	
+		},
+		"dead" : {		
+			"persistent_actions" : ["Dead"],
+			"entering_actions" : {"actions" : ["Die"], "time" : 1.6},
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["is_dead", "equal", 0]
+				}
+			]
+		},
+		"before_recover, parent=default_before_recover" : {
+			"speed" : {
+				"walk_around" : [1.6, 3]
+			}
+		},
+		"recover, parent=default_recover" : {			
+			"persistent_actions" : ["Eat"]
+		}
+	},
+	"skills" : {
+		"SILVAN_MELEE": {
+			"type": "MELEE",
+			"cooldown": 1.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["HEAD", "LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.01, 0.02],
+					"penetration" : 100
+				},
+				"1": {
+					"value" : [0.083, 0.125]
+				},
+				"2": {
+					"value" : [0.128, 0.192]
+				},
+				"3": {
+					"value" : [0.179, 0.268]
+				},
+		
+				"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : {
+					"value" : [0.083, 0.125]
+				},
+				"out_lvl2" : {
+					"value" : [0.128, 0.192]
+				},
+				
+				"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : {
+					"value" : [0.083, 0.125]
+				},
+				"vezuv_lvl2" : {
+					"value" : [0.128, 0.192]
+				},
+				"vezuv_lvl3" : {
+					"value" : [0.179, 0.268]
+				},
+				
+				"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : {
+					"value" : [0.083, 0.125]
+				},
+				"tungus_lvl2" : {
+					"value" : [0.128, 0.192]
+				},
+				"tungus_lvl3" : {
+					"value" : [0.179, 0.268]
+				},
+				
+				"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : {
+					"value" : [0.083, 0.125]
+				},
+				"autcar_lvl2" : {
+					"value" : [0.128, 0.192]
+				},
+				
+				"[vezuv_elit,tungus_elit]" : {
+					"value" : [0.53, 0.53]
+				}
+			},			 
+			"actions": ["AttackTooth"]
+		},
+		"SILVAN_MELEE_2": {
+			"type": "MELEE",
+			"cooldown": 1.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["HEAD", "LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.01, 0.02],
+					"penetration" : 100
+				},
+				"1": {
+					"value" : [0.083, 0.125]
+				},
+				"2": {
+					"value" : [0.128, 0.192]
+				},
+				"3": {
+					"value" : [0.179, 0.268]
+				},
+		
+				"[out_lvl1,out_lvl1_agr3,out_lvl1_agr6,out_lvl1_agr9]" : {
+					"value" : [0.083, 0.125]
+				},
+				"out_lvl2" : {
+					"value" : [0.128, 0.192]
+				},
+				
+				"[vezuv_lvl1,vezuv_lvl1_agr3,vezuv_lvl1_agr6,vezuv_lvl1_agr9]" : {
+					"value" : [0.083, 0.125]
+				},
+				"vezuv_lvl2" : {
+					"value" : [0.128, 0.192]
+				},
+				"vezuv_lvl3" : {
+					"value" : [0.179, 0.268]
+				},
+				
+				"[tungus_lvl1,tungus_lvl1_agr3,tungus_lvl1_agr6,tungus_lvl1_agr9]" : {
+					"value" : [0.083, 0.125]
+				},
+				"tungus_lvl2" : {
+					"value" : [0.128, 0.192]
+				},
+				"[tungus_lvl3]" : {
+					"value" : [0.179, 0.268]
+				},
+				
+				"[autcar_lvl1,autcar_lvl1_agr3,autcar_lvl1_agr6,autcar_lvl1_agr9]" : {
+					"value" : [0.083, 0.125]
+				},
+				"autcar_lvl2" : {
+					"value" : [0.128, 0.192]
+				},
+				
+				"[vezuv_elit,tungus_elit]" : {
+					"value" : [0.53, 0.53]
+				}
+			},			 
+			"actions": ["AttackPaws"]
+		},
+		"DOMOVOI_MELEE": {
+			"type": "MELEE",
+			"cooldown": 2.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["LEG_UPPER", "TORSO", "ARM", "LEG_LOWER"],
+					"type" : "MELEE",
+					"value" : [0.01, 0.02],
+					"penetration" : 100
+				},
+			
+				"or_lv1_quest": {
+					"value" : [0.002, 0.018]
+				},
+				"nz_lv5_yeti": {
+					"value" : [0.58, 0.92]
+				},
+				
+				"city_lvl1_dom" : {
+					"value" : [0.012, 0.024]
+				},
+				"out_lvl1_dom" : {
+					"value" : [0.014, 0.024]
+				},
+				"vezuv_lvl1_dom" : {
+					"value" : [0.016, 0.024]
+				},
+				"tungus_lvl1_dom" : {
+					"value" : [0.018, 0.024]
+				},
+				"autcar_lvl1_dom" : {
+					"value" : [0.02, 0.024]
+				}
+			},			 
+			"actions": ["AttackTooth"]
+		},
+		"DOMOVOI_MELEE_2": {
+			"type": "MELEE",
+			"cooldown": 2.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["LEG_UPPER", "TORSO", "ARM", "LEG_LOWER"],
+					"type" : "MELEE",
+					"value" : [0.01, 0.02],
+					"penetration" : 100
+				},
+				
+				"or_lv1_quest": {
+					"value" : [0.01, 0.018]
+				},
+				"nz_lv5_yeti": {
+					"value" : [0.58, 0.92]
+				},
+				
+				"city_lvl1_dom" : {
+					"value" : [0.012, 0.024]
+				},
+				"out_lvl1_dom" : {
+					"value" : [0.014, 0.024]
+				},
+				"vezuv_lvl1_dom" : {
+					"value" : [0.016, 0.024]
+				},
+				"tungus_lvl1_dom" : {
+					"value" : [0.018, 0.024]
+				},
+				"autcar_lvl1_dom" : {
+					"value" : [0.02, 0.024]
+				}
+			},			 
+			"actions": ["AttackPaws"]
+		},
+		
+		"DOMOVOI_MELEE_MISS": {
+			"type": "MELEE",
+			"cooldown": 2.5,
+			"aoe_radius": 0,
+			"damage": {
+				"body_zones": ["TORSO"],
+				"type" : "MELEE",
+				"value" : [0.0, 0.0],
+				"penetration" : 10
+			},			 
+			"actions": ["AttackPaws"]
+		},
+		"YETI_RANGE": {
+			"type": "THROW",
+			"cast_range": 20.0,
+			"cooldown": 2.5,
+			"aoe_radius": 4,
+			"throwing_type"	: "YETI",
+			"throw_start_position"	: [0, 1.5, 0],
+			"explode_delay"	: 3,
+			"damage": {
+					"type" : "MELEE",
+					"value" : [0.005, 0.013],
+					"penetration" : 10
+			},			
+			"effects": [["Cold", 5]], 
+			"actions": ["AttackPaws"]
+		}
+	}
+}

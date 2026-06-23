@@ -1,0 +1,28 @@
+{
+    "sfxes": {
+        "revealed": [
+            [
+                "sfx/Anomalys/anomaly_mine.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "warning": [], 
+        "hide": [], 
+        "persistent": [
+            [
+                "sfx/Anomalys/anomaly_mine_off.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "mine", 
+    "effects": []
+}

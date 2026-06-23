@@ -1,0 +1,51 @@
+{
+    "sfxes": {
+        "revealed": [
+            [
+                "sfx/anomaly_snowfield_hit.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "warning": [
+            [
+                "sfx/anomaly_snowfield.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "hide": [
+            [
+                "sfx/anomaly_snowfield.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "persistent": [
+            [
+                "sfx/anomaly_snowfield.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "Snow_field_01", 
+    "effects": [
+        {
+            "stacks": 30,
+            "id": 274
+        }
+    ]
+}

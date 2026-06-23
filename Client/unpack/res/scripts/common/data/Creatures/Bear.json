@@ -1,0 +1,379 @@
+{
+	"name, bylevel" : {
+		"default" : "Creatures.common.BEAR1",
+		
+		"out_lvl1" : "Creatures.common.BEAR_OUT1",
+		"out_lvl2" : "Creatures.common.BEAR_OUT2",
+		"out_elit" : "Creatures.common.BEAR_OUT_ELIT",
+		"vezuv_lvl1" : "Creatures.common.BEAR_VEZUV1",
+		"vezuv_lvl2" : "Creatures.common.BEAR_VEZUV2",
+		"vezuv_elit" : "Creatures.common.BEAR_VEZUV_ELIT",
+		"tungus_lvl1" : "Creatures.common.BEAR_TUNGUS1",
+		"tungus_lvl2" : "Creatures.common.BEAR_TUNGUS2",
+		"autcar_lvl1" : "Creatures.common.BEAR_AUTCAR1",
+		"autcar_lvl2" : "Creatures.common.BEAR_AUTCAR2",
+		
+		"out_lvl1_red" : "Creatures.common.BEAR_OUT1_RED",
+		"out_lvl2_red" : "Creatures.common.BEAR_OUT2_RED",
+		"vezuv_lvl1_red" : "Creatures.common.BEAR_VEZUV1_RED",
+		"vezuv_lvl2_red" : "Creatures.common.BEAR_VEZUV2_RED",
+		"tungus_lvl1_red" : "Creatures.common.BEAR_TUNGUS1_RED",
+		"tungus_lvl2_red" : "Creatures.common.BEAR_TUNGUS2_RED",
+		"autcar_lvl1_red" : "Creatures.common.BEAR_AUTCAR1_RED",
+		"autcar_lvl2_red" : "Creatures.common.BEAR_AUTCAR2_RED",
+		
+
+		"novaya_lvl1_white" : "Creatures.common.BEAR_NOVAYA1_WHITE",
+		"novaya_lvl2_white" : "Creatures.common.BEAR_NOVAYA2_WHITE",
+		"novaya_elit_white" : "Creatures.common.BEAR_NOVAYA_ELIT_WHITE"
+	},	
+	"model, bylevel" : {
+		"default" : "bear-mutant/bear-mutant.model",
+		"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : "bear-mutant/bear-mutant_red.model",
+		"[novaya_lvl1_white, novaya_lvl2_white, novaya_elit_white]" : "bear-mutant/bear-mutant_snow.model"
+
+	},	
+	"model_scale, bylevel" : {
+		"default" : 1,
+		"[out_lvl1, out_lvl2, vezuv_lvl1, vezuv_lvl2, tungus_lvl1, tungus_lvl2, autcar_lvl1, autcar_lvl2]"  :1,
+		"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : 1.3,
+		"[novaya_lvl1_white, novaya_lvl2_white]" : 1.6,
+		"[out_elit, vezuv_elit, novaya_elit_white]"  : 2
+	},
+	"tints, bylevel" : {
+		"default" : [{}],
+		"novaya_elit_white" : [{"bear_texture_skinned":"elit"}],
+		"[out_elit, vezuv_elit]" : [{"body":"elit"}]
+	},
+	"counter_system_on_kill": "MOB_KILLED_BEAR",
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 1,
+		"[out_lvl1, out_lvl2, vezuv_lvl1, vezuv_lvl2, tungus_lvl1, tungus_lvl2, autcar_lvl1, autcar_lvl2]"  :500,
+		"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : 1250,
+		"[out_elit, vezuv_elit, novaya_elit_white]"  : 0,		
+		"[novaya_lvl1_white, novaya_lvl2_white]" : 3000
+	},
+	"health, bylevel" : {
+		"default" : 1.8,
+		"[out_lvl1, out_lvl2, vezuv_lvl1, vezuv_lvl2, tungus_lvl1, tungus_lvl2, autcar_lvl1, autcar_lvl2]"  :2,
+		"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : 5,
+		"[novaya_lvl1_white, novaya_lvl2_white]" : 12,
+		
+		"out_elit" : 45,
+		"vezuv_elit" : 45,
+		"novaya_elit_white" : 45
+	},	
+	"agro_range" : 40,
+	"lose_agro_range" : 50,
+	"global_cooldown" : 3,
+	"defence, bylevel" : {
+		"default" : {
+			"MELEE" : 700.0,
+			"EXPLOSION" : 300.0,
+			"BIO" : 700.0
+		},
+		"[out_lvl1, out_lvl2, vezuv_lvl1, vezuv_lvl2, tungus_lvl1, tungus_lvl2, autcar_lvl1, autcar_lvl2]" : {
+			"BULLET" : 150.0
+		},
+		"out_elit" : {
+			"BULLET" : 230.0
+		},
+		"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : {
+			"BULLET" : 300.0
+		},
+		"vezuv_elit" : {
+			"BULLET" : 370.0
+		},
+		"[novaya_lvl1_white, novaya_lvl2_white]" : {
+			"BULLET" : 450.0,
+			"COLD" : 1000.0
+		},
+		"novaya_elit_white" : {
+			"BULLET" : 550.0,
+			"COLD" : 1000.0
+		}		
+	},
+	"body_zones_multiplier, bylevel" : {
+		"default" : {
+			"HEAD": 2,
+			"TORSO": 1,
+			"GROIN": 1.5,
+			"LEG_LOWER": 0.5
+		},
+		"[out_lvl1, out_lvl2, vezuv_lvl1, vezuv_lvl2, tungus_lvl1, tungus_lvl2, autcar_lvl1, autcar_lvl2]" : {
+			"HEAD": 2,
+			"TORSO": 1,
+			"GROIN": 1.5,
+			"LEG_LOWER": 0.5
+		},
+		"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : {
+			"HEAD": 1.8,
+			"TORSO": 1,
+			"GROIN": 1.5,
+			"LEG_LOWER": 0.5
+		},
+		"[novaya_lvl1_white, novaya_lvl2_white, out_elit, vezuv_elit, novaya_elit_white]" : {
+			"HEAD": 1.2,
+			"TORSO": 1,
+			"GROIN": 1.5,
+			"LEG_LOWER": 0.5
+		}
+	},
+	"bleed": {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/body_hit_low.xml",
+		"0.3": "sfx/Shoot/body_hit_med.xml",
+		"1": "sfx/Shoot/body_hit_max.xml"
+	},
+	"height, bylevel" : {
+		"default" : 1.5,
+		"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : 2,
+		"[novaya_lvl1_white, novaya_lvl2_white, out_elit, vezuv_elit, novaya_elit_white]" : 3
+	},	
+	"width" : 1.2,
+	"decompose_time" : [10,20],
+	"loot, bylevel" : {
+		"default" : {},
+		"[out_lvl1, out_lvl2, vezuv_lvl1, vezuv_lvl2, tungus_lvl1, tungus_lvl2, autcar_lvl1, autcar_lvl2]" : {
+			"410108" : 0.55,
+			"410109" : 0.45,
+			"410110" : 0.35
+		},
+		"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : {
+			"410146" : 0.7,
+			"410109" : 0.55,
+			"410110" : 0.45
+		},
+		"[novaya_lvl1_white, novaya_lvl2_white]" : {
+			"410147" : 0.95,
+			"410109" : 0.55,
+			"410110" : 0.45
+		},
+		"[out_elit, vezuv_elit, novaya_elit_white]"  : {
+			"410145" : 0.05
+		}
+		
+	},
+	"foot_nodes" : ["Bip01 L Toe0", "Bip01 R Toe0"],
+	"footsteps_sound" : "mob/bear/footsteps",
+	"melee_distance, bylevel" : {
+		"default" : 3,
+		"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : 3.7,
+		"[novaya_lvl1_white, novaya_lvl2_white, out_elit, vezuv_elit, novaya_elit_white]" : 4.5
+	},
+	"melee_height" : 2.5,	
+	"actions, bylevel" : {
+		"default" : {
+			"Idle" : {				
+				"sounds" : ["mob/bear/idle"]
+			},
+			"Idle1" : {				
+				"model_actions" : ["Idle1"],
+				"sounds" : ["mob/bear/idle"]
+			},
+			"AttackMelee_JAWS" : {
+				"model_actions" : ["AttackTooth"],
+				"sounds" : ["mob/bear/attack"]
+			},
+			"AttackMeleeAoe_ROAR" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/bear/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/bear/death"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			},
+			"Eat" : {
+				"model_actions" : ["Eat"]	
+			},
+			"Pain" : {
+				"model_actions" : ["Pain"],
+				"sounds" : ["mob/bear/pain"]
+			},
+			"Attacking" : {
+				"sounds" : ["mob/bear/angry"]
+			}			
+		}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state" : "walk_around",
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around" : {
+			"entering_actions" : {"actions" : ["Idle1"], "time" : 0.9},
+			"persistent_actions" : ["Idle"],
+			"movement_types" : ["walk_around"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			],
+			"speed, bylevel" : {
+				"default" : {
+					"walk_around" : [1.5, 5.7]
+				},
+				"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : {
+					"walk_around" : [2, 6.7]
+				},
+				"[novaya_lvl1_white, novaya_lvl2_white, out_elit, vezuv_elit, novaya_elit_white]" : {
+					"walk_around" : [2.5, 7.7]
+				}
+			}
+		},
+		"hide_ambush" : {
+			"entering_actions" : {"actions" : ["Idle1"], "time" : 0.9},
+			"persistent_actions" : ["Idle"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			],
+			"agro_range, bylevel" : {
+				"default" : 20
+			}
+		},
+		"attacking" : {
+			"skills" : {
+				"BEAR_MELEE" : 4, 
+				"BEAR_MELEE_AOE" : 1,
+				"BEAR_MELEE_WEAK" : 1
+			},
+			"movement_types" : ["follow_target", "walk_around"],
+			"persistent_actions" : ["Attacking"],
+			"conditions" : [
+				{
+					"to_state" : "before_recover",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "less", "100"]
+						]]
+				},
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["targets_count", "equal", 0]
+				}
+			],
+			"speed, bylevel" : {
+				"default" : {
+					"follow_target" : 8,
+					"walk_around" : [1.5, 5.7]
+				},
+				"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : {
+					"follow_target" : 9,
+					"walk_around" : [2, 6.7]
+				},
+				"[novaya_lvl1_white, novaya_lvl2_white, out_elit, vezuv_elit, novaya_elit_white]" : {
+					"follow_target" : 10,
+					"walk_around" : [2.5, 7.7]
+				}
+			}	
+		},
+		"dead" : {			
+			"persistent_actions" : ["Dead"],
+			"entering_actions" : {"actions" : ["Die"], "time" : 1},			
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["is_dead", "equal", 0]
+				}
+			]
+		},
+		"before_recover" : {
+			"entering_actions" : {"actions" : ["Idle1"], "time" : 0.9},
+			"persistent_actions" : ["Idle"],
+			"movement_types" : ["walk_around"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			],
+			"change_state_timer" : [10, "recover"],
+			"speed, bylevel" : {
+				"default" : {
+					"walk_around" : [1.5, 5.7]
+				},
+				"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]" : {
+					"walk_around" : [2, 6.7]
+				},
+				"[novaya_lvl1_white, novaya_lvl2_white, out_elit, vezuv_elit, novaya_elit_white]" : {
+					"walk_around" : [2.5, 7.7]
+				}
+			}
+		},
+		"recover, parent=default_recover" : {			
+			"persistent_actions" : ["Eat"]
+		}
+	},
+	"skills" : {
+		"BEAR_MELEE": {
+			"type": "MELEE",
+			"cooldown": 1.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO", "LEG_UPPER", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.2, 0.26],
+					"penetration" : 100
+				},
+				"[out_lvl1, out_lvl2, vezuv_lvl1, vezuv_lvl2, tungus_lvl1, tungus_lvl2, autcar_lvl1, autcar_lvl2]": {
+					"value" : [0.124, 0.286]
+				},
+				"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]": {
+					"value" : [0.198, 0.396]
+				},
+				"[novaya_lvl1_white, novaya_lvl2_white, out_elit, vezuv_elit, novaya_elit_white]": {
+					"value" : [0.472, 0.808]
+				}
+			},			
+			"effects": [["Bleed", 1]], 
+			"actions": ["AttackMelee_JAWS"]
+		},
+		"BEAR_MELEE_WEAK": {
+			"type": "MELEE",
+			"cooldown": 1.5,
+			"aoe_radius": 0,
+			"damage": {
+				"body_zones": ["TORSO"],
+				"type" : "MELEE",
+				"value" : [0.02, 0.1],
+				"penetration" : 100
+			},
+			"actions": ["AttackMelee_JAWS"]
+		},
+		"BEAR_MELEE_AOE": {
+			"type": "MELEE",
+			"cooldown": 5.0,
+			"aoe_radius": 5,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO"],
+					"type" : "EXPLOSION",
+					"value" : [0.010, 0.020],
+					"penetration" : 100
+				},
+				"[out_lvl1, out_lvl2, vezuv_lvl1, vezuv_lvl2, tungus_lvl1, tungus_lvl2, autcar_lvl1, autcar_lvl2]": {
+					"value" : [0.020, 0.040]
+				},
+				"[out_lvl1_red, out_lvl2_red, vezuv_lvl1_red, vezuv_lvl2_red, tungus_lvl1_red, tungus_lvl2_red, autcar_lvl1_red, autcar_lvl2_red]": {
+					"value" : [0.020, 0.080]
+				},
+				"[novaya_lvl1_white, novaya_lvl2_white, out_elit, vezuv_elit, novaya_elit_white]": {
+					"value" : [0.060, 0.12]
+				}
+			},			
+			"effects": [["Stun", 2]], 
+			"actions": ["AttackMeleeAoe_ROAR"]
+		}
+	}
+}

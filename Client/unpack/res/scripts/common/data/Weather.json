@@ -1,0 +1,239 @@
+{
+	"Weather":
+	 {
+		"spaces/so_origins":
+		{
+			"default": "StartGame"
+		},
+		
+		"spaces/market":
+		{
+			"default": "Market"
+		},
+		
+		"spaces/anomaly":
+		{
+			"default": "personages_select"
+		},
+		
+		"spaces/cave_test_2":
+		{
+			"default": "Cloudy3"
+		},
+		
+		"spaces/pvp_swamp":
+		{
+			"default": "Pvp_swamp_fog"
+		},
+		
+		"spaces/swamp":
+		{
+			"default": "Stormy",
+			"periods":
+			{
+				"weather_outlands_morning_fog":		"Fog",
+				"weather_outlands_stormy_1":		"Stormy",
+				"weather_outlands_evening":	        "Stormy",
+				"weather_outlands_stormy_2":		"PeaSoup"
+			}
+		},		
+		
+		"spaces/swamp_dungeon":
+		{
+			"default": "sunset"
+		},
+		
+		"spaces/gray_world":
+		{
+			"default": "gray_world"
+		},
+		
+		"spaces/cave_paukan":
+		{
+			"default": "underground"
+		},
+		
+		"spaces/lubech_uderground":
+		{
+			"default": "underground"
+		},
+		
+		"spaces/inst_lab":
+		{
+			"default": "underground"
+		},
+				
+		"spaces/city_lubech":
+		{
+            "default": "PeaSoup",
+	            "periods":
+        	    {
+	                "weather_morning":		"Fog",
+	                "weather_day":			"Clear",
+	                "weather_evening":		"Fog",
+	                "weather_night":		"PeaSoup"
+	            }
+        },
+		"spaces/city_lubech_new":
+		{
+            "default": "PeaSoup",
+	            "periods":
+        	    {
+	                "weather_morning":		"Fog",
+	                "weather_day":			"Clear",
+	                "weather_evening":		"Fog",
+	                "weather_night":		"PeaSoup"
+	            }
+        },
+		"spaces/city_lubech_noob":
+		{
+            "default": "PeaSoup",
+	            "periods":
+        	    {
+	                "weather_morning":		"Fog",
+	                "weather_day":			"Clear",
+	                "weather_evening":		"Fog",
+	                "weather_night":		"PeaSoup"
+	            }
+        },
+		"spaces/outlands":
+		{
+            "default": "Stormy",
+			"periods":{
+				"weather_outlands_morning_fog":		"Fog",
+				"weather_outlands_stormy_1":		"Clear",
+				"weather_outlands_rainy_random":	["Rainy","Clear","Hail"],
+				"weather_outlands_stormy_2":		"Clear"
+			}
+        },
+        "spaces/road_lubech":
+		{
+            "default": "Fog_roadlubech"
+        },
+		"spaces/vesuvius":
+		{
+			"default": "vesuvius"
+		},
+		"spaces/volcano":
+	   	{
+			"default": "DustStorm"
+		},
+		"spaces/outlands_airport":
+		{
+			"default": "Stormy",
+			"periods":
+			{
+				"weather_clear":			"Clear",
+				"weather_random":			["Stormy", "Clear"]
+			}
+		},
+	    "spaces/outlands_caravan":
+		  {
+            "default": "Stormy",
+            "periods":{
+                "weather_outlands_stormy_1":		"Stormy",
+                "weather_random": ["Rainy","Stormy"]
+            }
+        },
+
+	    "spaces/novaya":
+		{
+			"default": "Blizzard",
+			"periods":
+			{
+				"weather_morning":			"Fog",
+				"weather_day":				"Snow",
+				"weather_evening":			"Blizzard",
+				"weather_night_random":		["Snow", "Blizzard"]
+			}
+		},
+		
+	    "spaces/tunguska":
+		{
+            "default": "Clear",
+            "periods":{
+                "weather_clear": "Clear",
+                "weather_random": ["Rainy","Clear"]
+            }
+        },
+
+	    "spaces/steppe":
+	   	{
+			"default": "Steppe"			
+		},
+	    "spaces/steppe_dust":
+		{
+			 "default": "Steppe_dustwind"
+		},		
+		"space/pvp_steppe_d2":
+		{
+			"default": "Clear"
+		},
+		"spaces/zoo":
+		{
+		    "default": "test_loc"
+		},
+		"spaces/zoo2":
+		{
+		    "default": "test_loc"
+		},
+		"spaces/test_fps":
+		{
+		    "default": "test_loc"
+		},
+		"spaces/main":
+		{
+		    "default": "Clear"
+		},
+		"space/personages_select":
+		{
+			"default": "personages_select"
+		}
+	 },
+	
+	"ZoneWeather":
+	 {
+	    
+		"zone_fog_strong":
+		{
+		    "default": "fog_strong",
+			"periods":
+            {
+			    
+			}
+		},
+		"zone_fog_middle":
+		{
+		    "default": "fog_middle",
+			"periods":
+            {
+			    
+			}
+		},
+		"zone_fog_weak":
+		{
+		    "default": "fog_weak",
+			"periods":
+            {
+			    
+			}
+		},
+		"zone_1":
+		{
+			"default": "Clear",
+			"periods":
+			{
+				"clear_time":
+				{
+					"0":"Rainy"
+				},
+				"cloudy_time":
+				{
+					"0":"Rainy",
+					"1":["Rainy","Clear"]
+				}
+			}
+		}
+	 }
+
+}

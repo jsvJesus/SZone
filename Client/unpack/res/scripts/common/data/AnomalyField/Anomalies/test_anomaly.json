@@ -1,0 +1,37 @@
+{
+    "sfxes": {
+        "revealed": [
+            [
+                "sfx/anomaly_electro.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "warning": [
+            [
+                "sfx/anomaly_microwave.xml", 
+                [
+                    0, 
+                    0, 
+                    0
+                ]
+            ]
+        ], 
+        "hide": [], 
+        "persistent": [
+            [
+                "sfx/anomaly_mushroom_off.xml", 
+                [
+                    0, 
+                    2, 
+                    0
+                ]
+            ]
+        ]
+    }, 
+    "name": "TestAnomaly", 
+    "effects": []
+}

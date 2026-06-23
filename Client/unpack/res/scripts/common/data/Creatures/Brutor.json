@@ -1,0 +1,569 @@
+{
+	"name, bylevel" : {
+		"default" : "Creatures.common.BRUTOR1",
+		
+		"out_lvl1_cave" : "Creatures.common.BRUTOR_OUT1_GNOM",
+		"out_lvl2_cave" : "Creatures.common.BRUTOR_OUT2_GNOM",
+		"vezuv_lvl1_cave" : "Creatures.common.BRUTOR_VEZUV1_GNOM",
+		"vezuv_lvl2_cave" : "Creatures.common.BRUTOR_VEZUV2_GNOM",
+		"tungus_lvl1_cave" : "Creatures.common.BRUTOR_TUNGUS1_GNOM",
+		"tungus_lvl2_cave" : "Creatures.common.BRUTOR_TUNGUS2_GNOM",
+		"autcar_lvl1_cave" : "Creatures.common.BRUTOR_AUTCAR1_GNOM",
+		"autcar_lvl2_cave" : "Creatures.common.BRUTOR_AUTCAR2_GNOM",
+		"swamp_lvl1_cave" : "Creatures.common.BRUTOR_SWAMP1_GNOM",
+		"swamp_lvl2_cave" : "Creatures.common.BRUTOR_SWAMP2_GNOM",
+		
+
+		"out_lvl1" : "Creatures.common.BRUTOR_OUT1",
+		"out_lvl2" : "Creatures.common.BRUTOR_OUT2",
+		"vezuv_lvl1" : "Creatures.common.BRUTOR_VEZUV1",
+		"vezuv_lvl2" : "Creatures.common.BRUTOR_VEZUV2",
+		"tungus_lvl1" : "Creatures.common.BRUTOR_TUNGUS1",
+		"tungus_lvl2" : "Creatures.common.BRUTOR_TUNGUS2",
+		"autcar_lvl1" : "Creatures.common.BRUTOR_AUTCAR1",
+		"autcar_lvl2" : "Creatures.common.BRUTOR_AUTCAR2",
+		"swamp_lvl1" : "Creatures.common.BRUTOR_SWAMP1",
+		"swamp_lvl2" : "Creatures.common.BRUTOR_SWAMP2",
+		"br_paukan_lvl1" : "Creatures.common.BRUTOR4",
+		
+		"1" : "Creatures.common.BRUTOR2",
+		"2" : "Creatures.common.BRUTOR1",
+		"202" : "Creatures.common.BRUTOR3",
+		"502" : "Creatures.common.BRUTOR4"
+		
+	},
+	"model" : "brutor/brutor_lod1.model",	
+	"model_scale, bylevel" : {
+		"default" : 1,
+		
+		"[202,out_lvl1_cave,vezuv_lvl1_cave,tungus_lvl1_cave,autcar_lvl1_cave,swamp_lvl1_cave]" : 0.5,
+		"[out_lvl2_cave,vezuv_lvl2_cave,tungus_lvl2_cave,autcar_lvl2_cave,swamp_lvl2_cave]" : 0.8,
+		"br_paukan_lvl1" : 0.9,
+		"[1,out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : 1,
+		"[2,out_lvl2,vezuv_lvl2,tungus_lvl2,autcar_lvl2,swamp_lvl2]" : 1.2,
+		
+		"502" : 0.9
+	},
+	"tints, bylevel" : {
+		"default" : [{}],
+		"[202,502,br_paukan_lvl1]" : [{"body":"cave"}],
+		"[out_lvl1_cave,vezuv_lvl1_cave,tungus_lvl1_cave,autcar_lvl1_cave,swamp_lvl1_cave]" : [{"body":"cave"}],
+		"[out_lvl2_cave,vezuv_lvl2_cave,tungus_lvl2_cave,autcar_lvl2_cave,swamp_lvl2_cave]" : [{"body":"cave"}]
+	},
+	"counter_system_on_kill": "MOB_KILLED_BRUTOR",
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 1,
+		
+		"out_lvl1_cave" : 75,
+		"out_lvl2_cave" : 100,
+		"vezuv_lvl1_cave" : 80,
+		"vezuv_lvl2_cave" : 105,
+		"tungus_lvl1_cave" : 85,
+		"tungus_lvl2_cave" : 110,
+		"autcar_lvl1_cave" : 90,
+		"autcar_lvl2_cave" : 115,
+		"swamp_lvl1_cave" : 95,
+		"swamp_lvl2_cave" : 120,
+		
+		"out_lvl1" : 375,
+		"out_lvl2" : 935,
+		"vezuv_lvl1" : 380,
+		"vezuv_lvl2" : 940,
+		"tungus_lvl1" : 385,
+		"tungus_lvl2" : 945,
+		"autcar_lvl1" : 390,
+		"autcar_lvl2" : 950,
+		"swamp_lvl1" : 395,
+		"swamp_lvl2" : 955,
+		"br_paukan_lvl1" : 750,
+		
+		"1" : 375,
+		"2" : 937,
+		"202" : 75,
+		"502" : 750
+	},
+	"health, bylevel" : {
+		"default" : 0.777,
+		
+		"out_lvl1_cave" : 0.3,
+		"out_lvl2_cave" : 0.4,
+		"vezuv_lvl1_cave" : 0.32,
+		"vezuv_lvl2_cave" : 0.42,
+		"tungus_lvl1_cave" : 0.34,
+		"tungus_lvl2_cave" : 0.44,
+		"autcar_lvl1_cave" : 0.36,
+		"autcar_lvl2_cave" : 0.46,
+		"swamp_lvl1_cave" : 0.38,
+		"swamp_lvl2_cave" : 0.48,
+		
+		"out_lvl1" : 1.5,
+		"out_lvl2" : 3.75,
+		"vezuv_lvl1" : 1.52,
+		"vezuv_lvl2" : 3.77,
+		"tungus_lvl1" : 1.54,
+		"tungus_lvl2" : 3.79,
+		"autcar_lvl1" : 1.56,
+		"autcar_lvl2" : 3.81,
+		"swamp_lvl1" : 1.58,
+		"swamp_lvl2" : 3.83,
+		"br_paukan_lvl1" : 3,
+		
+		"1" : 1.5,
+		"2" : 3.75,
+		"202" : 0.3,
+		"502" : 3
+	},	
+	"agro_range, bylevel" : { 
+		"default" : 40,
+		
+		"out_lvl1_cave" : 7,
+		"out_lvl2_cave" : 7,
+		"vezuv_lvl1_cave" : 7,
+		"vezuv_lvl2_cave" : 7,
+		"tungus_lvl1_cave" : 7,
+		"tungus_lvl2_cave" : 7,
+		"autcar_lvl1_cave" : 7,
+		"autcar_lvl2_cave" : 7,
+		"swamp_lvl1_cave" : 7,
+		"swamp_lvl2_cave" : 7,
+		"br_paukan_lvl1" : 7,
+		
+		"202" : 7,
+		"502" : 7
+	},
+	"lose_agro_range, bylevel" : { 
+		"default" : 50,
+		
+		"out_lvl1_cave" : 11,
+		"out_lvl2_cave" : 11,
+		"vezuv_lvl1_cave" : 11,
+		"vezuv_lvl2_cave" : 11,
+		"tungus_lvl1_cave" : 11,
+		"tungus_lvl2_cave" : 11,
+		"autcar_lvl1_cave" : 11,
+		"autcar_lvl2_cave" : 11,
+		"swamp_lvl1_cave" : 11,
+		"swamp_lvl2_cave" : 11,
+		"br_paukan_lvl1" : 11,
+		
+		"202" : 11,
+		"502" : 11
+	
+	},
+	"global_cooldown" : 4,
+	"defence, bylevel" : {
+		"default" : {
+			"MELEE" : 700.0,
+			"BULLET" : 1.0,
+			"EXPLOSION" : 40.0,
+			"BIO" : 700.0
+		},
+		"[out_lvl1_cave,vezuv_lvl1_cave,tungus_lvl1_cave,autcar_lvl1_cave,swamp_lvl1_cave]" : {
+			"BULLET" : 0.0
+		},
+		"[out_lvl2_cave,vezuv_lvl2_cave,tungus_lvl2_cave,autcar_lvl2_cave,swamp_lvl2_cave]" : {
+			"BULLET" : 10.0
+		},
+		"[out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : {
+			"BULLET" : 20.0
+		},
+		"[out_lvl2,vezuv_lvl2,tungus_lvl2,autcar_lvl2,swamp_lvl2]" : {
+			"BULLET" : 50.0
+		},
+		"br_paukan_lvl1" : {
+			"BULLET" : 50.0
+		},
+		
+		"1" : {
+			"BULLET" : 0.0
+		},
+		"2" : {
+			"BULLET" : 40.0
+		},
+		"202" : {
+			"BULLET" : 10.0
+		},
+		"502" : {
+			"BULLET" : 50.0
+		}
+	},
+	"bleed": {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/body_hit_low.xml",
+		"0.3": "sfx/Shoot/body_hit_med.xml",
+		"1": "sfx/Shoot/body_hit_max.xml"
+	},
+	"height, bylevel" : {
+		"default" : 2.0,
+		"[out_lvl2_cave,vezuv_lvl2_cave,tungus_lvl2_cave,autcar_lvl2_cave,swamp_lvl2_cave]" : 2.1,
+		"[out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : 1.0,
+		"[out_lvl2,vezuv_lvl2,tungus_lvl2,autcar_lvl2,swamp_lvl2]" : 1.2
+	},
+	"width, bylevel" : {
+		"default" : 1.0,
+		"[out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : 0.5,
+		"[out_lvl2,vezuv_lvl2,tungus_lvl2,autcar_lvl2,swamp_lvl2]" : 0.5
+	},
+	"decompose_time" : [10,30],
+	"loot, bylevel" : {
+		"default" : {},
+		
+		"202" : {
+			"830" : 0.95,
+			"831" : 0.1
+		},
+		"502" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"out_lvl1_cave" : {
+			"829" : 0.75,
+			"832" : 0.1
+		},
+		
+		"out_lvl2_cave" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"vezuv_lvl1_cave" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"vezuv_lvl2_cave" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"tungus_lvl1_cave" : {
+			"830" : 0.75,	
+			"832" : 0.1
+		},
+		
+		"tungus_lvl2_cave" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"autcar_lvl1_cave" : {
+			"830" : 0.75,	
+			"832" : 0.1
+		},
+		
+		"autcar_lvl2_cave" : {
+			"830" : 0.75,	
+			"832" : 0.1
+		},
+		
+		"swamp_lvl1_cave" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"swamp_lvl2_cave" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		"br_paukan_lvl1" : {
+			"810257" : 0.9,
+			"832" : 0.1
+		},
+
+		
+		
+		"out_lvl1" : {
+			"829" : 0.75,
+			"831" : 0.1
+		},
+		
+		"out_lvl2" : {
+			"830" : 0.75,
+			"831" : 0.1
+		},
+		
+		"vezuv_lvl1" : {
+			"829" : 0.75,
+			"832" : 0.1
+		},
+		
+		"vezuv_lvl2" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"tungus_lvl1" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"tungus_lvl2" : {
+			"830" : 0.75,	
+			"832" : 0.1
+		},
+		
+		"autcar_lvl1" : {
+			"830" : 0.75,	
+			"832" : 0.1
+		},
+		
+		"autcar_lvl2" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"swamp_lvl1" : {
+			"830" : 0.75,
+			"832" : 0.1
+		},
+		
+		"swamp_lvl2" : {
+			"830" : 0.75,
+			"832" : 0.1
+		}
+		
+	},
+	"foot_nodes" : ["Bip01 L Toe0", "Bip01 R Toe0"],
+	"footsteps_sound" : "mob/brutor/footsteps",
+	"melee_distance, bylevel" : {
+		"default" : 1.8,
+		"[out_lvl1_cave,vezuv_lvl1_cave,tungus_lvl1_cave,autcar_lvl1_cave,swamp_lvl1_cave]" : 0.8,
+		"[out_lvl2_cave,vezuv_lvl2_cave,tungus_lvl2_cave,autcar_lvl2_cave,swamp_lvl2_cave]" : 0.9,
+		"[1,out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : 1.8,
+		"[2,out_lvl2,vezuv_lvl2,tungus_lvl2,autcar_lvl2,swamp_lvl2]" : 2,
+		
+		"3" : 2.16,
+		"202" : 0.9,
+		"[502,br_paukan_lvl1]" : 1.62
+	},
+	"melee_height" : 3.5,
+	"actions, bylevel" : {
+		"default" : {
+			"Idle" : {				
+				"sounds" : ["mob/brutor/idle"]
+			},
+			"Idle1" : {				
+				"model_actions" : ["Idle1"],
+				"sounds" : ["mob/brutor/idle"]
+			},
+			"Eat" : {				
+				"model_actions" : ["Eat"]
+			},
+			"AttackTooth" : {
+				"model_actions" : ["AttackTooth"],
+				"sounds" : ["mob/brutor/attack"]
+			},
+			"AttackPaws" : {
+				"model_actions" : ["AttackPaws"],
+				"sounds" : ["mob/brutor/attack"]
+			},
+			"AttackSpecial" : {
+				"model_actions" : ["AttackSpecial"],
+				"sounds" : ["mob/brutor/attack"]
+			},
+			"Threat" : {
+				"model_actions" : ["Threatening"],
+				"sounds" : ["mob/brutor/attack"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/brutor/pain"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			},				
+			"Pain" : {
+				"model_actions" : ["Pain"],
+				"sounds" : ["mob/brutor/pain"]
+			},				
+			"Attacking" : {
+				"sounds" : ["mob/brutor/angry"]
+			}
+		},
+		"2" : {}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state" : "walk_around",
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around, parent=default_walk_around" : {
+			"persistent_actions" : ["Idle"],			
+			"speed, bylevel" : {
+				"default" : {
+					"walk_around" : [0.9, 2.2]
+				},
+				"[out_lvl1_cave,vezuv_lvl1_cave,tungus_lvl1_cave,autcar_lvl1_cave,swamp_lvl1_cave]" : {
+					"walk_around" : [0.7, 1.9]
+				},
+				"[out_lvl2_cave,vezuv_lvl2_cave,tungus_lvl2_cave,autcar_lvl2_cave,swamp_lvl2_cave]" : {
+					"walk_around" : [0.7, 1.9]
+				},
+				"[1,out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : {
+					"walk_around" : [0.9, 2.2]
+				},
+				"[2,out_lvl2,vezuv_lvl2,tungus_lvl2,autcar_lvl2,swamp_lvl2]" : {
+					"walk_around" : [0.9, 2.2]
+				},
+				"202" : {
+					"walk_around" : [0.6, 1.8]
+				},
+				"[502,br_paukan_lvl1]" : {
+					"walk_around" : [0.7, 1.9]
+				}
+			}
+		},		
+		"attacking, parent=default_attacking" : {
+			"skills, bylevel" : {
+				"default" : {
+					"BRUTOR_MELEE" : 9,
+					"BRUTOR_MELEE_HARD" : 1,
+					"BRUTOR_THREATENING" : 1
+				},
+				"[out_lvl1_cave,vezuv_lvl1_cave,tungus_lvl1_cave,autcar_lvl1_cave,swamp_lvl1_cave]" : {
+					"BRUTOR_MELEE" : 11,
+					"BRUTOR_MELEE_HARD" : 1,
+					"BRUTOR_THREATENING" : 2
+				},
+				"[out_lvl2_cave,vezuv_lvl2_cave,tungus_lvl2_cave,autcar_lvl2_cave,swamp_lvl2_cave]" : {
+					"BRUTOR_MELEE" : 11,
+					"BRUTOR_MELEE_HARD" : 2,
+					"BRUTOR_THREATENING" : 1
+				},
+				"[1,out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : {
+					"BRUTOR_MELEE" : 8,
+					"BRUTOR_MELEE_HARD" : 1,
+					"BRUTOR_THREATENING" : 2
+				},
+				"[2,out_lvl2,vezuv_lvl2,tungus_lvl2,autcar_lvl2,swamp_lvl2]" : {
+					"BRUTOR_MELEE" : 8,
+					"BRUTOR_MELEE_HARD" : 2,
+					"BRUTOR_THREATENING" : 1
+				}
+			},
+			"persistent_actions" : ["Attacking"],
+			"movement_types" : ["follow_target", "walk_around"],
+			"speed, bylevel" : {
+				"default" : {
+					"follow_target" : 4.4,
+					"walk_around" : [2, 2]
+				}
+			}	
+		},
+		"dead" : {		
+			"persistent_actions" : ["Dead"],
+			"entering_actions" : {"actions" : ["Die"], "time" : 1.1},
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["is_dead", "equal", 0]
+				}
+			]
+		},
+		"before_recover, parent=default_before_recover" : {
+			"speed, bylevel" : {
+				"default" : {
+					"walk_around" : [0.9, 2.2]
+				}
+			}
+		},
+		"recover, parent=default_recover" : {			
+			"persistent_actions" : ["Eat"]
+		}
+	},
+	"skills" : {
+		"BRUTOR_MELEE": {
+			"type": "MELEE",
+			"cooldown": 1.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["HEAD", "LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.128, 0.192],
+					"penetration" : 100
+				},
+				"[out_lvl1_cave,vezuv_lvl1_cave,tungus_lvl1_cave,autcar_lvl1_cave,swamp_lvl1_cave]" : {
+					"body_zones": ["LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.98, 0.122],
+					"penetration" : 60
+				},
+				"[out_lvl2_cave,vezuv_lvl2_cave,tungus_lvl2_cave,autcar_lvl2_cave,swamp_lvl2_cave]" : {
+					"body_zones": ["LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.112, 0.141],
+					"penetration" : 70
+				},
+				"[1,out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : {
+					"body_zones": ["HEAD", "LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.128, 0.192],
+					"penetration" : 100
+				},
+				"[2,out_lvl2,vezuv_lvl2,tungus_lvl2,autcar_lvl2,swamp_lvl2]" : {
+					"body_zones": ["HEAD", "LEG_UPPER", "TORSO", "ARM"],
+					"type" : "MELEE",
+					"value" : [0.138, 0.212],
+					"penetration" : 120
+				}
+			},			 
+			"actions": ["AttackTooth"]
+		},
+		"BRUTOR_MELEE_HARD": {
+			"type": "MELEE",
+			"cooldown": 3.5,
+			"aoe_radius": 0,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO"],
+					"type" : "MELEE",
+					"value" : [0.256, 0.384],
+					"penetration" : 100
+				},
+				"[out_lvl1_cave,vezuv_lvl1_cave,tungus_lvl1_cave,autcar_lvl1_cave,swamp_lvl1_cave]" : {
+					"body_zones": ["TORSO"],
+					"type" : "MELEE",
+					"value" : [0.196, 0.244],
+					"penetration" : 60
+				},
+				"[out_lvl2_cave,vezuv_lvl2_cave,tungus_lvl2_cave,autcar_lvl2_cave,swamp_lvl2_cave]" : {
+					"body_zones": ["TORSO"],
+					"type" : "MELEE",
+					"value" : [0.224, 0.282],
+					"penetration" : 70
+				},
+				"[1,out_lvl1,vezuv_lvl1,tungus_lvl1,autcar_lvl1,swamp_lvl1]" : {
+					"body_zones": ["TORSO"],
+					"type" : "MELEE",
+					"value" : [0.256, 0.384],
+					"penetration" : 100
+				},
+				"[2,out_lvl2,vezuv_lvl2,tungus_lvl2,autcar_lvl2,swamp_lvl2]" : {
+					"body_zones": ["TORSO"],
+					"type" : "MELEE",
+					"value" : [0.276, 0.424],
+					"penetration" : 120
+				}
+			},			 
+			"actions": ["AttackPaws"]
+		},
+		"BRUTOR_THREATENING": {
+			"type": "MELEE",
+			"cooldown": 3.5,
+			"aoe_radius": 0,		 
+			"actions": ["Threat"],
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO"],
+					"type" : "MELEE",
+					"value" : [0.0, 0.0],
+					"penetration" : 10
+				}
+			}	
+		}
+	}
+}

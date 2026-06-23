@@ -1,0 +1,490 @@
+{
+	"name, bylevel" : {
+		"default" : "Creatures.common.BUSH",
+		"steppe_lvl1" : "Creatures.common.BUSH_STEPPE"
+		},
+	"model" : "bush/bush.model",
+	"model_scale, bylevel" : {
+		"default" : 1.1,
+		"GW_lvl1_agr12" : 1.1,
+		"GW_lvl1_agr20" : 1.3,
+		"test" : 1.3,
+		"steppe_lvl1" : 1.2
+		
+	},
+	"tints" : [{}],
+	"counter_system_on_kill": "MOB_KILLED_BUSH",
+    "statue": 0,
+	"experience, bylevel" : {
+		"default" : 20,
+		"GW_lvl1_agr12" : 50,
+		"GW_lvl1_agr20" : 50,
+		"steppe_lvl1" : 440
+	},
+	"health, bylevel" : {
+		"default" : 1.777,
+		"GW_lvl1_agr12" : 0.4,
+		"GW_lvl1_agr20" : 0.6,
+		"test" : 0.6,
+		"steppe_lvl1" : 1.2
+	},	
+	"agro_range, bylevel" : {
+		"default" : 12,
+		"GW_lvl1_agr12" : 12,
+		"GW_lvl1_agr20" : 20,
+		"steppe_lvl1" : 30
+	},
+	"lose_agro_range, bylevel" : {
+		"default" : 15,
+		"GW_lvl1_agr12" : 15,
+		"GW_lvl1_agr20" : 25,
+		"steppe_lvl1" : 40
+	},
+	"global_cooldown" : 1,
+	"defence, bylevel" : {
+		"default" : {
+			"MELEE" : 5.0,
+			"BULLET" : 5.0,
+			"EXPLOSION" : 5.0,
+			"BIO" : 5.0
+		},
+		"GW_lvl1_agr12" : {
+			"BULLET" : 1.0
+		},
+		"steppe_lvl1" : {
+			"MELEE" : 5.0,
+			"BULLET" : 100.0,
+			"EXPLOSION" : 75.0,
+			"BIO" : 5.0
+		}
+	},
+	"bleed": {
+		"0": "sfx/Shoot/armor_hit.xml",
+		"0.1": "sfx/Shoot/body_hit_green_low.xml",
+		"0.3": "sfx/Shoot/body_hit_green_med.xml",
+		"1": "sfx/Shoot/body_hit_green_max.xml"
+	},
+	"height, bylevel" : {
+		"default" : 1.0,
+		"GW_lvl1_agr12" : 1.5,
+		"GW_lvl1_agr20" : 1.5,
+		"steppe_lvl1" : 1.3
+	},	
+	"width" : 1,
+	"decompose_time" : [10,30],
+	"loot, bylevel" : {
+		"default" : {},
+		"GW_lvl1_agr12" : {
+			"410228" : 0.5
+		},
+		"GW_lvl1_agr20" : {
+			"410228" : 0.5
+		},
+		"steppe_lvl1" : {
+			"410354" : 0.8
+		}
+	},
+	"foot_nodes" : [],
+	"footsteps_sound" : "mob/Bush/idle",
+	"melee_distance, bylevel" : {
+		"default" : 2,
+		"GW_lvl1_agr12" : 2.4,
+		"GW_lvl1_agr20" : 2.4,
+		"steppe_lvl1" : 2.4
+	},
+	"melee_height" : 3.5,	
+	"actions, bylevel" : {
+		"default" : {
+			"Idle" : {				
+				"sounds" : ["mob/Bush/idle"]
+			},
+			"Idle_underground" : {				
+				"model_actions" : ["spider_dug"],
+				"sounds" : ["mob/bush/idle"]
+			},
+			"AttackNails" : {
+				"model_actions" : ["spider_attack"],
+				"sounds" : ["mob/bush/attack"]
+			},
+			"AttackCloud" : {
+				"model_actions" : ["spider_poison_cloud"],
+				"sounds" : ["mob/bush/attackcloud"]
+			},
+			"Up" : {
+				"model_actions" : ["spider_spawn"],
+				"sounds" : ["mob/bush/up"]
+			},
+			"Down" : {
+				"model_actions" : ["spider_dig"],
+				"sounds" : ["mob/bush/down"]
+			},
+			"Hide" : {	
+				"model_actions" : ["spider_dug"],
+				"sounds" : ["mob/bush/idle"]
+			},
+			"Die" : {
+				"model_actions" : ["Die"],
+				"sounds" : ["mob/bush/death"]
+			},				
+			"Pain" : {
+				"model_actions" : ["spider_recoil"],
+				"sounds" : ["mob/bush/pain"]
+			},
+			"Dead" : {
+				"model_actions" : ["Dead"]	
+			}				
+		}
+	},
+	"events" : {
+		"onTakeDamage" : ["Pain"]
+	},
+	"default_state" : "walk_around",
+	"common_conditions,parent=default_common_conditions" : [],	
+	"states" : {
+		"walk_around" : {
+			"movement_types" : ["stand_only"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				},
+				{
+					"to_state" : "Hide",
+					"predicate" : ["targets_count", "equal", 0]
+				}
+			],	
+			"transitions" : {
+				"Hide" : {"time" : 2, "actions" : ["Down"]}
+			},		
+			"speed" : {
+				"stand_only" : [0]
+			}
+		},		
+		"attacking, parent=default_attacking" : {
+			"skills, bylevel" : {
+			"default" : {
+				"BUSH_RANGE2" : 1,
+				"BUSH_STUN" : 3
+				},
+			"GW_lvl1_agr12" : {
+				"BUSH_RANGE2" : 1,
+				"BUSH_STUN" : 3
+				},
+			"GW_lvl1_agr20" : {
+				"BUSH_RANGE22" : 1,
+				"BUSH_STUN" : 3
+				},
+			"test" : {
+				"BUSH_ROCKET" : 1,
+				"BUSH_STUN" : 3
+				},
+			"steppe_lvl1" : {
+				"BUSH_RANGE22S" : 1,
+				"BUSH_POISON" : 2,
+				"BUSH_STUN2S" : 3
+				}
+			
+				
+			},
+			"movement_types" : ["stand_only"],
+			"conditions" : [
+				{
+					"to_state" : "before_recover",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "less", "100"]
+						]]
+				},
+			{
+				"to_state" : "Hide",
+				"predicate" :  
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "equal", "100"]
+						]]
+			}
+			],
+			"transitions" : {
+				"Hide" : {"time" : 1, "actions" : ["Down"]}
+			},
+			"speed" : {
+				"stand_only" : 0
+			}	
+		},
+		"dead" : {		
+			"persistent_actions" : ["Dead"],
+			"entering_actions" : {"actions" : ["Die"], "time" : 1.6},
+			"conditions" : [
+				{
+					"to_state" : "walk_around",
+					"predicate" : ["is_dead", "equal", 0]
+				}
+			]
+		},
+		"Hide" : {
+			"persistent_actions" : ["Hide"],
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			],
+			"transitions" : {
+				"attacking" : {"time" : 1, "actions" : ["Up"]}
+			},
+			"agro_range, bylevel" : {
+				"default" : 12,
+				"steppe_lvl1" : 20
+			},
+			"lose_agro_range, bylevel" : {
+				"default" : 15,
+				"steppe_lvl1" : 21
+			}
+		},
+		"before_recover, parent=default_before_recover" : {			
+			"persistent_actions" : ["Idle"],
+		"change_state_timer" : [10, "recover"],
+			"speed" : {
+				"stand_only" : [0]
+			},
+			"conditions" : [
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				}
+			]
+		},
+		"recover" : {			
+			"persistent_actions" : ["Idle_underground"],
+			"entering_actions" : {"actions" : ["Down"], "time" : 1.6},
+			"persistent_effects" : {
+				"418" : {"stacks":1}
+			},
+			"conditions" :[
+				{
+					"to_state" : "attacking",
+					"predicate" : ["targets_count", "more", 0]
+				},
+				{
+					"to_state" : "Hide",
+					"predicate" : 
+						["and",[
+							["targets_count", "equal", "0"],
+							["health_percent", "equal", "100"]
+						]]
+				}
+				],
+			"transitions" : {
+				"attacking" : {"time" : 2, "actions" : ["Up"]}
+			
+			}
+		}
+	},
+	"skills" : {
+
+	    "BUSH_STUN": {
+			"type": "DIRECT",
+			"cast_range": 7.0,
+			"cooldown": 7.0,
+			"aoe_radius": 20,
+			"effects": [["Stun", 1]], 
+			"damage, bylevel": 
+			{
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.005, 0.013],
+					"penetration" : 100
+				}
+			},
+			"actions": ["AttackCloud"],
+			"self_sfxes": [
+				{
+					"path"			: "sfx/Mob/BushCloud.xml",
+					"source_node" 	: "HP_sting",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		},
+		
+	    "BUSH_STUN2S": {
+			"type": "DIRECT",
+			"cast_range": 7.0,
+			"cooldown": 7.0,
+			"aoe_radius": 20,
+			"effects": [["Stun", 1]], 
+			"damage, bylevel": 
+			{
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.025, 0.043],
+					"penetration" : 100
+				}
+			},
+			"actions": ["AttackCloud"],
+			"self_sfxes": [
+				{
+					"path"			: "sfx/Mob/BushCloud.xml",
+					"source_node" 	: "HP_sting",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		},
+		
+		"BUSH_POISON": {
+			"type": "DIRECT",
+			"cast_range": 25.0,
+			"cooldown": 7.0,
+			"aoe_radius": 2,
+			"damage, bylevel": {
+				"default": {
+					"body_zones": ["TORSO","HEAD"],
+					"type" : "MELEE",
+					"value" : [0.01, 0.02],
+					"penetration" : 100
+				},
+				"steppe_lvl1" : {
+					"value" : [0.010, 0.015]
+				}
+				
+			},
+			"effects, bylevel": {
+				"default": [["Poison", 1]],
+				"steppe_lvl1" : [["Poison", 6]]
+
+			},
+			"actions": ["AttackPoison"],
+			"self_sfxes": [
+				{						
+					"path"			: "sfx/Mob/AttackPoison.xml",
+					"source_node" 	: "HP_mouth",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		},
+		
+		"BUSH_RANGE2": {
+			"type": "DIRECT",
+			"cast_range": 15.0,
+			"cooldown": 2.0,
+			"aoe_radius": 2,
+			"effects": [], 
+			"actions": ["AttackNails"],
+			"damage, bylevel": 
+			{
+				"default": 
+				{
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.005, 0.013],
+					"penetration" : 100
+				}
+			},
+			"self_sfxes": [
+				{
+					"path"			: "sfx/Mob/BushNail.xml",
+					"source_node" 	: "HP_sting",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		},
+		
+		
+		
+		"BUSH_RANGE22": {
+			"type": "DIRECT",
+			"cast_range": 25.0,
+			"cooldown": 2.0,
+			"aoe_radius": 2,
+			"effects": [],
+			"damage, bylevel":
+			{
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.005, 0.013],
+					"penetration" : 100
+				}
+			},
+			"actions": ["AttackNails"],
+			"self_sfxes": [
+				{
+					"path"			: "sfx/Mob/BushNail.xml",
+					"source_node" 	: "HP_sting",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		},
+		
+		
+		"BUSH_RANGE22S": {
+			"type": "DIRECT",
+			"cast_range": 50.0,
+			"cooldown": 1.0,
+			"aoe_radius": 2,
+			"effects": [],
+			"damage, bylevel":
+			{
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.050, 0.090],
+					"penetration" : 100
+				}
+			},
+			"actions": ["AttackNails"],
+			"self_sfxes": [
+				{
+					"path"			: "sfx/Mob/BushNail.xml",
+					"source_node" 	: "HP_sting",
+					"target_node"	: "HP_spine1",
+					"direct_to_target": 1,
+					"delay"			: 0.5,
+					"play_time"		: 1
+				}
+			]
+		},
+		
+		
+		"BUSH_ROCKET": {
+			"type": "ROCKET",
+			"aoe_radius": 4,
+			"rocket_type": "RPG7_ROCKET",
+			"rocket_start_position" : [0, 0.5, 0],
+			"rocket_speed": 5.0,
+			"rocket_acceleration": 5.0,
+			"rocket_max_distance": 50,
+			"cast_range": 25.0,
+			"cooldown": 2.0,
+			"effects": [],
+			"damage, bylevel":
+			{
+				"default": {
+					"body_zones": ["LEG_LOWER","LEG_UPPER"],
+					"type" : "MELEE",
+					"value" : [0.005, 0.013],
+					"penetration" : 100
+				}
+			},
+			"actions": ["AttackNails"],
+			"self_sfxes": []
+		}
+	}
+}
