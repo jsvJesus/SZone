@@ -7,12 +7,12 @@
   </player>
   <server>
     <online> true </online>
-    <host> ctsgames2.convex.ru </host>
+    <host> 127.0.0.1 </host>
   </server>
   <chat>
     <visibleLines> 4 </visibleLines>
   </chat>
   <login>
-    <host> ctsgames2.convex.ru:22231 </host>
+    <host> 127.0.0.1:22231 </host>
   </login>
 </scripts_config.xml>

@@ -19,6 +19,7 @@ Client/unpack/res/system/
 Client/unpack/res/textures/
 Client/unpack/res/weather/
 BW/
+Server/bin/
 
 .vs/
 .idea/
